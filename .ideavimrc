@@ -1,0 +1,12 @@
+set surround
+set easymotion
+
+set incsearch             " But do highlight as you type your search.
+set ignorecase            " Make searches case-insensitive.
+set clipboard+=unnamed     " yank and paste from system clipboard
+"set scrolloff=999         " the cursor is centered vertically if posible
+
+" set clipboard+=ideaput
+" set ideajoin
+
+inoremap jk <Esc>

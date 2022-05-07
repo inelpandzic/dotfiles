@@ -1,5 +1,33 @@
+"" Source your .vimrc
+"source ~/.vimrc
+
+"" -- Suggested options --
+" Show a few lines of context around the cursor. Note that this makes the
+" text scroll if you mouse-click near the start or end of the window.
+set scrolloff=5
+
+" Do incremental searching.
+set incsearch
+
+" Don't use Ex mode, use Q for formatting.
+map Q gq
+
+
+"" -- Map IDE actions to IdeaVim -- https://jb.gg/abva4t
+"" Map \r to the Reformat Code action
+"map \r <Action>(ReformatCode)
+
+"" Map <leader>d to start debug
+"map <leader>d <Action>(Debug)
+
+"" Map \b to toggle the breakpoint on the current line
+"map \b <Action>(ToggleLineBreakpoint)
+
+
+" Find more examples here: https://jb.gg/share-ideavimrc
 set surround
 set easymotion
+" set commentary
 
 set incsearch             " But do highlight as you type your search.
 set ignorecase            " Make searches case-insensitive.
@@ -7,6 +35,84 @@ set clipboard+=unnamed     " yank and paste from system clipboard
 "set scrolloff=999         " the cursor is centered vertically if posible
 
 " set clipboard+=ideaput
-" set ideajoin
+set ideajoin
+"set number relativenumber
+set splitright
+set splitdown
+
+let mapleader = " "
 
 inoremap jk <Esc>
+
+nmap <leader>ss :vsplit<CR>
+nmap <leader>sh :split<CR>
+
+nmap <leader>a :action GotoAction<CR>
+
+nnoremap <c-o> :action Back<cr>
+nnoremap <c-i> :action Forward<cr>
+nnoremap <c-'> :action PreviousTab<cr>
+nnoremap <leader> :action PrevMethod<cr>
+nnoremap <c-f>n :action NextMethod<cr>
+
+nnoremap <leader>o :action FileStructurePopup<CR>
+nnoremap <leader>v :action ActivateTerminalToolWindow<CR>
+nnoremap <leader>nn :action ActivateProjectToolWindow<CR>
+nnoremap <leader>nf :action SelectInProjectView<CR>
+nnoremap <leader>xx :action CloseAllEditors<CR>
+nnoremap <Leader>r :action ActivateRunToolWindow<CR>
+
+
+nnoremap <Leader>h :action HideAllWindows<CR>
+
+" Edit / refactor
+nnoremap gd :action GotoDeclaration<CR>
+nnoremap gy :action GotoTypeDeclaration<CR>
+nnoremap gi :action GotoImplementation<CR>
+nnoremap gs :action GotoSuperMethod<CR>
+nnoremap gq :action QuickImplementations<CR>
+
+nnoremap ,m :action ImplementMethods<CR>
+nnoremap ,r :action RenameElement<CR>
+nnoremap ,dd :action QuickJavaDoc<CR>
+nnoremap ,de :action ExternalJavaDoc<CR>
+
+nnoremap ,a :action Annotate<CR>
+nnoremap ,c :action Vcs.Show.Local.Changes<cr>
+
+"Run stuff
+nnoremap .r :action ContextRun<CR>
+nnoremap .d :action ContextDebug<CR>
+nnoremap .s :action Stop<CR>
+nnoremap .b :action ToggleLineBreakpoint<CR>
+"dodati next i prev za breakpoint
+
+" VCS operations
+
+
+
+
+"JumpToLastWindow
+
+"ReopenClosedTab
+"CloseActiveTab                                     <C-S-F4>
+"CloseAllEditors
+"CloseAllEditorsButActive
+"CloseAllUnmodifiedEditors
+
+
+"HideActiveWindow                                   <S-Esc>
+"HideAllWindows                                     <M-S-F12>
+"HideCoverage
+"HideSideWindows
+
+
+"SearchEverywhere.SelectItem                        <CR>
+"SelectAllOccurrences                               <M-C-G>
+"SelectIn                                           <A-F1>
+"SelectInProjectView                                <C-S-S>
+"SelectInRemoteHost
+"SelectNextOccurrence                               <C-G>
+"SelectVirtualTemplateElement                       <A-S-O>
+"SmartSelect                                        <A-Up>
+"SmartUnSelect

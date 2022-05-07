@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/ipandzic/.oh-my-zsh"
+export ZSH="/Users/inelpandzic/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -23,14 +23,13 @@ ZSH_THEME="robbyrussell"
 # Case-sensitive completion must be off. _ and - will be interchangeable.
 # HYPHEN_INSENSITIVE="true"
 
-# Uncomment the following line to disable bi-weekly auto-update checks.
-# DISABLE_AUTO_UPDATE="true"
-
-# Uncomment the following line to automatically update without prompting.
-# DISABLE_UPDATE_PROMPT="true"
+# Uncomment one of the following lines to change the auto-update behavior
+# zstyle ':omz:update' mode disabled  # disable automatic updates
+# zstyle ':omz:update' mode auto      # update automatically without asking
+# zstyle ':omz:update' mode reminder  # just remind me to update when it's time
 
 # Uncomment the following line to change how often to auto-update (in days).
-# export UPDATE_ZSH_DAYS=13
+# zstyle ':omz:update' frequency 13
 
 # Uncomment the following line if pasting URLs and other text is messed up.
 # DISABLE_MAGIC_FUNCTIONS="true"
@@ -45,8 +44,9 @@ ZSH_THEME="robbyrussell"
 # ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
-# Caution: this setting can cause issues with multiline prompts (zsh 5.7.1 and newer seem to work)
-# See https://github.com/ohmyzsh/ohmyzsh/issues/5765
+# You can also set it to another string to have that shown instead of the default red dots.
+# e.g. COMPLETION_WAITING_DOTS="%F{yellow}waiting...%f"
+# Caution: this setting can cause issues with multiline prompts in zsh < 5.7.1 (see #5765)
 # COMPLETION_WAITING_DOTS="true"
 
 # Uncomment the following line if you want to disable marking untracked files
@@ -70,7 +70,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git docker docker-compose)
+plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -103,50 +103,56 @@ source $ZSH/oh-my-zsh.sh
 
 #Golang
 
-export GOPATH=/Users/ipandzic/Dev/go
+export GOPATH=/Users/inelpandzic/Dev/go
 export PATH=$PATH:$(go env GOPATH)/bin
 
-export GOOGLE_APPLICATION_CREDENTIALS=/Users/ipandzic/Dev/firebase/pragmatic-review-5bded-firebase-adminsdk-oisxt-323c4a048e.json
+# Jobtome
+export GOPROXY=direct #jobtome
+export GOSUMDB=off #jobtome
+export PATH=$PATH:$HOME/.google-cloud-sdk/bin
 
-#Java Vesions
-export JAVA_HOME=`/usr/libexec/java_home -v 11`
-
-alias j16="export JAVA_HOME=`/usr/libexec/java_home -v 16`; java -version"
-alias j11="export JAVA_HOME=`/usr/libexec/java_home -v 11`; java -version"
-alias j8="export JAVA_HOME=`/usr/libexec/java_home -v 1.8`; java -version"
 
 #Make terminal better
-
 alias c='clear'
-alias ll='ls -lah'
+alias ll='ls -lahtr'
 alias gs='git status'
 alias gb='git branch'
 alias gl='git log --decorate --oneline'
 alias gp='git push origin $(git_current_branch)'
-alias mdt='mvn dependency:tree -Dverbose -U'
 
-alias mvn-set-pub='mv ~/.m2/settings.xml ~/.m2/settings-pub.xml'
-alias mvn-set-ib='mv ~/.m2/settings-pub.xml ~/.m2/settings.xml'
+alias conf-zshrc='nvim ~/.zshrc'
+alias conf-tmux='nvim ~/.tmux.conf'
 
-alias conf-nvim='vim ~/.config/nvim/init.vim'
-alias conf-vim='vim ~/.vimrc' #MacOS Vim
-alias conf-zshrc='vim ~/.zshrc'
-alias conf-ideavimrc='vim ~/.ideavimrc'
-
-alias vf='vim $(fzf)'
-alias nn='cd /Users/ipandzic/Library/Mobile\ Documents/com\~apple\~CloudDocs/Notes/; vim .'
-alias nn-f='cd /Users/ipandzic/Library/Mobile\ Documents/com\~apple\~CloudDocs/Notes/; vim $(fzf)'
-
-#alias icloud='cd /Users/ipandzic/Library/Mobile\ Documents/com\~apple\~CloudDocs/'
+alias dew='cd ~/Dev/Workspace/'
+# alias repo='cd ~/Dev/Workspace/; cd $(find . -type d -print | fzf)'
+alias repo='cd ~/Dev/Workspace/; cd $(find . -type d -print | fzf); tmux rename-window $( echo "${PWD##*/}")'
 
 #
 bindkey -v
-bindkey -s '^E' 'vim $(fzf)\n'
-bindkey '^R' history-incremental-search-backward
+bindkey -s '^E' 'nvim $(fzf)\n'
+alias vf='nvim $(fzf)'
+
+# Completion stuff
+if type brew &>/dev/null
+then
+  FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
+
+  autoload -Uz compinit
+  compinit
+fi
 
 # fzf tab completion
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-# Needed for docker autocompletion
-autoload -Uz compinit; compinitc
+# env vars needed for LazyGit
+export VISUAL="nvim"
+export EDITOR="nvim"
+
+# Jobtome added config
+-e eval "$(pyenv init --path)"
+export PATH="${GCLOUDSDK_PATH}:${PATH}"
+GCLOUDSDK_PATH="${HOME}/.google-cloud-sdk/bin"
+export PATH="${GCLOUDSDK_PATH}:${PATH}"
+# Jobtome added config
+
 

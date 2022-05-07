@@ -5,7 +5,6 @@ Tools configured by these files are:
 - skhd
 - Karabiner Elements
 - Alacritty
-- Iterm2
 - Tmux
 - ZSH
 - Neovim

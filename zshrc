@@ -125,7 +125,7 @@ alias conf-tmux='nvim ~/.tmux.conf'
 
 alias dew='cd ~/Dev/Workspace/'
 # alias repo='cd ~/Dev/Workspace/; cd $(find . -type d -print | fzf)'
-alias repo='cd ~/Dev/Workspace/; cd $(find . -type d -print | fzf); tmux rename-window $( echo "${PWD##*/}")'
+alias rr='cd ~/Dev/Workspace/; cd $(find . -type d -print | fzf); tmux rename-window $( echo "${PWD##*/}")'
 
 #
 bindkey -v

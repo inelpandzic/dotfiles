@@ -110,6 +110,7 @@ export PATH=$PATH:$(go env GOPATH)/bin
 export GOPROXY=direct #jobtome
 export GOSUMDB=off #jobtome
 export PATH=$PATH:$HOME/.google-cloud-sdk/bin
+export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/14/bin
 
 
 #Make terminal better

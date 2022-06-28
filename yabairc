@@ -47,8 +47,10 @@ yabai -m rule --add app='^System Information$' manage=off
 yabai -m rule --add app='^System Preferences$' manage=off
 yabai -m rule --add app='^Podcasts$' manage=off
 yabai -m rule --add app='^Karabiner$' manage=off
-yabai -m rule --add app='Acrobat Reader' manage=off
+yabai -m rule --add app='^Postgres$' manage=off
+yabai -m rule --add app='^Docker$' manage=off
 yabai -m rule --add title='Preferences$' manage=off
+yabai -m rule --add app='Acrobat Reader' manage=off
 
 yabai -m rule --add title='Settings$' manage=off
 

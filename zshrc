@@ -132,6 +132,7 @@ alias rr='cd ~/Dev/Workspace/; cd $(find . -type d -print | fzf); tmux rename-wi
 bindkey -v
 bindkey -s '^E' 'nvim $(fzf)\n'
 alias vf='nvim $(fzf)'
+alias vc='code . --goto $(fzf)'
 
 # Completion stuff
 if type brew &>/dev/null

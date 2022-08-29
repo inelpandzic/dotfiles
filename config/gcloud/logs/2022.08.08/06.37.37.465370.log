@@ -1,0 +1,228 @@
+2022-08-08 06:37:37,468 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'clusters']
+2022-08-08 06:37:37,470 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'clusters', 'list']
+2022-08-08 06:37:37,486 DEBUG    root            Running [gcloud.container.clusters.list] with arguments: []
+2022-08-08 06:37:37,492 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2022-08-08 06:37:38,129 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cloud-dev-112233/locations/-/clusters?alt=json HTTP/1.1" 200 None
+2022-08-08 06:37:38,196 INFO     root            Display format: "
+    table(
+        name,
+        zone:label=LOCATION,
+        master_version():label=MASTER_VERSION,
+        endpoint:label=MASTER_IP,
+        nodePools[0].config.machineType,
+        currentNodeVersion:label=NODE_VERSION,
+        firstof(currentNodeCount,initialNodeCount):label=NUM_NODES,
+        status
+    )
+"
+2022-08-08 06:37:38,219 INFO     ___FILE_ONLY___ NAME
+2022-08-08 06:37:38,219 INFO     ___FILE_ONLY___                                 
+2022-08-08 06:37:38,219 INFO     ___FILE_ONLY___ LOCATION
+2022-08-08 06:37:38,219 INFO     ___FILE_ONLY___         
+2022-08-08 06:37:38,219 INFO     ___FILE_ONLY___ MASTER_VERSION
+2022-08-08 06:37:38,219 INFO     ___FILE_ONLY___     
+2022-08-08 06:37:38,219 INFO     ___FILE_ONLY___ MASTER_IP
+2022-08-08 06:37:38,219 INFO     ___FILE_ONLY___        
+2022-08-08 06:37:38,219 INFO     ___FILE_ONLY___ MACHINE_TYPE
+2022-08-08 06:37:38,219 INFO     ___FILE_ONLY___    
+2022-08-08 06:37:38,219 INFO     ___FILE_ONLY___ NODE_VERSION
+2022-08-08 06:37:38,219 INFO     ___FILE_ONLY___          
+2022-08-08 06:37:38,219 INFO     ___FILE_ONLY___ NUM_NODES
+2022-08-08 06:37:38,219 INFO     ___FILE_ONLY___   
+2022-08-08 06:37:38,219 INFO     ___FILE_ONLY___ STATUS
+2022-08-08 06:37:38,219 INFO     ___FILE_ONLY___ 
+
+2022-08-08 06:37:38,219 INFO     ___FILE_ONLY___ ondrei-32021
+2022-08-08 06:37:38,219 INFO     ___FILE_ONLY___                         
+2022-08-08 06:37:38,219 INFO     ___FILE_ONLY___ europe-west1-c
+2022-08-08 06:37:38,219 INFO     ___FILE_ONLY___   
+2022-08-08 06:37:38,219 INFO     ___FILE_ONLY___ 1.21.14-gke.700
+2022-08-08 06:37:38,219 INFO     ___FILE_ONLY___    
+2022-08-08 06:37:38,219 INFO     ___FILE_ONLY___ 34.77.130.237
+2022-08-08 06:37:38,220 INFO     ___FILE_ONLY___    
+2022-08-08 06:37:38,220 INFO     ___FILE_ONLY___ n1-standard-4
+2022-08-08 06:37:38,220 INFO     ___FILE_ONLY___   
+2022-08-08 06:37:38,220 INFO     ___FILE_ONLY___ 1.21.14-gke.700
+2022-08-08 06:37:38,220 INFO     ___FILE_ONLY___       
+2022-08-08 06:37:38,220 INFO     ___FILE_ONLY___ 3
+2022-08-08 06:37:38,220 INFO     ___FILE_ONLY___           
+2022-08-08 06:37:38,220 INFO     ___FILE_ONLY___ RUNNING
+2022-08-08 06:37:38,220 INFO     ___FILE_ONLY___ 
+
+2022-08-08 06:37:38,220 INFO     ___FILE_ONLY___ plavi-122
+2022-08-08 06:37:38,220 INFO     ___FILE_ONLY___                            
+2022-08-08 06:37:38,220 INFO     ___FILE_ONLY___ europe-west2-c
+2022-08-08 06:37:38,220 INFO     ___FILE_ONLY___   
+2022-08-08 06:37:38,220 INFO     ___FILE_ONLY___ 1.22.10-gke.600
+2022-08-08 06:37:38,220 INFO     ___FILE_ONLY___    
+2022-08-08 06:37:38,220 INFO     ___FILE_ONLY___ 34.89.23.202
+2022-08-08 06:37:38,220 INFO     ___FILE_ONLY___     
+2022-08-08 06:37:38,220 INFO     ___FILE_ONLY___ n1-standard-4
+2022-08-08 06:37:38,220 INFO     ___FILE_ONLY___   
+2022-08-08 06:37:38,220 INFO     ___FILE_ONLY___ 1.22.10-gke.600
+2022-08-08 06:37:38,220 INFO     ___FILE_ONLY___       
+2022-08-08 06:37:38,220 INFO     ___FILE_ONLY___ 3
+2022-08-08 06:37:38,220 INFO     ___FILE_ONLY___           
+2022-08-08 06:37:38,220 INFO     ___FILE_ONLY___ RUNNING
+2022-08-08 06:37:38,220 INFO     ___FILE_ONLY___ 
+
+2022-08-08 06:37:38,220 INFO     ___FILE_ONLY___ ege-3097
+2022-08-08 06:37:38,220 INFO     ___FILE_ONLY___                             
+2022-08-08 06:37:38,221 INFO     ___FILE_ONLY___ europe-west3
+2022-08-08 06:37:38,221 INFO     ___FILE_ONLY___     
+2022-08-08 06:37:38,221 INFO     ___FILE_ONLY___ 1.24.2-gke.1900
+2022-08-08 06:37:38,221 INFO     ___FILE_ONLY___    
+2022-08-08 06:37:38,221 INFO     ___FILE_ONLY___ 34.89.167.113
+2022-08-08 06:37:38,221 INFO     ___FILE_ONLY___    
+2022-08-08 06:37:38,221 INFO     ___FILE_ONLY___ n1-standard-4
+2022-08-08 06:37:38,221 INFO     ___FILE_ONLY___   
+2022-08-08 06:37:38,221 INFO     ___FILE_ONLY___ 1.24.2-gke.1900
+2022-08-08 06:37:38,221 INFO     ___FILE_ONLY___       
+2022-08-08 06:37:38,221 INFO     ___FILE_ONLY___ 3
+2022-08-08 06:37:38,221 INFO     ___FILE_ONLY___           
+2022-08-08 06:37:38,221 INFO     ___FILE_ONLY___ RUNNING
+2022-08-08 06:37:38,221 INFO     ___FILE_ONLY___ 
+
+2022-08-08 06:37:38,221 INFO     ___FILE_ONLY___ slava-pxc
+2022-08-08 06:37:38,221 INFO     ___FILE_ONLY___                            
+2022-08-08 06:37:38,221 INFO     ___FILE_ONLY___ europe-west3-a
+2022-08-08 06:37:38,221 INFO     ___FILE_ONLY___   
+2022-08-08 06:37:38,221 INFO     ___FILE_ONLY___ 1.23.8-gke.1900
+2022-08-08 06:37:38,221 INFO     ___FILE_ONLY___    
+2022-08-08 06:37:38,221 INFO     ___FILE_ONLY___ 35.234.70.108
+2022-08-08 06:37:38,221 INFO     ___FILE_ONLY___    
+2022-08-08 06:37:38,221 INFO     ___FILE_ONLY___ n1-standard-4
+2022-08-08 06:37:38,221 INFO     ___FILE_ONLY___   
+2022-08-08 06:37:38,221 INFO     ___FILE_ONLY___ 1.23.8-gke.1900
+2022-08-08 06:37:38,221 INFO     ___FILE_ONLY___       
+2022-08-08 06:37:38,221 INFO     ___FILE_ONLY___ 3
+2022-08-08 06:37:38,221 INFO     ___FILE_ONLY___           
+2022-08-08 06:37:38,221 INFO     ___FILE_ONLY___ RUNNING
+2022-08-08 06:37:38,221 INFO     ___FILE_ONLY___ 
+
+2022-08-08 06:37:38,221 INFO     ___FILE_ONLY___ inel-32528
+2022-08-08 06:37:38,222 INFO     ___FILE_ONLY___                           
+2022-08-08 06:37:38,222 INFO     ___FILE_ONLY___ europe-west3-b
+2022-08-08 06:37:38,222 INFO     ___FILE_ONLY___   
+2022-08-08 06:37:38,222 INFO     ___FILE_ONLY___ 1.21.14-gke.2100
+2022-08-08 06:37:38,222 INFO     ___FILE_ONLY___   
+2022-08-08 06:37:38,222 INFO     ___FILE_ONLY___ 34.159.88.121
+2022-08-08 06:37:38,222 INFO     ___FILE_ONLY___    
+2022-08-08 06:37:38,222 INFO     ___FILE_ONLY___ n1-standard-4
+2022-08-08 06:37:38,222 INFO     ___FILE_ONLY___   
+2022-08-08 06:37:38,222 INFO     ___FILE_ONLY___ 1.21.14-gke.2100
+2022-08-08 06:37:38,222 INFO     ___FILE_ONLY___      
+2022-08-08 06:37:38,222 INFO     ___FILE_ONLY___ 3
+2022-08-08 06:37:38,222 INFO     ___FILE_ONLY___           
+2022-08-08 06:37:38,222 INFO     ___FILE_ONLY___ STOPPING
+2022-08-08 06:37:38,222 INFO     ___FILE_ONLY___ 
+
+2022-08-08 06:37:38,222 INFO     ___FILE_ONLY___ max-30844
+2022-08-08 06:37:38,222 INFO     ___FILE_ONLY___                            
+2022-08-08 06:37:38,222 INFO     ___FILE_ONLY___ europe-west3-b
+2022-08-08 06:37:38,222 INFO     ___FILE_ONLY___   
+2022-08-08 06:37:38,222 INFO     ___FILE_ONLY___ 1.21.12-gke.2200
+2022-08-08 06:37:38,222 INFO     ___FILE_ONLY___   
+2022-08-08 06:37:38,222 INFO     ___FILE_ONLY___ 35.246.193.17
+2022-08-08 06:37:38,222 INFO     ___FILE_ONLY___    
+2022-08-08 06:37:38,222 INFO     ___FILE_ONLY___ n1-standard-4
+2022-08-08 06:37:38,222 INFO     ___FILE_ONLY___   
+2022-08-08 06:37:38,222 INFO     ___FILE_ONLY___ 1.21.12-gke.2200
+2022-08-08 06:37:38,222 INFO     ___FILE_ONLY___      
+2022-08-08 06:37:38,222 INFO     ___FILE_ONLY___ 3
+2022-08-08 06:37:38,222 INFO     ___FILE_ONLY___           
+2022-08-08 06:37:38,222 INFO     ___FILE_ONLY___ RUNNING
+2022-08-08 06:37:38,222 INFO     ___FILE_ONLY___ 
+
+2022-08-08 06:37:38,222 INFO     ___FILE_ONLY___ natali-22
+2022-08-08 06:37:38,222 INFO     ___FILE_ONLY___                            
+2022-08-08 06:37:38,222 INFO     ___FILE_ONLY___ europe-west3-b
+2022-08-08 06:37:38,223 INFO     ___FILE_ONLY___   
+2022-08-08 06:37:38,223 INFO     ___FILE_ONLY___ 1.22.12-gke.300
+2022-08-08 06:37:38,223 INFO     ___FILE_ONLY___    
+2022-08-08 06:37:38,223 INFO     ___FILE_ONLY___ 34.159.89.125
+2022-08-08 06:37:38,223 INFO     ___FILE_ONLY___    
+2022-08-08 06:37:38,223 INFO     ___FILE_ONLY___ n1-standard-4
+2022-08-08 06:37:38,223 INFO     ___FILE_ONLY___   
+2022-08-08 06:37:38,223 INFO     ___FILE_ONLY___ 1.22.12-gke.300
+2022-08-08 06:37:38,223 INFO     ___FILE_ONLY___       
+2022-08-08 06:37:38,223 INFO     ___FILE_ONLY___ 3
+2022-08-08 06:37:38,223 INFO     ___FILE_ONLY___           
+2022-08-08 06:37:38,223 INFO     ___FILE_ONLY___ RUNNING
+2022-08-08 06:37:38,223 INFO     ___FILE_ONLY___ 
+
+2022-08-08 06:37:38,223 INFO     ___FILE_ONLY___ jenkins-lat-psmdb-ec1a13de-backups
+2022-08-08 06:37:38,223 INFO     ___FILE_ONLY___   
+2022-08-08 06:37:38,223 INFO     ___FILE_ONLY___ us-central1-a
+2022-08-08 06:37:38,223 INFO     ___FILE_ONLY___    
+2022-08-08 06:37:38,223 INFO     ___FILE_ONLY___ 1.24.2-gke.1900
+2022-08-08 06:37:38,223 INFO     ___FILE_ONLY___    
+2022-08-08 06:37:38,223 INFO     ___FILE_ONLY___ 34.71.247.89
+2022-08-08 06:37:38,223 INFO     ___FILE_ONLY___     
+2022-08-08 06:37:38,223 INFO     ___FILE_ONLY___ n1-standard-4
+2022-08-08 06:37:38,223 INFO     ___FILE_ONLY___   
+2022-08-08 06:37:38,223 INFO     ___FILE_ONLY___ 1.24.2-gke.1900
+2022-08-08 06:37:38,223 INFO     ___FILE_ONLY___       
+2022-08-08 06:37:38,223 INFO     ___FILE_ONLY___ 4
+2022-08-08 06:37:38,223 INFO     ___FILE_ONLY___           
+2022-08-08 06:37:38,223 INFO     ___FILE_ONLY___ RUNNING
+2022-08-08 06:37:38,223 INFO     ___FILE_ONLY___ 
+
+2022-08-08 06:37:38,223 INFO     ___FILE_ONLY___ jenkins-psmdb-1d9ddc00-backups
+2022-08-08 06:37:38,223 INFO     ___FILE_ONLY___       
+2022-08-08 06:37:38,223 INFO     ___FILE_ONLY___ us-central1-a
+2022-08-08 06:37:38,223 INFO     ___FILE_ONLY___    
+2022-08-08 06:37:38,224 INFO     ___FILE_ONLY___ 1.21.12-gke.1700
+2022-08-08 06:37:38,224 INFO     ___FILE_ONLY___   
+2022-08-08 06:37:38,224 INFO     ___FILE_ONLY___ 34.132.186.254
+2022-08-08 06:37:38,224 INFO     ___FILE_ONLY___   
+2022-08-08 06:37:38,224 INFO     ___FILE_ONLY___ n1-standard-4
+2022-08-08 06:37:38,224 INFO     ___FILE_ONLY___   
+2022-08-08 06:37:38,224 INFO     ___FILE_ONLY___ 1.20.15-gke.12800 *
+2022-08-08 06:37:38,224 INFO     ___FILE_ONLY___   
+2022-08-08 06:37:38,224 INFO     ___FILE_ONLY___ 3
+2022-08-08 06:37:38,224 INFO     ___FILE_ONLY___           
+2022-08-08 06:37:38,224 INFO     ___FILE_ONLY___ RUNNING
+2022-08-08 06:37:38,224 INFO     ___FILE_ONLY___ 
+
+2022-08-08 06:37:38,224 INFO     ___FILE_ONLY___ cap-666
+2022-08-08 06:37:38,224 INFO     ___FILE_ONLY___                              
+2022-08-08 06:37:38,224 INFO     ___FILE_ONLY___ us-central1-c
+2022-08-08 06:37:38,224 INFO     ___FILE_ONLY___    
+2022-08-08 06:37:38,224 INFO     ___FILE_ONLY___ 1.24.2-gke.1900
+2022-08-08 06:37:38,224 INFO     ___FILE_ONLY___    
+2022-08-08 06:37:38,224 INFO     ___FILE_ONLY___ 35.202.25.100
+2022-08-08 06:37:38,224 INFO     ___FILE_ONLY___    
+2022-08-08 06:37:38,224 INFO     ___FILE_ONLY___ n1-standard-4
+2022-08-08 06:37:38,224 INFO     ___FILE_ONLY___   
+2022-08-08 06:37:38,224 INFO     ___FILE_ONLY___ 1.24.2-gke.1900
+2022-08-08 06:37:38,224 INFO     ___FILE_ONLY___       
+2022-08-08 06:37:38,224 INFO     ___FILE_ONLY___ 3
+2022-08-08 06:37:38,224 INFO     ___FILE_ONLY___           
+2022-08-08 06:37:38,224 INFO     ___FILE_ONLY___ RUNNING
+2022-08-08 06:37:38,224 INFO     ___FILE_ONLY___ 
+
+2022-08-08 06:37:38,224 INFO     ___FILE_ONLY___ jenkins-pgo-33d56110-sandbox
+2022-08-08 06:37:38,224 INFO     ___FILE_ONLY___         
+2022-08-08 06:37:38,224 INFO     ___FILE_ONLY___ us-central1-c
+2022-08-08 06:37:38,224 INFO     ___FILE_ONLY___    
+2022-08-08 06:37:38,224 INFO     ___FILE_ONLY___ 1.21.13-gke.900
+2022-08-08 06:37:38,224 INFO     ___FILE_ONLY___    
+2022-08-08 06:37:38,224 INFO     ___FILE_ONLY___ 35.223.49.23
+2022-08-08 06:37:38,225 INFO     ___FILE_ONLY___     
+2022-08-08 06:37:38,225 INFO     ___FILE_ONLY___ n1-standard-4
+2022-08-08 06:37:38,225 INFO     ___FILE_ONLY___   
+2022-08-08 06:37:38,225 INFO     ___FILE_ONLY___ 1.21.13-gke.900
+2022-08-08 06:37:38,225 INFO     ___FILE_ONLY___       
+2022-08-08 06:37:38,225 INFO     ___FILE_ONLY___ 3
+2022-08-08 06:37:38,225 INFO     ___FILE_ONLY___           
+2022-08-08 06:37:38,225 INFO     ___FILE_ONLY___ RUNNING
+2022-08-08 06:37:38,225 INFO     ___FILE_ONLY___ 
+
+2022-08-08 06:37:38,225 INFO     ___FILE_ONLY___ 
+* - There is an upgrade available for your cluster(s).
+
+To upgrade nodes to the latest available version, run
+  $ gcloud container clusters upgrade NAME
+
+2022-08-08 06:37:38,231 DEBUG    root            Metrics reporting process started...

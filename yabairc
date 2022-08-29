@@ -51,6 +51,8 @@ yabai -m rule --add app='^Postgres$' manage=off
 yabai -m rule --add app='^Docker$' manage=off
 yabai -m rule --add title='Preferences$' manage=off
 yabai -m rule --add app='Acrobat Reader' manage=off
+yabai -m rule --add app='Context' manage=off
+yabai -m rule --add app='OpenVPN' manage=off
 
 yabai -m rule --add title='Settings$' manage=off
 
@@ -60,5 +62,7 @@ yabai -m rule --add app='^GoLand$' title='Project Structure' manage=off
 yabai -m rule --add app='^GoLand$' title='Preferences' manage=off
 yabai -m rule --add app='^GoLand$' title='Edit configuration' manage=off
 yabai -m rule --add app='^GoLand$' title='^Commit$' manage=off
+
+# yabai -m signal --add event=window_created action="zsh ~/icloud/Dev/dotfiles/yabai-vscode-created.sh"
 
 echo "yabai configuration loaded.."

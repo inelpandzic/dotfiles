@@ -1,16 +1,16 @@
 
 
-
 # change focus
-alt - h : yabai -m window --focus west
-alt - j : yabai -m window --focus south
-alt - k : yabai -m window --focus north
-alt - l : yabai -m window --focus east
+hyper - h : yabai -m window --focus west
+hyper - j : yabai -m window --focus south
+hyper - k : yabai -m window --focus north
+hyper - l : yabai -m window --focus east
 
-hyper - c : yabai -m window --focus recent
-alt - p : yabai -m window --focus prev
-alt - n : yabai -m window --focus next
+hyper - p : yabai -m window --focus next
+hyper - n : yabai -m window --focus prev
 
+# Cycle windows forwards and backwards in focused stack only
+hyper - tab : yabai -m window --focus stack.next || yabai -m window --focus stack.first
 
 # shift window in current workspace
 alt + shift - h : yabai -m window --swap west || $(yabai -m window --display west; yabai -m display --focus west)
@@ -22,7 +22,16 @@ hyper - r : yabai -m space --rotate 90
 
 hyper - f : yabai -m window --toggle zoom-fullscreen
 
+# asdfg
+# xcv
+hyper - a : open /Applications/Slack.app
+hyper - s : open /Applications/Google\ Chrome.app
+hyper - d : open /Applications/Alacritty.app
+hyper - c : open /Applications/Notion.app
+hyper - v : open /Applications/Things3.app
+
 # Stacks ======================================
+
 alt + shift - s : window=$(yabai -m query --windows --window | jq -r '.id') && yabai -m window east --stack $window || (yabai -m window $window --toggle float && yabai -m window $window --toggle float)
 
 alt - s : yabai -m window recent --stack mouse
@@ -31,7 +40,13 @@ alt - s : yabai -m window recent --stack mouse
 alt + shift - up : yabai -m window --focus stack.next || yabai -m window --focus south
 alt + shift - down : yabai -m window --focus stack.prev || yabai -m window --focus north
 
-# =================================================
+
+hyper - up : yabai -m window --stack north
+hyper - right : yabai -m window --stack east
+hyper - down : yabai -m window --stack south
+hyper - left : yabai -m window --stack west
+
+# Floating =================================================
 # float / unfloat window and center on screen
 hyper - t : yabai -m window --toggle float;\
           yabai -m window --grid 4:4:1:1:2:2
@@ -47,7 +62,6 @@ hyper + cmd - left   : yabai -m window --grid 1:2:0:0:1:1
 
 # make floating window fill right-half of screen
 hyper + cmd - right  : yabai -m window --grid 1:2:1:0:1:1
-
 
 
 # Spaces =========================================

@@ -106,9 +106,6 @@ source $ZSH/oh-my-zsh.sh
 export GOPATH=/Users/inelpandzic/Dev/go
 export PATH=$PATH:$(go env GOPATH)/bin
 
-# Jobtome
-export GOPROXY=direct #jobtome
-export GOSUMDB=off #jobtome
 export PATH=$PATH:$HOME/.google-cloud-sdk/bin
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/14/bin
 
@@ -131,8 +128,25 @@ alias rr='cd ~/Dev/Workspace/; cd $(find . -type d -print | fzf); tmux rename-wi
 #
 bindkey -v
 bindkey -s '^E' 'nvim $(fzf)\n'
-alias vf='nvim $(fzf)'
+
+alias n='nvim'
+
+alias nn='nvim $(fzf)'
 alias vc='code . --goto $(fzf)'
+
+alias k='kubectl'
+alias kn='kubens'
+alias kx='kubectx'
+alias ka='kubectl get all'
+alias ks='kubectl get services'
+alias kp='kubectl get pods'
+alias kl='kubectl logs'
+
+
+# yq version switch
+alias yq4='rm /opt/homebrew/bin/yq && ln -s /opt/homebrew/Cellar/yq/4.26.1/bin/yq /opt/homebrew/bin/yq'
+alias yq3='rm /opt/homebrew/bin/yq && ln -s /Users/inelpandzic/Dev/Workspace/tools/yq_darwin_amd64 /opt/homebrew/bin/yq'
+
 
 # Completion stuff
 if type brew &>/dev/null
@@ -150,11 +164,18 @@ fi
 export VISUAL="nvim"
 export EDITOR="nvim"
 
-# Jobtome added config
--e eval "$(pyenv init --path)"
-export PATH="${GCLOUDSDK_PATH}:${PATH}"
-GCLOUDSDK_PATH="${HOME}/.google-cloud-sdk/bin"
-export PATH="${GCLOUDSDK_PATH}:${PATH}"
-# Jobtome added config
 
+# Percona GCP/GKE ----------------------------------------
+# --------------------------------------------------------
+
+export USE_GKE_GCLOUD_AUTH_PLUGIN=True
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/completion.zsh.inc'; fi
+
+# Generated for envman. Do not edit.
+[ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
 

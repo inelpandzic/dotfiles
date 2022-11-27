@@ -1,0 +1,14 @@
+2022-11-12 13:51:59,784 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'node_pools']
+2022-11-12 13:51:59,786 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'binauthz']
+2022-11-12 13:51:59,787 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'azure']
+2022-11-12 13:51:59,788 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'clusters']
+2022-11-12 13:51:59,789 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'subnets']
+2022-11-12 13:51:59,790 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'fleet']
+2022-11-12 13:51:59,791 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'operations']
+2022-11-12 13:51:59,793 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'get_server_config']
+2022-11-12 13:51:59,793 DEBUG    root            No implementation for release track [GA] for element: [/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/surface/container/backup_restore]
+2022-11-12 13:51:59,793 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'aws']
+2022-11-12 13:51:59,794 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'images']
+2022-11-12 13:51:59,794 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'hub']
+2022-11-12 13:51:59,795 ERROR    root            (gcloud.container) Invalid choice: 'cluster'.
+2022-11-12 13:52:00,100 DEBUG    root            Metrics reporting process started...

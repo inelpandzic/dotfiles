@@ -1,0 +1,128 @@
+2022-11-06 09:38:29,045 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'clusters']
+2022-11-06 09:38:29,047 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'clusters', 'list']
+2022-11-06 09:38:29,068 DEBUG    google.auth.transport.requests Making request: POST https://oauth2.googleapis.com/token
+2022-11-06 09:38:29,089 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2022-11-06 09:38:29,240 DEBUG    urllib3.connectionpool https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2022-11-06 09:38:29,259 DEBUG    root            Running [gcloud.container.clusters.list] with arguments: []
+2022-11-06 09:38:29,303 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2022-11-06 09:38:29,914 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cloud-dev-112233/locations/-/clusters?alt=json HTTP/1.1" 200 None
+2022-11-06 09:38:29,931 INFO     root            Display format: "
+    table(
+        name,
+        zone:label=LOCATION,
+        master_version():label=MASTER_VERSION,
+        endpoint:label=MASTER_IP,
+        nodePools[0].config.machineType,
+        currentNodeVersion:label=NODE_VERSION,
+        firstof(currentNodeCount,initialNodeCount):label=NUM_NODES,
+        status
+    )
+"
+2022-11-06 09:38:29,941 INFO     ___FILE_ONLY___ NAME
+2022-11-06 09:38:29,941 INFO     ___FILE_ONLY___           
+2022-11-06 09:38:29,941 INFO     ___FILE_ONLY___ LOCATION
+2022-11-06 09:38:29,941 INFO     ___FILE_ONLY___         
+2022-11-06 09:38:29,941 INFO     ___FILE_ONLY___ MASTER_VERSION
+2022-11-06 09:38:29,941 INFO     ___FILE_ONLY___     
+2022-11-06 09:38:29,941 INFO     ___FILE_ONLY___ MASTER_IP
+2022-11-06 09:38:29,941 INFO     ___FILE_ONLY___        
+2022-11-06 09:38:29,941 INFO     ___FILE_ONLY___ MACHINE_TYPE
+2022-11-06 09:38:29,941 INFO     ___FILE_ONLY___    
+2022-11-06 09:38:29,941 INFO     ___FILE_ONLY___ NODE_VERSION
+2022-11-06 09:38:29,941 INFO     ___FILE_ONLY___         
+2022-11-06 09:38:29,941 INFO     ___FILE_ONLY___ NUM_NODES
+2022-11-06 09:38:29,941 INFO     ___FILE_ONLY___   
+2022-11-06 09:38:29,941 INFO     ___FILE_ONLY___ STATUS
+2022-11-06 09:38:29,941 INFO     ___FILE_ONLY___ 
+
+2022-11-06 09:38:29,941 INFO     ___FILE_ONLY___ ondrei-13193
+2022-11-06 09:38:29,942 INFO     ___FILE_ONLY___   
+2022-11-06 09:38:29,942 INFO     ___FILE_ONLY___ europe-west1-c
+2022-11-06 09:38:29,942 INFO     ___FILE_ONLY___   
+2022-11-06 09:38:29,942 INFO     ___FILE_ONLY___ 1.22.12-gke.2300
+2022-11-06 09:38:29,942 INFO     ___FILE_ONLY___   
+2022-11-06 09:38:29,942 INFO     ___FILE_ONLY___ 104.155.15.56
+2022-11-06 09:38:29,942 INFO     ___FILE_ONLY___    
+2022-11-06 09:38:29,942 INFO     ___FILE_ONLY___ n1-standard-4
+2022-11-06 09:38:29,942 INFO     ___FILE_ONLY___   
+2022-11-06 09:38:29,942 INFO     ___FILE_ONLY___ 1.21.14-gke.8500 *
+2022-11-06 09:38:29,942 INFO     ___FILE_ONLY___   
+2022-11-06 09:38:29,942 INFO     ___FILE_ONLY___ 3
+2022-11-06 09:38:29,942 INFO     ___FILE_ONLY___           
+2022-11-06 09:38:29,942 INFO     ___FILE_ONLY___ RUNNING
+2022-11-06 09:38:29,942 INFO     ___FILE_ONLY___ 
+
+2022-11-06 09:38:29,942 INFO     ___FILE_ONLY___ slava-pxc
+2022-11-06 09:38:29,942 INFO     ___FILE_ONLY___      
+2022-11-06 09:38:29,942 INFO     ___FILE_ONLY___ europe-west3-a
+2022-11-06 09:38:29,942 INFO     ___FILE_ONLY___   
+2022-11-06 09:38:29,943 INFO     ___FILE_ONLY___ 1.23.12-gke.1600
+2022-11-06 09:38:29,943 INFO     ___FILE_ONLY___   
+2022-11-06 09:38:29,943 INFO     ___FILE_ONLY___ 35.246.207.226
+2022-11-06 09:38:29,943 INFO     ___FILE_ONLY___   
+2022-11-06 09:38:29,943 INFO     ___FILE_ONLY___ n1-standard-4
+2022-11-06 09:38:29,943 INFO     ___FILE_ONLY___   
+2022-11-06 09:38:29,943 INFO     ___FILE_ONLY___ 1.23.12-gke.1600
+2022-11-06 09:38:29,943 INFO     ___FILE_ONLY___     
+2022-11-06 09:38:29,943 INFO     ___FILE_ONLY___ 3
+2022-11-06 09:38:29,943 INFO     ___FILE_ONLY___           
+2022-11-06 09:38:29,943 INFO     ___FILE_ONLY___ RUNNING
+2022-11-06 09:38:29,943 INFO     ___FILE_ONLY___ 
+
+2022-11-06 09:38:29,943 INFO     ___FILE_ONLY___ inel-2240
+2022-11-06 09:38:29,943 INFO     ___FILE_ONLY___      
+2022-11-06 09:38:29,943 INFO     ___FILE_ONLY___ europe-west3-b
+2022-11-06 09:38:29,943 INFO     ___FILE_ONLY___   
+2022-11-06 09:38:29,943 INFO     ___FILE_ONLY___ 1.22.12-gke.2300
+2022-11-06 09:38:29,943 INFO     ___FILE_ONLY___   
+2022-11-06 09:38:29,943 INFO     ___FILE_ONLY___ 34.159.176.43
+2022-11-06 09:38:29,943 INFO     ___FILE_ONLY___    
+2022-11-06 09:38:29,943 INFO     ___FILE_ONLY___ n1-standard-4
+2022-11-06 09:38:29,943 INFO     ___FILE_ONLY___   
+2022-11-06 09:38:29,943 INFO     ___FILE_ONLY___ 1.21.14-gke.8500 *
+2022-11-06 09:38:29,943 INFO     ___FILE_ONLY___   
+2022-11-06 09:38:29,944 INFO     ___FILE_ONLY___ 3
+2022-11-06 09:38:29,944 INFO     ___FILE_ONLY___           
+2022-11-06 09:38:29,944 INFO     ___FILE_ONLY___ RUNNING
+2022-11-06 09:38:29,944 INFO     ___FILE_ONLY___ 
+
+2022-11-06 09:38:29,944 INFO     ___FILE_ONLY___ max-30844
+2022-11-06 09:38:29,944 INFO     ___FILE_ONLY___      
+2022-11-06 09:38:29,944 INFO     ___FILE_ONLY___ europe-west3-b
+2022-11-06 09:38:29,944 INFO     ___FILE_ONLY___   
+2022-11-06 09:38:29,944 INFO     ___FILE_ONLY___ 1.22.12-gke.2300
+2022-11-06 09:38:29,944 INFO     ___FILE_ONLY___   
+2022-11-06 09:38:29,944 INFO     ___FILE_ONLY___ 35.246.193.17
+2022-11-06 09:38:29,944 INFO     ___FILE_ONLY___    
+2022-11-06 09:38:29,944 INFO     ___FILE_ONLY___ n1-standard-4
+2022-11-06 09:38:29,944 INFO     ___FILE_ONLY___   
+2022-11-06 09:38:29,944 INFO     ___FILE_ONLY___ 1.22.12-gke.2300
+2022-11-06 09:38:29,944 INFO     ___FILE_ONLY___     
+2022-11-06 09:38:29,944 INFO     ___FILE_ONLY___ 3
+2022-11-06 09:38:29,944 INFO     ___FILE_ONLY___           
+2022-11-06 09:38:29,944 INFO     ___FILE_ONLY___ RUNNING
+2022-11-06 09:38:29,944 INFO     ___FILE_ONLY___ 
+
+2022-11-06 09:38:29,944 INFO     ___FILE_ONLY___ 
+* - There is an upgrade available for your cluster(s).
+
+To upgrade nodes to the latest available version, run
+  $ gcloud container clusters upgrade NAME
+
+2022-11-06 09:38:29,945 DEBUG    root            Checking for updates...
+2022-11-06 09:38:29,956 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): dl.google.com:443
+2022-11-06 09:38:30,071 DEBUG    urllib3.connectionpool https://dl.google.com:443 "GET /dl/cloudsdk/channels/rapid/components-2.json HTTP/1.1" 200 203446
+2022-11-06 09:38:30,163 INFO     ___FILE_ONLY___ 
+
+Updates are available for some Google Cloud CLI components.  To install them,
+please run:
+  $ gcloud components update
+
+
+2022-11-06 09:38:30,167 INFO     ___FILE_ONLY___ 
+
+To take a quick anonymous survey, run:
+  $ gcloud survey
+
+
+2022-11-06 09:38:30,182 DEBUG    root            Metrics reporting process started...

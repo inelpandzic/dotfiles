@@ -113,10 +113,12 @@ export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/14/bin
 #Make terminal better
 alias c='clear'
 alias ll='ls -lahtr'
+
 alias gs='git status'
 alias gb='git branch'
 alias gl='git log --decorate --oneline'
 alias gp='git push origin $(git_current_branch)'
+alias gc='git checkout .'
 
 alias conf-zshrc='nvim ~/.zshrc'
 alias conf-tmux='nvim ~/.tmux.conf'
@@ -130,13 +132,14 @@ bindkey -v
 bindkey -s '^E' 'nvim $(fzf)\n'
 
 alias n='nvim'
-
 alias nn='nvim $(fzf)'
+
 alias vc='code . --goto $(fzf)'
 
 alias k='kubectl'
 alias kn='kubens'
 alias kx='kubectx'
+alias kg='kubectl get'
 alias ka='kubectl get all'
 alias ks='kubectl get services'
 alias kp='kubectl get pods'

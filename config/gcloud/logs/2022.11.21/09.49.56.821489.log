@@ -1,0 +1,33 @@
+2022-11-21 09:49:56,822 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
+2022-11-21 09:49:56,824 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'config_helper']
+2022-11-21 09:49:56,825 DEBUG    root            Running [gcloud.config.config-helper] with arguments: [--format: "json"]
+2022-11-21 09:49:56,841 DEBUG    google.auth.transport.requests Making request: POST https://oauth2.googleapis.com/token
+2022-11-21 09:49:56,859 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2022-11-21 09:49:57,012 DEBUG    urllib3.connectionpool https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2022-11-21 09:49:57,015 INFO     root            Display format: "default json"
+2022-11-21 09:49:57,015 INFO     ___FILE_ONLY___ {
+  "configuration": {
+    "active_configuration": "percona-cloud-dev",
+    "properties": {
+      "core": {
+        "account": "inel.pandzic@percona.com",
+        "disable_usage_reporting": "False",
+        "project": "cloud-dev-112233"
+      }
+    }
+  },
+  "credential": {
+    "access_token": "ya29.a0AeTM1idodTIIkIihum35L1y3dtn6dRE4mJXNAmf5s3KXwfOLoLthCg4tgLIavxwbw27THK_pRMc6OMZkv8MVUpdnRosGupF--xssRO98FlmjffHm_3N7CzAriUMXT5XYnCE4ailhBcSjU-m-bwVi03kXWGE0EXjRvtnG0d8aCgYKATsSARESFQHWtWOmw6eFD3ueMn9hK1xMob6bIw0174",
+    "id_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjI3Yjg2ZGM2OTM4ZGMzMjdiMjA0MzMzYTI1MGViYjQzYjMyZTRiM2MiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzMjU1NTk0MDU1OS5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImF1ZCI6IjMyNTU1OTQwNTU5LmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTA3NDA5ODEzMzQ0NTU5NDQzNDA3IiwiaGQiOiJwZXJjb25hLmNvbSIsImVtYWlsIjoiaW5lbC5wYW5kemljQHBlcmNvbmEuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiJveDNiRVJER2ZqbExKbE8tSEdlMS1BIiwiaWF0IjoxNjY5MDIwNTk3LCJleHAiOjE2NjkwMjQxOTd9.01js8Fp1qLwBDBQvc7CIumSw_X9LBfEHvLXoudtTRNefyPKi1fq2X_FLFPBHJtOHWBtIQb68vqmb2cG0rzCJEenAZroNeL_VtvL3KSe931nFUm6svgxT3P1nLKF1IHs7IevS-m9JCEehWVxTwbGV-wCbkTMIM-t6hEnr4JQIAQgFkWC3QtkhtQqZ5Af_9shs-KaojX123246kNF5oUCr9tmoE2pa-hNSk5WcyWy2R3qNT0tZmK1PHdTrVRJsPzIqDn14_F-PkwiynDCuvfDGTHKpWz1PXXVWyd6etz4EVYgMMv5vILqnFnN68tdjGip1ALPriqcScsofJtLiugDeqQ",
+    "token_expiry": "2022-11-21T09:49:56Z"
+  },
+  "sentinels": {
+    "config_sentinel": "/Users/inelpandzic/.config/gcloud/config_sentinel"
+  }
+}
+2022-11-21 09:49:57,015 INFO     ___FILE_ONLY___ 
+
+2022-11-21 09:49:57,016 DEBUG    root            Checking for updates...
+2022-11-21 09:49:57,024 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): dl.google.com:443
+2022-11-21 09:49:57,146 DEBUG    urllib3.connectionpool https://dl.google.com:443 "GET /dl/cloudsdk/channels/rapid/components-2.json HTTP/1.1" 200 203447
+2022-11-21 09:49:57,235 DEBUG    root            Metrics reporting process started...

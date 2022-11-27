@@ -1,0 +1,23 @@
+2022-11-21 14:24:27,350 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'clusters']
+2022-11-21 14:24:27,352 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'clusters', 'delete']
+2022-11-21 14:24:27,365 DEBUG    root            Running [gcloud.container.clusters.delete] with arguments: [--zone: "europe-west3-b", NAME:1: "['inel-2505']"]
+2022-11-21 14:24:28,749 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2022-11-21 14:24:29,364 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "DELETE /v1/projects/cloud-dev-112233/locations/europe-west3-b/clusters/inel-2505?alt=json HTTP/1.1" 200 None
+2022-11-21 14:24:29,369 INFO     ___FILE_ONLY___ Deleting cluster inel-2505...
+2022-11-21 14:24:29,371 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2022-11-21 14:24:29,596 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cloud-dev-112233/locations/europe-west3-b/operations/operation-1669037069367-b9b800ac?alt=json HTTP/1.1" 200 None
+2022-11-21 14:24:33,238 DEBUG    root            (gcloud.container.clusters.delete) Aborted by user.
+Traceback (most recent call last):
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 987, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 809, in Run
+    resources = command_instance.Run(args)
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/surface/container/clusters/delete.py", line 128, in Run
+    adapter.WaitForOperation(
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/googlecloudsdk/api_lib/container/api_adapter.py", line 1429, in WaitForOperation
+    time.sleep(poll_period_s)
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/googlecloudsdk/core/console/progress_tracker.py", line 154, in _CtrlCHandler
+    raise console_io.OperationCancelledError(self._aborted_message)
+googlecloudsdk.core.console.console_io.OperationCancelledError: Aborted by user.
+2022-11-21 14:24:33,244 ERROR    root            (gcloud.container.clusters.delete) Aborted by user.
+2022-11-21 14:24:33,253 DEBUG    root            Metrics reporting process started...

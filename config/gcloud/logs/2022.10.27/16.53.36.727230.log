@@ -1,0 +1,27 @@
+2022-10-27 16:53:36,728 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
+2022-10-27 16:53:36,729 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'config_helper']
+2022-10-27 16:53:36,730 DEBUG    root            Running [gcloud.config.config-helper] with arguments: [--format: "json"]
+2022-10-27 16:53:36,735 INFO     root            Display format: "default json"
+2022-10-27 16:53:36,735 INFO     ___FILE_ONLY___ {
+  "configuration": {
+    "active_configuration": "percona-cloud-dev",
+    "properties": {
+      "core": {
+        "account": "inel.pandzic@percona.com",
+        "disable_usage_reporting": "False",
+        "project": "cloud-dev-112233"
+      }
+    }
+  },
+  "credential": {
+    "access_token": "ya29.a0Aa4xrXPIXn72u8XdFhS4HEki3rFdE2fw0-LwxAJgqQ1eof9gykUT_RFNg4KT71mCA5Mz1MaVtgRgplh-y9UnvLEMw2cg_Vd5AQkyYzegatDAgrit0BHPX4Xzw0Qmiw-ltByiQCPp7LvKQoPc3ztk7q2rKTgoo6oOoVdbpbUaCgYKATASARESFQEjDvL9Ng2TP1GgqyqJd5DWmFDuhQ0174",
+    "id_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImVlMWI5Zjg4Y2ZlMzE1MWRkZDI4NGE2MWJmOGNlY2Y2NTliMTMwY2YiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzMjU1NTk0MDU1OS5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImF1ZCI6IjMyNTU1OTQwNTU5LmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTA3NDA5ODEzMzQ0NTU5NDQzNDA3IiwiaGQiOiJwZXJjb25hLmNvbSIsImVtYWlsIjoiaW5lbC5wYW5kemljQHBlcmNvbmEuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiJpYTJBVGpNS2dadnctbG9tMmN1dGtBIiwiaWF0IjoxNjY2ODc5MTY2LCJleHAiOjE2NjY4ODI3NjZ9.exPSy32OCSerME13awMgML4uOHdDUVbJFiT95JzPOw1geTYqJ9LoBT5EXp_isIpKcYIV1bI1ViUEVp-MQ9SsgDViAMUr5LAuzxF0fmFhWAVur4DBRM5v8J5qUFQLi07stRz25IYKXtjDNh2UfTpWPuPUlzvcZOBdXD4zalPRn-7plgCIX-ifvaGS0qjCQ8qiLgsCCbvq0pSG9BNuak3ReZG_HMx-ugz3EiEhVADlJizZHNrL3ke_D97Lfw-UDDRc_3vhJKih9HPDj5VPZeddTQqexXJI1EOa7N2sjFLuG0RgJm67DIugKuQSE4Lc0clZSBTjXo1FNtqg1sQ--rmQLg",
+    "token_expiry": "2022-10-27T14:59:25Z"
+  },
+  "sentinels": {
+    "config_sentinel": "/Users/inelpandzic/.config/gcloud/config_sentinel"
+  }
+}
+2022-10-27 16:53:36,735 INFO     ___FILE_ONLY___ 
+
+2022-10-27 16:53:36,740 DEBUG    root            Metrics reporting process started...

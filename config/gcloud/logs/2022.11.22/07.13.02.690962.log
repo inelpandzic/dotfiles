@@ -1,0 +1,157 @@
+2022-11-22 07:13:02,693 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'clusters']
+2022-11-22 07:13:02,695 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'clusters', 'list']
+2022-11-22 07:13:02,712 DEBUG    root            Running [gcloud.container.clusters.list] with arguments: []
+2022-11-22 07:13:02,762 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2022-11-22 07:13:03,481 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cloud-dev-112233/locations/-/clusters?alt=json HTTP/1.1" 200 None
+2022-11-22 07:13:03,498 INFO     root            Display format: "
+    table(
+        name,
+        zone:label=LOCATION,
+        master_version():label=MASTER_VERSION,
+        endpoint:label=MASTER_IP,
+        nodePools[0].config.machineType,
+        currentNodeVersion:label=NODE_VERSION,
+        firstof(currentNodeCount,initialNodeCount):label=NUM_NODES,
+        status
+    )
+"
+2022-11-22 07:13:03,507 INFO     ___FILE_ONLY___ NAME
+2022-11-22 07:13:03,508 INFO     ___FILE_ONLY___                           
+2022-11-22 07:13:03,508 INFO     ___FILE_ONLY___ LOCATION
+2022-11-22 07:13:03,508 INFO     ___FILE_ONLY___         
+2022-11-22 07:13:03,508 INFO     ___FILE_ONLY___ MASTER_VERSION
+2022-11-22 07:13:03,508 INFO     ___FILE_ONLY___                        
+2022-11-22 07:13:03,508 INFO     ___FILE_ONLY___ MASTER_IP
+2022-11-22 07:13:03,508 INFO     ___FILE_ONLY___        
+2022-11-22 07:13:03,508 INFO     ___FILE_ONLY___ MACHINE_TYPE
+2022-11-22 07:13:03,508 INFO     ___FILE_ONLY___    
+2022-11-22 07:13:03,508 INFO     ___FILE_ONLY___ NODE_VERSION
+2022-11-22 07:13:03,508 INFO     ___FILE_ONLY___       
+2022-11-22 07:13:03,508 INFO     ___FILE_ONLY___ NUM_NODES
+2022-11-22 07:13:03,508 INFO     ___FILE_ONLY___   
+2022-11-22 07:13:03,508 INFO     ___FILE_ONLY___ STATUS
+2022-11-22 07:13:03,508 INFO     ___FILE_ONLY___ 
+
+2022-11-22 07:13:03,508 INFO     ___FILE_ONLY___ andrii-5916
+2022-11-22 07:13:03,508 INFO     ___FILE_ONLY___                    
+2022-11-22 07:13:03,508 INFO     ___FILE_ONLY___ europe-west1-c
+2022-11-22 07:13:03,508 INFO     ___FILE_ONLY___   
+2022-11-22 07:13:03,508 INFO     ___FILE_ONLY___ 1.21.14-gke.9500
+2022-11-22 07:13:03,508 INFO     ___FILE_ONLY___                      
+2022-11-22 07:13:03,508 INFO     ___FILE_ONLY___ 35.233.90.31
+2022-11-22 07:13:03,508 INFO     ___FILE_ONLY___     
+2022-11-22 07:13:03,508 INFO     ___FILE_ONLY___ n1-standard-4
+2022-11-22 07:13:03,508 INFO     ___FILE_ONLY___   
+2022-11-22 07:13:03,508 INFO     ___FILE_ONLY___ 1.21.14-gke.9500
+2022-11-22 07:13:03,508 INFO     ___FILE_ONLY___   
+2022-11-22 07:13:03,508 INFO     ___FILE_ONLY___ 3
+2022-11-22 07:13:03,508 INFO     ___FILE_ONLY___           
+2022-11-22 07:13:03,508 INFO     ___FILE_ONLY___ RUNNING
+2022-11-22 07:13:03,508 INFO     ___FILE_ONLY___ 
+
+2022-11-22 07:13:03,508 INFO     ___FILE_ONLY___ slava-pxc
+2022-11-22 07:13:03,508 INFO     ___FILE_ONLY___                      
+2022-11-22 07:13:03,508 INFO     ___FILE_ONLY___ europe-west3-a
+2022-11-22 07:13:03,508 INFO     ___FILE_ONLY___   
+2022-11-22 07:13:03,508 INFO     ___FILE_ONLY___ 1.21.14-gke.9500
+2022-11-22 07:13:03,508 INFO     ___FILE_ONLY___                      
+2022-11-22 07:13:03,508 INFO     ___FILE_ONLY___ 35.234.112.215
+2022-11-22 07:13:03,509 INFO     ___FILE_ONLY___   
+2022-11-22 07:13:03,509 INFO     ___FILE_ONLY___ n1-standard-4
+2022-11-22 07:13:03,509 INFO     ___FILE_ONLY___   
+2022-11-22 07:13:03,509 INFO     ___FILE_ONLY___ 1.21.14-gke.9500
+2022-11-22 07:13:03,509 INFO     ___FILE_ONLY___   
+2022-11-22 07:13:03,509 INFO     ___FILE_ONLY___ 3
+2022-11-22 07:13:03,509 INFO     ___FILE_ONLY___           
+2022-11-22 07:13:03,509 INFO     ___FILE_ONLY___ RUNNING
+2022-11-22 07:13:03,509 INFO     ___FILE_ONLY___ 
+
+2022-11-22 07:13:03,509 INFO     ___FILE_ONLY___ inel-20717
+2022-11-22 07:13:03,509 INFO     ___FILE_ONLY___                     
+2022-11-22 07:13:03,509 INFO     ___FILE_ONLY___ europe-west3-b
+2022-11-22 07:13:03,509 INFO     ___FILE_ONLY___   
+2022-11-22 07:13:03,509 INFO     ___FILE_ONLY___ 1.21.14-gke.9500
+2022-11-22 07:13:03,509 INFO     ___FILE_ONLY___                      
+2022-11-22 07:13:03,509 INFO     ___FILE_ONLY___ 34.141.74.219
+2022-11-22 07:13:03,509 INFO     ___FILE_ONLY___    
+2022-11-22 07:13:03,509 INFO     ___FILE_ONLY___ n1-standard-4
+2022-11-22 07:13:03,509 INFO     ___FILE_ONLY___   
+2022-11-22 07:13:03,509 INFO     ___FILE_ONLY___ 1.21.14-gke.9500
+2022-11-22 07:13:03,509 INFO     ___FILE_ONLY___   
+2022-11-22 07:13:03,509 INFO     ___FILE_ONLY___ 3
+2022-11-22 07:13:03,509 INFO     ___FILE_ONLY___           
+2022-11-22 07:13:03,509 INFO     ___FILE_ONLY___ RUNNING
+2022-11-22 07:13:03,509 INFO     ___FILE_ONLY___ 
+
+2022-11-22 07:13:03,509 INFO     ___FILE_ONLY___ max-30844
+2022-11-22 07:13:03,509 INFO     ___FILE_ONLY___                      
+2022-11-22 07:13:03,509 INFO     ___FILE_ONLY___ europe-west3-b
+2022-11-22 07:13:03,509 INFO     ___FILE_ONLY___   
+2022-11-22 07:13:03,509 INFO     ___FILE_ONLY___ 1.22.12-gke.2300
+2022-11-22 07:13:03,509 INFO     ___FILE_ONLY___                      
+2022-11-22 07:13:03,509 INFO     ___FILE_ONLY___ 35.246.193.17
+2022-11-22 07:13:03,509 INFO     ___FILE_ONLY___    
+2022-11-22 07:13:03,509 INFO     ___FILE_ONLY___ n1-standard-4
+2022-11-22 07:13:03,509 INFO     ___FILE_ONLY___   
+2022-11-22 07:13:03,509 INFO     ___FILE_ONLY___ 1.22.12-gke.2300
+2022-11-22 07:13:03,509 INFO     ___FILE_ONLY___   
+2022-11-22 07:13:03,509 INFO     ___FILE_ONLY___ 3
+2022-11-22 07:13:03,509 INFO     ___FILE_ONLY___           
+2022-11-22 07:13:03,509 INFO     ___FILE_ONLY___ RUNNING
+2022-11-22 07:13:03,509 INFO     ___FILE_ONLY___ 
+
+2022-11-22 07:13:03,510 INFO     ___FILE_ONLY___ jenkins-pso-ca58ef8-cluster1
+2022-11-22 07:13:03,510 INFO     ___FILE_ONLY___   
+2022-11-22 07:13:03,510 INFO     ___FILE_ONLY___ us-central1-a
+2022-11-22 07:13:03,510 INFO     ___FILE_ONLY___    
+2022-11-22 07:13:03,510 INFO     ___FILE_ONLY___ 1.21.14-gke.9500 (! 13 days left !)
+2022-11-22 07:13:03,510 INFO     ___FILE_ONLY___   
+2022-11-22 07:13:03,510 INFO     ___FILE_ONLY___ 104.197.27.125
+2022-11-22 07:13:03,510 INFO     ___FILE_ONLY___   
+2022-11-22 07:13:03,510 INFO     ___FILE_ONLY___ n1-standard-4
+2022-11-22 07:13:03,510 INFO     ___FILE_ONLY___   
+2022-11-22 07:13:03,510 INFO     ___FILE_ONLY___ 1.21.14-gke.9500
+2022-11-22 07:13:03,510 INFO     ___FILE_ONLY___   
+2022-11-22 07:13:03,510 INFO     ___FILE_ONLY___ 3
+2022-11-22 07:13:03,510 INFO     ___FILE_ONLY___           
+2022-11-22 07:13:03,510 INFO     ___FILE_ONLY___ ERROR
+2022-11-22 07:13:03,510 INFO     ___FILE_ONLY___ 
+
+2022-11-22 07:13:03,510 INFO     ___FILE_ONLY___ plavi-1244
+2022-11-22 07:13:03,510 INFO     ___FILE_ONLY___                     
+2022-11-22 07:13:03,510 INFO     ___FILE_ONLY___ us-central1-a
+2022-11-22 07:13:03,510 INFO     ___FILE_ONLY___    
+2022-11-22 07:13:03,510 INFO     ___FILE_ONLY___ 1.24.6-gke.1500
+2022-11-22 07:13:03,510 INFO     ___FILE_ONLY___                       
+2022-11-22 07:13:03,510 INFO     ___FILE_ONLY___ 34.72.160.58
+2022-11-22 07:13:03,510 INFO     ___FILE_ONLY___     
+2022-11-22 07:13:03,510 INFO     ___FILE_ONLY___ n1-standard-4
+2022-11-22 07:13:03,510 INFO     ___FILE_ONLY___   
+2022-11-22 07:13:03,510 INFO     ___FILE_ONLY___ 1.24.6-gke.1500
+2022-11-22 07:13:03,510 INFO     ___FILE_ONLY___    
+2022-11-22 07:13:03,510 INFO     ___FILE_ONLY___ 3
+2022-11-22 07:13:03,510 INFO     ___FILE_ONLY___           
+2022-11-22 07:13:03,510 INFO     ___FILE_ONLY___ RUNNING
+2022-11-22 07:13:03,510 INFO     ___FILE_ONLY___ 
+
+2022-11-22 07:13:03,510 INFO     ___FILE_ONLY___ natali-22
+2022-11-22 07:13:03,510 INFO     ___FILE_ONLY___                      
+2022-11-22 07:13:03,510 INFO     ___FILE_ONLY___ us-central1-c
+2022-11-22 07:13:03,511 INFO     ___FILE_ONLY___    
+2022-11-22 07:13:03,511 INFO     ___FILE_ONLY___ 1.22.15-gke.2500
+2022-11-22 07:13:03,511 INFO     ___FILE_ONLY___                      
+2022-11-22 07:13:03,511 INFO     ___FILE_ONLY___ 34.134.233.178
+2022-11-22 07:13:03,511 INFO     ___FILE_ONLY___   
+2022-11-22 07:13:03,511 INFO     ___FILE_ONLY___ n1-standard-4
+2022-11-22 07:13:03,511 INFO     ___FILE_ONLY___   
+2022-11-22 07:13:03,511 INFO     ___FILE_ONLY___ 1.22.15-gke.2500
+2022-11-22 07:13:03,511 INFO     ___FILE_ONLY___   
+2022-11-22 07:13:03,511 INFO     ___FILE_ONLY___ 3
+2022-11-22 07:13:03,511 INFO     ___FILE_ONLY___           
+2022-11-22 07:13:03,511 INFO     ___FILE_ONLY___ RUNNING
+2022-11-22 07:13:03,511 INFO     ___FILE_ONLY___ 
+
+2022-11-22 07:13:03,511 WARNING  root            
+! One or more clusters are approaching expiration and will be deleted.
+
+2022-11-22 07:13:03,517 DEBUG    root            Metrics reporting process started...

@@ -1,0 +1,93 @@
+{
+  // VIM
+  "vim.leader": "<space>",
+  "vim.easymotion": true,
+  "vim.sneak": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  // "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.visualModeKeyBindings": [],
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["ctrl+o"],
+      "commands": ["workbench.action.navigateBackInNavigationLocations"]
+    },
+    {
+      "before": ["ctrl+i"],
+      "commands": ["workbench.action.navigateForwardInNavigationLocations"]
+    },
+    {
+      "before": ["g", "d"],
+      "commands": ["editor.action.revealDefinition"]
+    },
+    {
+      "before": ["g", "D"],
+      "commands": ["editor.action.goToTypeDefinition"]
+    },
+    {
+      "before": ["leader", "l", "r"],
+      "commands": ["editor.action.rename"]
+    },
+    {
+      "before": ["g", "r"],
+      "commands": ["editor.action.goToReferences"]
+    },
+    {
+      "before": ["g", "i"],
+      "commands": ["editor.action.goToImplementation"]
+    },
+    {
+      "before": ["K"],
+      "commands": ["editor.action.showHover"]
+    },
+    {
+      "before": ["leader", "l", "f"],
+      "commands": ["editor.action.formatDocument"]
+    }
+  ],
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "k"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.enableNeovim": false,
+  "vim.neovimConfigPath": "/opt/homebrew/bin/nvim",
+  "vim.foldfix": true,
+  // VIM end
+  "editor.minimap.enabled": false,
+  "terminal.integrated.macOptionClickForcesSelection": true,
+  "editor.language.colorizedBracketPairs": [],
+  "window.openFoldersInNewWindow": "off",
+  "editor.links": false,
+  "workbench.startupEditor": "none",
+  "workbench.activityBar.visible": false,
+  "files.autoSave": "afterDelay",
+  "workbench.tree.indent": 12,
+  "workbench.editor.showTabs": false,
+  "terminal.external.osxExec": "iTerm.app",
+  "vscode-neovim.neovimExecutablePaths.darwin": "/opt/homebrew/bin/nvim",
+  "go.toolsManagement.autoUpdate": true,
+  "editor.fontSize": 13,
+  "debug.console.fontSize": 13,
+  "terminal.integrated.fontSize": 13,
+  "redhat.telemetry.enabled": true,
+  "vscode-neovim.neovimInitVimPaths.darwin": "/Users/inelpandzic/.vscode/init.vim",
+  "editor.rulers": [],
+  //CustomizeUI
+  "customizeUI.titleBar": "frameless",
+
+  "window.titleBarStyle": "native",
+  "git.enableSmartCommit": true,
+  "editor.cursorBlinking": "smooth",
+  "vim.statusBarColorControl": true,
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#005f5f",
+    "statusBar.noFolderBackground": "#005f5f",
+    "statusBar.debuggingBackground": "#005f5f"
+  },
+  "diffEditor.ignoreTrimWhitespace": false
+
+  // "workbench.iconTheme": "Monokai Pro (Filter Octagon) Icons",
+}

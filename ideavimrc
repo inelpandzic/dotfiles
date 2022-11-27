@@ -51,14 +51,11 @@ nmap <leader>a :action GotoAction<CR>
 
 nnoremap <c-o> :action Back<cr>
 nnoremap <c-i> :action Forward<cr>
-nnoremap <c-'> :action PreviousTab<cr>
-nnoremap <leader> :action PrevMethod<cr>
-nnoremap <c-f>n :action NextMethod<cr>
 
 nnoremap <leader>o :action FileStructurePopup<CR>
-nnoremap <leader>v :action ActivateTerminalToolWindow<CR>
+nnoremap <leader>t :action ActivateTerminalToolWindow<CR>
 nnoremap <leader>nn :action ActivateProjectToolWindow<CR>
-nnoremap <leader>nf :action SelectInProjectView<CR>
+nnoremap <leader>e :action SelectInProjectView<CR>
 nnoremap <leader>xx :action CloseAllEditors<CR>
 nnoremap <Leader>r :action ActivateRunToolWindow<CR>
 
@@ -67,15 +64,15 @@ nnoremap <Leader>h :action HideAllWindows<CR>
 
 " Edit / refactor
 nnoremap gd :action GotoDeclaration<CR>
-nnoremap gy :action GotoTypeDeclaration<CR>
+nnoremap gD :action GotoTypeDeclaration<CR>
 nnoremap gi :action GotoImplementation<CR>
 nnoremap gs :action GotoSuperMethod<CR>
 nnoremap gq :action QuickImplementations<CR>
 
-nnoremap ,m :action ImplementMethods<CR>
-nnoremap ,r :action RenameElement<CR>
-nnoremap ,dd :action QuickJavaDoc<CR>
-nnoremap ,de :action ExternalJavaDoc<CR>
+nnoremap <leader>lm :action ImplementMethods<CR>
+nnoremap <leader>lr :action RenameElement<CR>
+" nnoremap ,dd :action QuickJavaDoc<CR> --> use shift+k
+nnoremap <leader>lk :action ExternalJavaDoc<CR>
 
 nnoremap ,a :action Annotate<CR>
 nnoremap ,c :action Vcs.Show.Local.Changes<cr>

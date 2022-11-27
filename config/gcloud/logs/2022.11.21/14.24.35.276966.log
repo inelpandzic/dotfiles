@@ -1,0 +1,3 @@
+2022-11-21 14:24:35,278 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'clusters']
+2022-11-21 14:24:35,279 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'clusters', 'delete']
+2022-11-21 14:24:35,290 DEBUG    root            Running [gcloud.container.clusters.delete] with arguments: [--zone: "europe-west3-b", NAME:1: "['inel-2505']"]

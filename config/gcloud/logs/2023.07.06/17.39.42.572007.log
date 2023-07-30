@@ -1,0 +1,16 @@
+2023-07-06 17:39:42,573 DEBUG    root            Loaded Command Group: ['gcloud', 'projects']
+2023-07-06 17:39:42,575 DEBUG    root            Loaded Command Group: ['gcloud', 'projects', 'describe']
+2023-07-06 17:39:42,576 DEBUG    root            Running [gcloud.projects.describe] with arguments: [--account: "inel.pandzic@percona.com", --configuration: "percona-cloud-dev", --format: "value(name)", PROJECT_ID_OR_NUMBER: "cloud-dev-112233"]
+2023-07-06 17:39:42,598 DEBUG    google.auth.transport.requests Making request: POST https://oauth2.googleapis.com/token
+2023-07-06 17:39:42,609 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2023-07-06 17:39:42,812 DEBUG    urllib3.connectionpool https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2023-07-06 17:39:42,853 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2023-07-06 17:39:43,713 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "GET /v1/projects/cloud-dev-112233?alt=json HTTP/1.1" 200 None
+2023-07-06 17:39:43,719 DEBUG    root            Chosen display Format:default value(name)
+2023-07-06 17:39:43,720 INFO     root            Display format: "default value(name)"
+2023-07-06 17:39:43,721 INFO     ___FILE_ONLY___ cloud-dev
+
+2023-07-06 17:39:43,726 DEBUG    root            Checking for updates...
+2023-07-06 17:39:43,747 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): dl.google.com:443
+2023-07-06 17:39:43,911 DEBUG    urllib3.connectionpool https://dl.google.com:443 "GET /dl/cloudsdk/channels/rapid/components-2.json HTTP/1.1" 200 208274
+2023-07-06 17:39:44,025 DEBUG    root            Metrics reporting process started...

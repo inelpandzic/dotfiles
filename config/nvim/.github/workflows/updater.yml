@@ -2,11 +2,8 @@ name: Updater Comment
 
 on:
   pull_request_target:
-    paths:
-      - "**.lua"
-      - "packer_snapshot"
-    types:
-      - opened
+    paths: ["**.lua"]
+    types: ["opened"]
 
 jobs:
   updater-comment:
@@ -20,7 +17,7 @@ jobs:
             const user = src.user.login
             const tab = "  "
             let settings = tab + "updater = {\n" + tab + tab + `channel = "nightly",\n`
-            if (src.ref != "main") {
+            if (src.ref != "nightly") {
               settings += tab + tab + `branch = "${src.ref}",\n`
             }
             if (user != "AstroNvim") {

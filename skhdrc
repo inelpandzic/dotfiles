@@ -20,12 +20,14 @@ hyper - e : yabai -m window --toggle zoom-fullscreen
 # Focus APP ===============
 hyper - a : open /Applications/Slack.app
 hyper - s : open /Applications/Google\ Chrome.app
-# hyper - d : open /Applications/Alacritty.app
-hyper - c : open /Applications/Obsidian.app
-hyper - v : open /Applications/Things3.app
-hyper - d : open /Applications/iTerm.app
+hyper - d : open /Applications/Alacritty.app
+# hyper - f : open /Applications/Visual\ Studio\ Code.app
 hyper - f : open /Applications/Visual\ Studio\ Code.app
 # hyper - f : open /Applications/GoLand.app/
+# hyper - c : open /Applications/Obsidian.app
+hyper - c : open /Applications/Notion.app
+hyper - v : open /Applications/Things3.app
+# hyper - d : open /Applications/iTerm.app
 
 # Stacks ======================================
 alt + shift - s : window=$(yabai -m query --windows --window | jq -r '.id') && yabai -m window east --stack $window || (yabai -m window $window --toggle float && yabai -m window $window --toggle float)
@@ -49,6 +51,8 @@ hyper - tab : yabai -m window --focus stack.next || yabai -m window --focus stac
 hyper - t : yabai -m window --toggle float;\
           yabai -m window --grid 4:4:1:1:2:2
 
+hyper - y : yabai -m window --toggle tile
+
 # make floating window fill screen
 hyper + cmd - up     : yabai -m window --grid 1:1:0:0:1:1
 
@@ -63,7 +67,6 @@ hyper + cmd - right  : yabai -m window --grid 1:2:1:0:1:1
 #
 # go back to previous workspace (kind of like back_and_forth in i3)
 # hyper - g : yabai -m space --focus recent
-hyper - g : yabai -m space --focus recent
 hyper - 1 : yabai -m space --focus 1
 hyper - 2 : yabai -m space --focus 2
 hyper - 3 : yabai -m space --focus 3

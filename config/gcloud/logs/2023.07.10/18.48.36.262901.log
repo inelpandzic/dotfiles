@@ -1,0 +1,19 @@
+2023-07-10 18:48:36,263 DEBUG    root            Loaded Command Group: ['gcloud', 'projects']
+2023-07-10 18:48:36,265 DEBUG    root            Loaded Command Group: ['gcloud', 'projects', 'describe']
+2023-07-10 18:48:36,266 DEBUG    root            Running [gcloud.projects.describe] with arguments: [--account: "inel.pandzic@percona.com", --configuration: "percona-cloud-dev", --format: "value(name)", PROJECT_ID_OR_NUMBER: "cloud-dev-112233"]
+2023-07-10 18:48:36,282 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2023-07-10 18:48:36,283 DEBUG    root            Caught socket error, retrying: HTTPSConnectionPool(host='cloudresourcemanager.googleapis.com', port=443): Max retries exceeded with url: /v1/projects/cloud-dev-112233?alt=json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x106767dd0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2023-07-10 18:48:36,283 DEBUG    root            Retrying request to url https://cloudresourcemanager.googleapis.com/v1/projects/cloud-dev-112233?alt=json after exception HTTPSConnectionPool(host='cloudresourcemanager.googleapis.com', port=443): Max retries exceeded with url: /v1/projects/cloud-dev-112233?alt=json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x106767dd0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2023-07-10 18:48:38,743 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2023-07-11 02:45:17,619 DEBUG    root            Caught socket error, retrying: HTTPSConnectionPool(host='cloudresourcemanager.googleapis.com', port=443): Read timed out. (read timeout=300)
+2023-07-11 02:45:17,624 DEBUG    root            Retrying request to url https://cloudresourcemanager.googleapis.com/v1/projects/cloud-dev-112233?alt=json after exception HTTPSConnectionPool(host='cloudresourcemanager.googleapis.com', port=443): Read timed out. (read timeout=300)
+2023-07-11 02:45:22,095 DEBUG    google.auth.transport.requests Making request: POST https://oauth2.googleapis.com/token
+2023-07-11 02:45:22,125 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2023-07-11 02:45:22,298 DEBUG    urllib3.connectionpool https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2023-07-11 02:45:22,367 DEBUG    urllib3.connectionpool Starting new HTTPS connection (2): cloudresourcemanager.googleapis.com:443
+2023-07-11 02:45:23,217 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "GET /v1/projects/cloud-dev-112233?alt=json HTTP/1.1" 200 None
+2023-07-11 02:45:23,219 DEBUG    root            Chosen display Format:default value(name)
+2023-07-11 02:45:23,220 INFO     root            Display format: "default value(name)"
+2023-07-11 02:45:23,220 INFO     ___FILE_ONLY___ cloud-dev
+
+2023-07-11 02:45:23,226 DEBUG    root            Metrics reporting process started...

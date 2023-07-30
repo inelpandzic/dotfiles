@@ -30,7 +30,7 @@ yabai -m config split_ratio                  0.50
 yabai -m config auto_balance                 off
 
 # bsp or float (default: bsp)
-yabai -m config layout bsp
+yabai -m config layout float
 
 # Set all padding and gaps to 20pt (default: 0)
 yabai -m config top_padding    0
@@ -45,14 +45,18 @@ yabai -m rule --add app='^Finder$' manage=off
 yabai -m rule --add app='^Activity Monitor$' manage=off
 yabai -m rule --add app='^System Information$' manage=off
 yabai -m rule --add app='^System Preferences$' manage=off
+yabai -m rule --add app='^System Settings$' manage=off
 yabai -m rule --add app='^Podcasts$' manage=off
 yabai -m rule --add app='^Karabiner$' manage=off
 yabai -m rule --add app='^Postgres$' manage=off
 yabai -m rule --add app='^Docker$' manage=off
 yabai -m rule --add title='Preferences$' manage=off
+yabai -m rule --add title='Sign in - Google Accounts$' manage=off
 yabai -m rule --add app='Acrobat Reader' manage=off
 yabai -m rule --add app='Context' manage=off
-yabai -m rule --add app='OpenVPN' manage=off
+yabai -m rule --add app='^OpenVPN$' manage=off
+yabai -m rule --add app='^1Passowrd$' manage=off
+yabai -m rule --add app='^Notes$' manage=off
 
 yabai -m rule --add title='Settings$' manage=off
 

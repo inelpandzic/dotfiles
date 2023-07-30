@@ -1,3 +1,10 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -8,7 +15,7 @@ export ZSH="/Users/inelpandzic/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -111,6 +118,7 @@ export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/14/bin
 
 
 #Make terminal better
+alias 1p='cat ~/.jedansif | base64 -D | pbcopy'
 alias c='clear'
 alias ll='ls -lahtr'
 
@@ -129,10 +137,10 @@ alias rr='cd ~/Dev/Workspace/; cd $(find . -type d -print | fzf); tmux rename-wi
 
 #
 bindkey -v
-bindkey -s '^E' 'nvim $(fzf)\n'
+#bindkey -s '^E' 'nvim $(fzf)\n'
 
 alias n='nvim'
-alias nn='nvim $(fzf)'
+alias nf='nvim $(fzf)'
 
 alias vc='code . --goto $(fzf)'
 
@@ -168,8 +176,26 @@ export VISUAL="nvim"
 export EDITOR="nvim"
 
 
+
+# --------------------------------------------------------
 # Percona GCP/GKE ----------------------------------------
 # --------------------------------------------------------
+#
+
+alias gke-list='gcloud container clusters list'
+alias gke-create='gcloud container clusters create --zone europe-west3-b inel-$RANDOM --cluster-version 1.25 --machine-type n1-standard-4 --preemptible --num-nodes=3 --no-enable-autoupgrade --disk-size 30 --labels delete-cluster-after-hours=10 && kubectl create clusterrolebinding cluster-admin-binding-inel --clusterrole=cluster-admin --user=inel.pandzic@percona.com'
+
+gke-delete() {
+    local cluster=$(gcloud container clusters list | awk '{print $1}' | grep inel | head -n 1)
+    yes | gcloud container clusters delete $cluster --zone europe-west3-b
+}
+
+gke-recreate(){
+    local cluster=$(gcloud container clusters list | awk '{print $1}' | grep inel | head -n 1)
+    yes | gcloud container clusters delete $cluster --async --zone europe-west3-b
+
+    gke-create
+}
 
 export USE_GKE_GCLOUD_AUTH_PLUGIN=True
 
@@ -182,3 +208,5 @@ if [ -f '/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/completion.zsh.
 # Generated for envman. Do not edit.
 [ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
 
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

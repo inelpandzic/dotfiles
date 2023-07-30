@@ -1,8 +1,0 @@
-2022-11-21 16:32:07,284 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'clusters']
-2022-11-21 16:32:07,285 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'clusters', 'delete']
-2022-11-21 16:32:07,297 DEBUG    root            Running [gcloud.container.clusters.delete] with arguments: [--zone: "europe-west3-b", NAME:1: "['inel-19622']"]
-2022-11-21 16:32:07,785 INFO     ___FILE_ONLY___ 
-
-Command killed by keyboard interrupt
-
-

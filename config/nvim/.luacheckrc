@@ -1,11 +1,9 @@
 -- Global objects
 globals = {
-  "PACKER_BOOTSTRAP",
   "astronvim",
   "astronvim_installation",
   "vim",
-  "C",
-  "packer_plugins",
+  "bit",
 }
 
 -- Rerun tests only if their modification time changed
@@ -15,6 +13,6 @@ cache = true
 self = false
 
 ignore = {
-  "631",  -- max_line_length
-  "212/_.*",  -- unused argument, for vars with "_" prefix
+  "631", -- max_line_length
+  "212/_.*", -- unused argument, for vars with "_" prefix
 }

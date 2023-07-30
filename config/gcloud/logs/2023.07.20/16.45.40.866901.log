@@ -1,0 +1,13 @@
+2023-07-20 16:45:40,868 DEBUG    root            Loaded Command Group: ['gcloud', 'projects']
+2023-07-20 16:45:40,870 DEBUG    root            Loaded Command Group: ['gcloud', 'projects', 'describe']
+2023-07-20 16:45:40,871 DEBUG    root            Running [gcloud.projects.describe] with arguments: [--account: "inel.pandzic@percona.com", --configuration: "percona-cloud-dev", --format: "value(name)", PROJECT_ID_OR_NUMBER: "cloud-dev-112233"]
+2023-07-20 16:45:40,884 DEBUG    google.auth.transport.requests Making request: POST https://oauth2.googleapis.com/token
+2023-07-20 16:45:40,913 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2023-07-20 16:45:41,105 DEBUG    urllib3.connectionpool https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2023-07-20 16:45:41,174 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2023-07-20 16:45:42,126 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "GET /v1/projects/cloud-dev-112233?alt=json HTTP/1.1" 200 None
+2023-07-20 16:45:42,129 DEBUG    root            Chosen display Format:default value(name)
+2023-07-20 16:45:42,130 INFO     root            Display format: "default value(name)"
+2023-07-20 16:45:42,131 INFO     ___FILE_ONLY___ cloud-dev
+
+2023-07-20 16:45:42,150 DEBUG    root            Metrics reporting process started...

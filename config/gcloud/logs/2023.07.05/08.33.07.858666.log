@@ -1,0 +1,242 @@
+2023-07-05 08:33:07,862 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'clusters']
+2023-07-05 08:33:07,868 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'clusters', 'create']
+2023-07-05 08:33:07,885 DEBUG    root            Running [gcloud.container.clusters.create] with arguments: [--cluster-version: "1.25", --disk-size: "32212254720", --labels: "OrderedDict([('delete-cluster-after-hours', '10')])", --machine-type: "n1-standard-4", --no-enable-autoupgrade: "False", --num-nodes: "3", --preemptible: "True", --zone: "europe-west3-b", NAME: "inel-26987"]
+2023-07-05 08:33:07,890 INFO     ___FILE_ONLY___ Default change: VPC-native is the default mode during cluster creation for versions greater than 1.21.0-gke.1500. To create advanced routes based clusters, please pass the `--no-enable-ip-alias` flag
+
+2023-07-05 08:33:07,891 INFO     ___FILE_ONLY___ Default change: During creation of nodepools or autoscaling configuration changes for cluster versions greater than 1.24.1-gke.800 a default location policy is applied. For Spot and PVM it defaults to ANY, and for all other VM kinds a BALANCED policy is used. To change the default values use the `--location-policy` flag.
+
+2023-07-05 08:33:07,891 INFO     ___FILE_ONLY___ Note: Your Pod address range (`--cluster-ipv4-cidr`) can accommodate at most 1008 node(s).
+
+2023-07-05 08:33:07,896 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-07-05 08:33:07,897 DEBUG    root            Caught socket error, retrying: HTTPSConnectionPool(host='container.googleapis.com', port=443): Max retries exceeded with url: /v1/projects/cloud-dev-112233/locations/europe-west3-b/clusters?alt=json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x104a72090>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2023-07-05 08:33:07,898 DEBUG    root            Retrying request to url https://container.googleapis.com/v1/projects/cloud-dev-112233/locations/europe-west3-b/clusters?alt=json after exception HTTPSConnectionPool(host='container.googleapis.com', port=443): Max retries exceeded with url: /v1/projects/cloud-dev-112233/locations/europe-west3-b/clusters?alt=json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x104a72090>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2023-07-05 08:33:10,201 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-07-05 08:33:10,203 DEBUG    root            Caught socket error, retrying: HTTPSConnectionPool(host='container.googleapis.com', port=443): Max retries exceeded with url: /v1/projects/cloud-dev-112233/locations/europe-west3-b/clusters?alt=json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x104ad1310>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2023-07-05 08:33:10,203 DEBUG    root            Retrying request to url https://container.googleapis.com/v1/projects/cloud-dev-112233/locations/europe-west3-b/clusters?alt=json after exception HTTPSConnectionPool(host='container.googleapis.com', port=443): Max retries exceeded with url: /v1/projects/cloud-dev-112233/locations/europe-west3-b/clusters?alt=json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x104ad1310>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2023-07-05 08:33:14,283 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-07-05 08:33:14,286 DEBUG    root            Caught socket error, retrying: HTTPSConnectionPool(host='container.googleapis.com', port=443): Max retries exceeded with url: /v1/projects/cloud-dev-112233/locations/europe-west3-b/clusters?alt=json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x104ad1310>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2023-07-05 08:33:14,286 DEBUG    root            Retrying request to url https://container.googleapis.com/v1/projects/cloud-dev-112233/locations/europe-west3-b/clusters?alt=json after exception HTTPSConnectionPool(host='container.googleapis.com', port=443): Max retries exceeded with url: /v1/projects/cloud-dev-112233/locations/europe-west3-b/clusters?alt=json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x104ad1310>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2023-07-05 08:33:21,626 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-07-05 08:33:21,630 DEBUG    root            Caught socket error, retrying: HTTPSConnectionPool(host='container.googleapis.com', port=443): Max retries exceeded with url: /v1/projects/cloud-dev-112233/locations/europe-west3-b/clusters?alt=json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x104ad0c50>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2023-07-05 08:33:21,630 DEBUG    root            Retrying request to url https://container.googleapis.com/v1/projects/cloud-dev-112233/locations/europe-west3-b/clusters?alt=json after exception HTTPSConnectionPool(host='container.googleapis.com', port=443): Max retries exceeded with url: /v1/projects/cloud-dev-112233/locations/europe-west3-b/clusters?alt=json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x104ad0c50>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2023-07-05 08:33:37,613 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-07-05 08:33:37,623 DEBUG    root            HTTPSConnectionPool(host='container.googleapis.com', port=443): Max retries exceeded with url: /v1/projects/cloud-dev-112233/locations/europe-west3-b/clusters?alt=json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x104ad1390>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+Traceback (most recent call last):
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/third_party/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/third_party/urllib3/util/connection.py", line 72, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.2_1/Frameworks/Python.framework/Versions/3.11/lib/python3.11/socket.py", line 962, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/third_party/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/third_party/urllib3/connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/third_party/urllib3/connectionpool.py", line 1043, in _validate_conn
+    conn.connect()
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/third_party/urllib3/connection.py", line 358, in connect
+    self.sock = conn = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/third_party/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x104ad1390>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/third_party/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/third_party/urllib3/connectionpool.py", line 785, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/third_party/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='container.googleapis.com', port=443): Max retries exceeded with url: /v1/projects/cloud-dev-112233/locations/europe-west3-b/clusters?alt=json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x104ad1390>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 987, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 807, in Run
+    resources = command_instance.Run(args)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/surface/container/clusters/create.py", line 1190, in Run
+    operation_ref = adapter.CreateCluster(cluster_ref, options)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/googlecloudsdk/api_lib/container/api_adapter.py", line 2510, in CreateCluster
+    operation = self.client.projects_locations_clusters.Create(req)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/googlecloudsdk/generated_clients/apis/container/v1/container_v1_client.py", line 493, in Create
+    return self._RunMethod(
+           ^^^^^^^^^^^^^^^^
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 734, in _RunMethod
+    http_response = http_wrapper.MakeRequest(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/third_party/apitools/base/py/http_wrapper.py", line 348, in MakeRequest
+    return _MakeRequestNoRetry(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/third_party/apitools/base/py/http_wrapper.py", line 397, in _MakeRequestNoRetry
+    info, content = http.request(
+                    ^^^^^^^^^^^^^
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/googlecloudsdk/core/requests.py", line 426, in HttpRequest
+    return orig_request_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/googlecloudsdk/core/requests.py", line 510, in request
+    response = self.session.request(
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/googlecloudsdk/core/transport.py", line 260, in WrappedRequest
+    response = orig_request(*modified_args, **modified_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/googlecloudsdk/core/credentials/requests.py", line 107, in WrappedRequest
+    response = orig_request(
+               ^^^^^^^^^^^^^
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/googlecloudsdk/core/transport.py", line 260, in WrappedRequest
+    response = orig_request(*modified_args, **modified_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/googlecloudsdk/core/requests.py", line 246, in WrappedRequest
+    return orig_request_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/third_party/requests/sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/third_party/requests/sessions.py", line 655, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/third_party/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='container.googleapis.com', port=443): Max retries exceeded with url: /v1/projects/cloud-dev-112233/locations/europe-west3-b/clusters?alt=json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x104ad1390>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2023-07-05 08:33:37,639 ERROR    ___FILE_ONLY___ BEGIN CRASH STACKTRACE
+Traceback (most recent call last):
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/third_party/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/third_party/urllib3/util/connection.py", line 72, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.2_1/Frameworks/Python.framework/Versions/3.11/lib/python3.11/socket.py", line 962, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/third_party/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/third_party/urllib3/connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/third_party/urllib3/connectionpool.py", line 1043, in _validate_conn
+    conn.connect()
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/third_party/urllib3/connection.py", line 358, in connect
+    self.sock = conn = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/third_party/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x104ad1390>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/third_party/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/third_party/urllib3/connectionpool.py", line 785, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/third_party/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='container.googleapis.com', port=443): Max retries exceeded with url: /v1/projects/cloud-dev-112233/locations/europe-west3-b/clusters?alt=json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x104ad1390>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/googlecloudsdk/command_lib/crash_handling.py", line 191, in Wrapper
+    target_function(*args, **kwargs)
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/googlecloudsdk/gcloud_main.py", line 186, in main
+    gcloud_cli.Execute()
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 1013, in Execute
+    self._HandleAllErrors(exc, command_path_string, specified_arg_names)
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 1050, in _HandleAllErrors
+    exceptions.HandleError(exc, command_path_string, self.__known_error_handler)
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/googlecloudsdk/calliope/exceptions.py", line 555, in HandleError
+    core_exceptions.reraise(exc)
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/googlecloudsdk/core/exceptions.py", line 146, in reraise
+    six.reraise(type(exc_value), exc_value, tb)
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/third_party/six/__init__.py", line 719, in reraise
+    raise value
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 987, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 807, in Run
+    resources = command_instance.Run(args)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/surface/container/clusters/create.py", line 1190, in Run
+    operation_ref = adapter.CreateCluster(cluster_ref, options)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/googlecloudsdk/api_lib/container/api_adapter.py", line 2510, in CreateCluster
+    operation = self.client.projects_locations_clusters.Create(req)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/googlecloudsdk/generated_clients/apis/container/v1/container_v1_client.py", line 493, in Create
+    return self._RunMethod(
+           ^^^^^^^^^^^^^^^^
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 734, in _RunMethod
+    http_response = http_wrapper.MakeRequest(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/third_party/apitools/base/py/http_wrapper.py", line 348, in MakeRequest
+    return _MakeRequestNoRetry(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/third_party/apitools/base/py/http_wrapper.py", line 397, in _MakeRequestNoRetry
+    info, content = http.request(
+                    ^^^^^^^^^^^^^
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/googlecloudsdk/core/requests.py", line 426, in HttpRequest
+    return orig_request_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/googlecloudsdk/core/requests.py", line 510, in request
+    response = self.session.request(
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/googlecloudsdk/core/transport.py", line 260, in WrappedRequest
+    response = orig_request(*modified_args, **modified_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/googlecloudsdk/core/credentials/requests.py", line 107, in WrappedRequest
+    response = orig_request(
+               ^^^^^^^^^^^^^
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/googlecloudsdk/core/transport.py", line 260, in WrappedRequest
+    response = orig_request(*modified_args, **modified_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/googlecloudsdk/core/requests.py", line 246, in WrappedRequest
+    return orig_request_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/third_party/requests/sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/third_party/requests/sessions.py", line 655, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/third_party/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='container.googleapis.com', port=443): Max retries exceeded with url: /v1/projects/cloud-dev-112233/locations/europe-west3-b/clusters?alt=json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x104ad1390>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2023-07-05 08:33:37,645 ERROR    root            gcloud crashed (ConnectionError): HTTPSConnectionPool(host='container.googleapis.com', port=443): Max retries exceeded with url: /v1/projects/cloud-dev-112233/locations/europe-west3-b/clusters?alt=json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x104ad1390>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2023-07-05 08:33:37,655 INFO     ___FILE_ONLY___ 
+If you would like to report this issue, please run the following command:
+
+2023-07-05 08:33:37,655 INFO     ___FILE_ONLY___   gcloud feedback
+
+2023-07-05 08:33:37,655 INFO     ___FILE_ONLY___ 
+To check gcloud for common problems, please run the following command:
+
+2023-07-05 08:33:37,655 INFO     ___FILE_ONLY___   gcloud info --run-diagnostics
+
+2023-07-05 08:33:37,669 DEBUG    root            Metrics reporting process started...

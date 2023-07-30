@@ -1,15 +1,18 @@
 name: Style Check
 
-on: [push, pull_request]
+on:
+  push:
+    branches: ["main"]
+  pull_request:
 
 jobs:
   style:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: JohnnyMorganz/stylua-action@1.0.0
+      - uses: actions/checkout@v3
+      - uses: JohnnyMorganz/stylua-action@v3
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          version: v0.14.0
+          version: latest
           # CLI arguments
           args: --check .

@@ -1,0 +1,30 @@
+2023-07-02 16:34:03,094 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
+2023-07-02 16:34:03,096 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'config_helper']
+2023-07-02 16:34:03,097 DEBUG    root            Running [gcloud.config.config-helper] with arguments: [--format: "json"]
+2023-07-02 16:34:03,105 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): www.gstatic.com:443
+2023-07-02 16:34:03,106 DEBUG    root            Unable to fetch feature flags config from [https://www.gstatic.com/cloudsdk/feature_flag_config_file.yaml]: HTTPSConnectionPool(host='www.gstatic.com', port=443): Max retries exceeded with url: /cloudsdk/feature_flag_config_file.yaml (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x105a02a50>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2023-07-02 16:34:03,108 DEBUG    root            Chosen display Format:default json
+2023-07-02 16:34:03,108 INFO     root            Display format: "default json"
+2023-07-02 16:34:03,108 INFO     ___FILE_ONLY___ {
+  "configuration": {
+    "active_configuration": "percona-cloud-dev",
+    "properties": {
+      "core": {
+        "account": "inel.pandzic@percona.com",
+        "disable_usage_reporting": "False",
+        "project": "cloud-dev-112233"
+      }
+    }
+  },
+  "credential": {
+    "access_token": "ya29.a0AbVbY6Pt4BREpIBdTHDxl65SDyc-4TAvXhAOYVDfrIHnphJVVLcFGjHP246qcZvWitoTVwjmtzKHmOXqAYkkTsog9cjzPdEBLPoJxdkfXmjgvGIQzFFTm_5WHdgNP0jetfITLE2iDefbfgShGYLg_iO5bdaBlEqHwfpvvU8aCgYKAaoSARESFQFWKvPlggfM9oZNevosbOH8sxG7uA0174",
+    "id_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6Ijk5YmNiMDY5MzQwYTNmMTQ3NDYyNzk0ZGZlZmE3NWU3OTk2MTM2MzQiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzMjU1NTk0MDU1OS5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImF1ZCI6IjMyNTU1OTQwNTU5LmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTA3NDA5ODEzMzQ0NTU5NDQzNDA3IiwiaGQiOiJwZXJjb25hLmNvbSIsImVtYWlsIjoiaW5lbC5wYW5kemljQHBlcmNvbmEuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiJIMjViRjc0dTBFWTZ2dldrUHdEM3dRIiwiaWF0IjoxNjg4MzA4MDc0LCJleHAiOjE2ODgzMTE2NzR9.cM973J4844v13uUQ-DUpJ3bI8O7-4gILwRnpvFJkhvtfI6YCg6ykIVgA9iCgi-39n05J2zjWsZvuIwOPsYm4jnXw8gl0NhzSRHT_SwNtRLSFCT_aNArM-9YBk9ngfVWACzfBNXWfihZGMQr7Zr7LV5B7Deua4L4aolp-0bbrQfrgr8JE5Jpw3vVn0BBi5VqYN0-LK86QyjZwZbUBdmvUQRohye8czp7LGv3Qqq5e8wLCbIgwaNC1_No4aB6CvBvHpZUPmbRRvVt2-tOwXetWjy56k28VTEGrbrsXthu3MsJEwMbZEQUKWUodM4R4um7nibnyDehwTFLaX6VcSoyfcg",
+    "token_expiry": "2023-07-02T15:27:53Z"
+  },
+  "sentinels": {
+    "config_sentinel": "/Users/inelpandzic/.config/gcloud/config_sentinel"
+  }
+}
+2023-07-02 16:34:03,108 INFO     ___FILE_ONLY___ 
+
+2023-07-02 16:34:03,117 DEBUG    root            Metrics reporting process started...

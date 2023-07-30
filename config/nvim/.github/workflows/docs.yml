@@ -2,8 +2,7 @@ name: Documentation
 
 on:
   push:
-    branches:
-      - main
+    branches: ["main"]
   pull_request:
 
 jobs:
@@ -12,9 +11,9 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       - name: Setup Lua
-        uses: leafo/gh-actions-lua@v8
+        uses: leafo/gh-actions-lua@v10
         with:
           luaVersion: 5.4
       - name: Install LDoc
@@ -24,6 +23,9 @@ jobs:
       - name: Build Docs
         run: |
           ldoc .
+      - name: Set CNAME
+        run: |
+          echo "api.astronvim.com" > docs/CNAME
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         if: ${{ github.ref == 'refs/heads/main' }}

@@ -1,0 +1,33 @@
+2023-07-24 08:50:23,781 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
+2023-07-24 08:50:23,784 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'config_helper']
+2023-07-24 08:50:23,784 DEBUG    root            Running [gcloud.config.config-helper] with arguments: [--format: "json"]
+2023-07-24 08:50:23,871 DEBUG    google.auth.transport.requests Making request: POST https://oauth2.googleapis.com/token
+2023-07-24 08:50:23,948 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2023-07-24 08:50:24,102 DEBUG    urllib3.connectionpool https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2023-07-24 08:50:24,119 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): www.gstatic.com:443
+2023-07-24 08:50:24,211 DEBUG    urllib3.connectionpool https://www.gstatic.com:443 "GET /cloudsdk/feature_flag_config_file.yaml HTTP/1.1" 200 101
+2023-07-24 08:50:24,217 DEBUG    root            Chosen display Format:default json
+2023-07-24 08:50:24,217 INFO     root            Display format: "default json"
+2023-07-24 08:50:24,218 INFO     ___FILE_ONLY___ {
+  "configuration": {
+    "active_configuration": "percona-cloud-dev",
+    "properties": {
+      "core": {
+        "account": "inel.pandzic@percona.com",
+        "disable_usage_reporting": "False",
+        "project": "cloud-dev-112233"
+      }
+    }
+  },
+  "credential": {
+    "access_token": "ya29.a0AbVbY6OiM4UW_aRO9wKGYS4g6RhMxBfq-WKNj7PNx9a8N75WZWOptq_-5crkjnlbS5NNWX1ohuyLugUNtVnVP5VJXubRjryHSfdF_BQZIhiH9mke0iRj_bOv7N2VjgzSforcvofrrSsy2wVNYEBt8cSEb1shH2y617MKwD0aCgYKAUQSARESFQFWKvPlAmqw0vkRFXB4j2pZynOQwg0174",
+    "id_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImEzYmRiZmRlZGUzYmFiYjI2NTFhZmNhMjY3OGRkZThjMGIzNWRmNzYiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzMjU1NTk0MDU1OS5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImF1ZCI6IjMyNTU1OTQwNTU5LmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTA3NDA5ODEzMzQ0NTU5NDQzNDA3IiwiaGQiOiJwZXJjb25hLmNvbSIsImVtYWlsIjoiaW5lbC5wYW5kemljQHBlcmNvbmEuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiItc3RkdGlESEVfLWxRNDVZSFJTRk5BIiwiaWF0IjoxNjkwMTgxNDI0LCJleHAiOjE2OTAxODUwMjR9.AAgwcp1wSUp0UTiyAfmc_iqEqxOOhBnivsRttptOWT0ahmlJRZBLZOWWrdwr-1gm4aHt8hvF5bFQex8WsXyemAJ7e_3dgACs2Kwb7jFsVXqfbOgtjdhzB5isgQgCMUr5mOeJQPVEvpL78QKBWfql3plS1YB2LpsphVDH9mGfUZm-mSDtra-XZdEPN4UTqV6TFwOsVCqgRqSfpf_yhuQUsBQtJdBdwP4hrHbog0tsGuKl4StU6EvvKlwgbjGNVWIxA9DYdeUIjgTdGPBssCfINqabQTlGeEHT26PM75wS0jyWcroJatG_ERZP1XXUGFMblyZqggoq_imOMv5jQQf2zw",
+    "token_expiry": "2023-07-24T07:50:23Z"
+  },
+  "sentinels": {
+    "config_sentinel": "/Users/inelpandzic/.config/gcloud/config_sentinel"
+  }
+}
+2023-07-24 08:50:24,218 INFO     ___FILE_ONLY___ 
+
+2023-07-24 08:50:24,224 DEBUG    root            Metrics reporting process started...

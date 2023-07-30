@@ -1,0 +1,115 @@
+2023-07-07 05:41:11,474 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'clusters']
+2023-07-07 05:41:11,476 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'clusters', 'list']
+2023-07-07 05:41:11,488 DEBUG    root            Running [gcloud.container.clusters.list] with arguments: []
+2023-07-07 05:41:11,537 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-07-07 05:41:12,177 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cloud-dev-112233/locations/-/clusters?alt=json HTTP/1.1" 200 None
+2023-07-07 05:41:12,203 DEBUG    root            Chosen display Format:
+    table(
+        name,
+        zone:label=LOCATION,
+        master_version():label=MASTER_VERSION,
+        endpoint:label=MASTER_IP,
+        nodePools[0].config.machineType,
+        currentNodeVersion:label=NODE_VERSION,
+        firstof(currentNodeCount,initialNodeCount):label=NUM_NODES,
+        status
+    )
+
+2023-07-07 05:41:12,205 INFO     root            Display format: "
+    table(
+        name,
+        zone:label=LOCATION,
+        master_version():label=MASTER_VERSION,
+        endpoint:label=MASTER_IP,
+        nodePools[0].config.machineType,
+        currentNodeVersion:label=NODE_VERSION,
+        firstof(currentNodeCount,initialNodeCount):label=NUM_NODES,
+        status
+    )
+"
+2023-07-07 05:41:12,220 INFO     ___FILE_ONLY___ NAME
+2023-07-07 05:41:12,220 INFO     ___FILE_ONLY___        
+2023-07-07 05:41:12,220 INFO     ___FILE_ONLY___ LOCATION
+2023-07-07 05:41:12,220 INFO     ___FILE_ONLY___         
+2023-07-07 05:41:12,220 INFO     ___FILE_ONLY___ MASTER_VERSION
+2023-07-07 05:41:12,220 INFO     ___FILE_ONLY___     
+2023-07-07 05:41:12,220 INFO     ___FILE_ONLY___ MASTER_IP
+2023-07-07 05:41:12,220 INFO     ___FILE_ONLY___        
+2023-07-07 05:41:12,220 INFO     ___FILE_ONLY___ MACHINE_TYPE
+2023-07-07 05:41:12,221 INFO     ___FILE_ONLY___    
+2023-07-07 05:41:12,221 INFO     ___FILE_ONLY___ NODE_VERSION
+2023-07-07 05:41:12,221 INFO     ___FILE_ONLY___       
+2023-07-07 05:41:12,221 INFO     ___FILE_ONLY___ NUM_NODES
+2023-07-07 05:41:12,221 INFO     ___FILE_ONLY___   
+2023-07-07 05:41:12,221 INFO     ___FILE_ONLY___ STATUS
+2023-07-07 05:41:12,221 INFO     ___FILE_ONLY___ 
+
+2023-07-07 05:41:12,221 INFO     ___FILE_ONLY___ inel-8658
+2023-07-07 05:41:12,221 INFO     ___FILE_ONLY___   
+2023-07-07 05:41:12,221 INFO     ___FILE_ONLY___ europe-west3-b
+2023-07-07 05:41:12,221 INFO     ___FILE_ONLY___   
+2023-07-07 05:41:12,221 INFO     ___FILE_ONLY___ 1.25.10-gke.2100
+2023-07-07 05:41:12,221 INFO     ___FILE_ONLY___   
+2023-07-07 05:41:12,221 INFO     ___FILE_ONLY___ 35.198.68.239
+2023-07-07 05:41:12,221 INFO     ___FILE_ONLY___    
+2023-07-07 05:41:12,221 INFO     ___FILE_ONLY___ n1-standard-4
+2023-07-07 05:41:12,221 INFO     ___FILE_ONLY___   
+2023-07-07 05:41:12,221 INFO     ___FILE_ONLY___ 1.25.10-gke.2100
+2023-07-07 05:41:12,221 INFO     ___FILE_ONLY___   
+2023-07-07 05:41:12,221 INFO     ___FILE_ONLY___ 3
+2023-07-07 05:41:12,221 INFO     ___FILE_ONLY___           
+2023-07-07 05:41:12,221 INFO     ___FILE_ONLY___ RUNNING
+2023-07-07 05:41:12,221 INFO     ___FILE_ONLY___ 
+
+2023-07-07 05:41:12,221 INFO     ___FILE_ONLY___ plavi-123
+2023-07-07 05:41:12,221 INFO     ___FILE_ONLY___   
+2023-07-07 05:41:12,221 INFO     ___FILE_ONLY___ us-central1-a
+2023-07-07 05:41:12,221 INFO     ___FILE_ONLY___    
+2023-07-07 05:41:12,221 INFO     ___FILE_ONLY___ 1.24.12-gke.500
+2023-07-07 05:41:12,221 INFO     ___FILE_ONLY___    
+2023-07-07 05:41:12,221 INFO     ___FILE_ONLY___ 35.224.148.131
+2023-07-07 05:41:12,222 INFO     ___FILE_ONLY___   
+2023-07-07 05:41:12,222 INFO     ___FILE_ONLY___ n1-standard-4
+2023-07-07 05:41:12,222 INFO     ___FILE_ONLY___   
+2023-07-07 05:41:12,222 INFO     ___FILE_ONLY___ 1.24.12-gke.500
+2023-07-07 05:41:12,222 INFO     ___FILE_ONLY___    
+2023-07-07 05:41:12,222 INFO     ___FILE_ONLY___ 3
+2023-07-07 05:41:12,222 INFO     ___FILE_ONLY___           
+2023-07-07 05:41:12,222 INFO     ___FILE_ONLY___ RUNNING
+2023-07-07 05:41:12,222 INFO     ___FILE_ONLY___ 
+
+2023-07-07 05:41:12,222 INFO     ___FILE_ONLY___ plavi-124
+2023-07-07 05:41:12,222 INFO     ___FILE_ONLY___   
+2023-07-07 05:41:12,222 INFO     ___FILE_ONLY___ us-central1-a
+2023-07-07 05:41:12,222 INFO     ___FILE_ONLY___    
+2023-07-07 05:41:12,222 INFO     ___FILE_ONLY___ 1.24.14-gke.1400
+2023-07-07 05:41:12,222 INFO     ___FILE_ONLY___   
+2023-07-07 05:41:12,222 INFO     ___FILE_ONLY___ 35.232.122.97
+2023-07-07 05:41:12,222 INFO     ___FILE_ONLY___    
+2023-07-07 05:41:12,222 INFO     ___FILE_ONLY___ n1-standard-4
+2023-07-07 05:41:12,222 INFO     ___FILE_ONLY___   
+2023-07-07 05:41:12,222 INFO     ___FILE_ONLY___ 1.24.14-gke.1400
+2023-07-07 05:41:12,222 INFO     ___FILE_ONLY___   
+2023-07-07 05:41:12,222 INFO     ___FILE_ONLY___ 3
+2023-07-07 05:41:12,222 INFO     ___FILE_ONLY___           
+2023-07-07 05:41:12,222 INFO     ___FILE_ONLY___ RUNNING
+2023-07-07 05:41:12,222 INFO     ___FILE_ONLY___ 
+
+2023-07-07 05:41:12,222 INFO     ___FILE_ONLY___ plavi-127
+2023-07-07 05:41:12,222 INFO     ___FILE_ONLY___   
+2023-07-07 05:41:12,222 INFO     ___FILE_ONLY___ us-central1-a
+2023-07-07 05:41:12,222 INFO     ___FILE_ONLY___    
+2023-07-07 05:41:12,222 INFO     ___FILE_ONLY___ 1.27.2-gke.1200
+2023-07-07 05:41:12,222 INFO     ___FILE_ONLY___    
+2023-07-07 05:41:12,222 INFO     ___FILE_ONLY___ 34.72.148.7
+2023-07-07 05:41:12,222 INFO     ___FILE_ONLY___      
+2023-07-07 05:41:12,223 INFO     ___FILE_ONLY___ n1-standard-4
+2023-07-07 05:41:12,223 INFO     ___FILE_ONLY___   
+2023-07-07 05:41:12,223 INFO     ___FILE_ONLY___ 1.27.2-gke.1200
+2023-07-07 05:41:12,223 INFO     ___FILE_ONLY___    
+2023-07-07 05:41:12,223 INFO     ___FILE_ONLY___ 3
+2023-07-07 05:41:12,223 INFO     ___FILE_ONLY___           
+2023-07-07 05:41:12,223 INFO     ___FILE_ONLY___ RUNNING
+2023-07-07 05:41:12,223 INFO     ___FILE_ONLY___ 
+
+2023-07-07 05:41:12,235 DEBUG    root            Metrics reporting process started...

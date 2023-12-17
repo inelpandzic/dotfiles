@@ -1,0 +1,166 @@
+2023-11-20 09:58:43,648 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'clusters']
+2023-11-20 09:58:43,650 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'clusters', 'list']
+2023-11-20 09:58:43,664 DEBUG    root            Running [gcloud.container.clusters.list] with arguments: []
+2023-11-20 09:58:43,716 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-11-20 09:58:44,335 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cloud-dev-112233/locations/-/clusters?alt=json HTTP/1.1" 200 None
+2023-11-20 09:58:44,356 DEBUG    root            Chosen display Format:
+    table(
+        name,
+        zone:label=LOCATION,
+        master_version():label=MASTER_VERSION,
+        endpoint:label=MASTER_IP,
+        nodePools[0].config.machineType,
+        currentNodeVersion:label=NODE_VERSION,
+        firstof(currentNodeCount,initialNodeCount):label=NUM_NODES,
+        status
+    )
+
+2023-11-20 09:58:44,357 INFO     root            Display format: "
+    table(
+        name,
+        zone:label=LOCATION,
+        master_version():label=MASTER_VERSION,
+        endpoint:label=MASTER_IP,
+        nodePools[0].config.machineType,
+        currentNodeVersion:label=NODE_VERSION,
+        firstof(currentNodeCount,initialNodeCount):label=NUM_NODES,
+        status
+    )
+"
+2023-11-20 09:58:44,372 INFO     ___FILE_ONLY___ NAME
+2023-11-20 09:58:44,372 INFO     ___FILE_ONLY___                              
+2023-11-20 09:58:44,372 INFO     ___FILE_ONLY___ LOCATION
+2023-11-20 09:58:44,372 INFO     ___FILE_ONLY___         
+2023-11-20 09:58:44,372 INFO     ___FILE_ONLY___ MASTER_VERSION
+2023-11-20 09:58:44,372 INFO     ___FILE_ONLY___        
+2023-11-20 09:58:44,372 INFO     ___FILE_ONLY___ MASTER_IP
+2023-11-20 09:58:44,372 INFO     ___FILE_ONLY___        
+2023-11-20 09:58:44,372 INFO     ___FILE_ONLY___ MACHINE_TYPE
+2023-11-20 09:58:44,372 INFO     ___FILE_ONLY___    
+2023-11-20 09:58:44,372 INFO     ___FILE_ONLY___ NODE_VERSION
+2023-11-20 09:58:44,372 INFO     ___FILE_ONLY___          
+2023-11-20 09:58:44,372 INFO     ___FILE_ONLY___ NUM_NODES
+2023-11-20 09:58:44,372 INFO     ___FILE_ONLY___   
+2023-11-20 09:58:44,372 INFO     ___FILE_ONLY___ STATUS
+2023-11-20 09:58:44,372 INFO     ___FILE_ONLY___ 
+
+2023-11-20 09:58:44,372 INFO     ___FILE_ONLY___ plavi-128
+2023-11-20 09:58:44,372 INFO     ___FILE_ONLY___                         
+2023-11-20 09:58:44,372 INFO     ___FILE_ONLY___ europe-west1-c
+2023-11-20 09:58:44,372 INFO     ___FILE_ONLY___   
+2023-11-20 09:58:44,372 INFO     ___FILE_ONLY___ 1.28.3-gke.1203000
+2023-11-20 09:58:44,372 INFO     ___FILE_ONLY___    
+2023-11-20 09:58:44,372 INFO     ___FILE_ONLY___ 34.77.70.119
+2023-11-20 09:58:44,372 INFO     ___FILE_ONLY___     
+2023-11-20 09:58:44,372 INFO     ___FILE_ONLY___ n1-standard-4
+2023-11-20 09:58:44,372 INFO     ___FILE_ONLY___   
+2023-11-20 09:58:44,373 INFO     ___FILE_ONLY___ 1.28.3-gke.1203000
+2023-11-20 09:58:44,373 INFO     ___FILE_ONLY___    
+2023-11-20 09:58:44,373 INFO     ___FILE_ONLY___ 3
+2023-11-20 09:58:44,373 INFO     ___FILE_ONLY___           
+2023-11-20 09:58:44,373 INFO     ___FILE_ONLY___ RUNNING
+2023-11-20 09:58:44,373 INFO     ___FILE_ONLY___ 
+
+2023-11-20 09:58:44,373 INFO     ___FILE_ONLY___ ege-9148
+2023-11-20 09:58:44,373 INFO     ___FILE_ONLY___                          
+2023-11-20 09:58:44,373 INFO     ___FILE_ONLY___ europe-west3
+2023-11-20 09:58:44,373 INFO     ___FILE_ONLY___     
+2023-11-20 09:58:44,373 INFO     ___FILE_ONLY___ 1.24.16-gke.500
+2023-11-20 09:58:44,373 INFO     ___FILE_ONLY___       
+2023-11-20 09:58:44,373 INFO     ___FILE_ONLY___ 34.159.134.152
+2023-11-20 09:58:44,373 INFO     ___FILE_ONLY___   
+2023-11-20 09:58:44,373 INFO     ___FILE_ONLY___ n1-standard-4
+2023-11-20 09:58:44,373 INFO     ___FILE_ONLY___   
+2023-11-20 09:58:44,373 INFO     ___FILE_ONLY___ 1.24.16-gke.500
+2023-11-20 09:58:44,373 INFO     ___FILE_ONLY___       
+2023-11-20 09:58:44,373 INFO     ___FILE_ONLY___ 3
+2023-11-20 09:58:44,373 INFO     ___FILE_ONLY___           
+2023-11-20 09:58:44,373 INFO     ___FILE_ONLY___ RUNNING
+2023-11-20 09:58:44,373 INFO     ___FILE_ONLY___ 
+
+2023-11-20 09:58:44,373 INFO     ___FILE_ONLY___ inel-9495
+2023-11-20 09:58:44,373 INFO     ___FILE_ONLY___                         
+2023-11-20 09:58:44,373 INFO     ___FILE_ONLY___ europe-west3-b
+2023-11-20 09:58:44,373 INFO     ___FILE_ONLY___   
+2023-11-20 09:58:44,373 INFO     ___FILE_ONLY___ 1.25.15-gke.1115000
+2023-11-20 09:58:44,373 INFO     ___FILE_ONLY___   
+2023-11-20 09:58:44,373 INFO     ___FILE_ONLY___ 35.246.143.152
+2023-11-20 09:58:44,373 INFO     ___FILE_ONLY___   
+2023-11-20 09:58:44,373 INFO     ___FILE_ONLY___ n1-standard-4
+2023-11-20 09:58:44,373 INFO     ___FILE_ONLY___   
+2023-11-20 09:58:44,373 INFO     ___FILE_ONLY___ 1.25.15-gke.1115000
+2023-11-20 09:58:44,373 INFO     ___FILE_ONLY___   
+2023-11-20 09:58:44,373 INFO     ___FILE_ONLY___ 3
+2023-11-20 09:58:44,373 INFO     ___FILE_ONLY___           
+2023-11-20 09:58:44,373 INFO     ___FILE_ONLY___ RUNNING
+2023-11-20 09:58:44,373 INFO     ___FILE_ONLY___ 
+
+2023-11-20 09:58:44,373 INFO     ___FILE_ONLY___ jen-pg-581-ec3603300-4-cluster2
+2023-11-20 09:58:44,373 INFO     ___FILE_ONLY___   
+2023-11-20 09:58:44,373 INFO     ___FILE_ONLY___ us-central1-a
+2023-11-20 09:58:44,373 INFO     ___FILE_ONLY___    
+2023-11-20 09:58:44,374 INFO     ___FILE_ONLY___ 1.25.15-gke.1115000
+2023-11-20 09:58:44,374 INFO     ___FILE_ONLY___   
+2023-11-20 09:58:44,374 INFO     ___FILE_ONLY___ 35.226.195.176
+2023-11-20 09:58:44,374 INFO     ___FILE_ONLY___   
+2023-11-20 09:58:44,374 INFO     ___FILE_ONLY___ n1-standard-4
+2023-11-20 09:58:44,374 INFO     ___FILE_ONLY___   
+2023-11-20 09:58:44,374 INFO     ___FILE_ONLY___ 1.25.15-gke.1115000
+2023-11-20 09:58:44,374 INFO     ___FILE_ONLY___   
+2023-11-20 09:58:44,374 INFO     ___FILE_ONLY___ 3
+2023-11-20 09:58:44,374 INFO     ___FILE_ONLY___           
+2023-11-20 09:58:44,374 INFO     ___FILE_ONLY___ RUNNING
+2023-11-20 09:58:44,374 INFO     ___FILE_ONLY___ 
+
+2023-11-20 09:58:44,374 INFO     ___FILE_ONLY___ jen-pg-581-ec3603300-4-cluster3
+2023-11-20 09:58:44,374 INFO     ___FILE_ONLY___   
+2023-11-20 09:58:44,374 INFO     ___FILE_ONLY___ us-central1-a
+2023-11-20 09:58:44,374 INFO     ___FILE_ONLY___    
+2023-11-20 09:58:44,374 INFO     ___FILE_ONLY___ 1.25.15-gke.1115000
+2023-11-20 09:58:44,374 INFO     ___FILE_ONLY___   
+2023-11-20 09:58:44,374 INFO     ___FILE_ONLY___ 35.193.170.10
+2023-11-20 09:58:44,374 INFO     ___FILE_ONLY___    
+2023-11-20 09:58:44,374 INFO     ___FILE_ONLY___ n1-standard-4
+2023-11-20 09:58:44,374 INFO     ___FILE_ONLY___   
+2023-11-20 09:58:44,374 INFO     ___FILE_ONLY___ 1.25.15-gke.1115000
+2023-11-20 09:58:44,374 INFO     ___FILE_ONLY___   
+2023-11-20 09:58:44,374 INFO     ___FILE_ONLY___ 3
+2023-11-20 09:58:44,374 INFO     ___FILE_ONLY___           
+2023-11-20 09:58:44,374 INFO     ___FILE_ONLY___ RUNNING
+2023-11-20 09:58:44,374 INFO     ___FILE_ONLY___ 
+
+2023-11-20 09:58:44,374 INFO     ___FILE_ONLY___ jen-pg-581-ec3603300-4-cluster4
+2023-11-20 09:58:44,374 INFO     ___FILE_ONLY___   
+2023-11-20 09:58:44,374 INFO     ___FILE_ONLY___ us-central1-a
+2023-11-20 09:58:44,374 INFO     ___FILE_ONLY___    
+2023-11-20 09:58:44,374 INFO     ___FILE_ONLY___ 1.25.15-gke.1115000
+2023-11-20 09:58:44,374 INFO     ___FILE_ONLY___   
+2023-11-20 09:58:44,374 INFO     ___FILE_ONLY___ 35.188.221.71
+2023-11-20 09:58:44,374 INFO     ___FILE_ONLY___    
+2023-11-20 09:58:44,374 INFO     ___FILE_ONLY___ n1-standard-4
+2023-11-20 09:58:44,374 INFO     ___FILE_ONLY___   
+2023-11-20 09:58:44,374 INFO     ___FILE_ONLY___ 1.25.15-gke.1115000
+2023-11-20 09:58:44,374 INFO     ___FILE_ONLY___   
+2023-11-20 09:58:44,374 INFO     ___FILE_ONLY___ 3
+2023-11-20 09:58:44,374 INFO     ___FILE_ONLY___           
+2023-11-20 09:58:44,374 INFO     ___FILE_ONLY___ RUNNING
+2023-11-20 09:58:44,374 INFO     ___FILE_ONLY___ 
+
+2023-11-20 09:58:44,374 INFO     ___FILE_ONLY___ spronin-1337
+2023-11-20 09:58:44,374 INFO     ___FILE_ONLY___                      
+2023-11-20 09:58:44,374 INFO     ___FILE_ONLY___ us-central1-a
+2023-11-20 09:58:44,374 INFO     ___FILE_ONLY___    
+2023-11-20 09:58:44,375 INFO     ___FILE_ONLY___ 1.27.7-gke.1121000
+2023-11-20 09:58:44,375 INFO     ___FILE_ONLY___    
+2023-11-20 09:58:44,375 INFO     ___FILE_ONLY___ 34.72.87.54
+2023-11-20 09:58:44,375 INFO     ___FILE_ONLY___      
+2023-11-20 09:58:44,375 INFO     ___FILE_ONLY___ n1-standard-4
+2023-11-20 09:58:44,375 INFO     ___FILE_ONLY___   
+2023-11-20 09:58:44,375 INFO     ___FILE_ONLY___ 1.27.7-gke.1121000
+2023-11-20 09:58:44,375 INFO     ___FILE_ONLY___    
+2023-11-20 09:58:44,375 INFO     ___FILE_ONLY___ 3
+2023-11-20 09:58:44,375 INFO     ___FILE_ONLY___           
+2023-11-20 09:58:44,375 INFO     ___FILE_ONLY___ RUNNING
+2023-11-20 09:58:44,375 INFO     ___FILE_ONLY___ 
+
+2023-11-20 09:58:44,381 DEBUG    root            Metrics reporting process started...

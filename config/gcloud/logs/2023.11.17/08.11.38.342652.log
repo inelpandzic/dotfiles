@@ -1,0 +1,13 @@
+2023-11-17 08:11:38,343 DEBUG    root            Loaded Command Group: ['gcloud', 'projects']
+2023-11-17 08:11:38,345 DEBUG    root            Loaded Command Group: ['gcloud', 'projects', 'describe']
+2023-11-17 08:11:38,346 DEBUG    root            Running [gcloud.projects.describe] with arguments: [--account: "inel.pandzic@percona.com", --configuration: "percona-cloud-dev", --format: "value(name)", PROJECT_ID_OR_NUMBER: "cloud-dev-112233"]
+2023-11-17 08:11:38,522 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2023-11-17 08:11:39,501 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "GET /v1/projects/cloud-dev-112233?alt=json HTTP/1.1" 200 None
+2023-11-17 08:11:39,504 DEBUG    root            Chosen display Format:default value(name)
+2023-11-17 08:11:39,505 INFO     root            Display format: "default value(name)"
+2023-11-17 08:11:39,505 INFO     ___FILE_ONLY___ cloud-dev
+
+2023-11-17 08:11:39,506 DEBUG    root            Checking for updates...
+2023-11-17 08:11:39,542 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): dl.google.com:443
+2023-11-17 08:11:39,674 DEBUG    urllib3.connectionpool https://dl.google.com:443 "GET /dl/cloudsdk/channels/rapid/components-2.json HTTP/1.1" 200 209943
+2023-11-17 08:11:39,796 DEBUG    root            Metrics reporting process started...

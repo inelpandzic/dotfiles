@@ -1,0 +1,9 @@
+2023-11-20 09:58:44,768 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'clusters']
+2023-11-20 09:58:44,769 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'clusters', 'delete']
+2023-11-20 09:58:44,781 DEBUG    root            Running [gcloud.container.clusters.delete] with arguments: [--async: "True", --zone: "europe-west3-b", NAME:1: "['inel-9495']"]
+2023-11-20 09:58:44,781 DEBUG    root            Chosen display Format:list[title="The following clusters will be deleted."]
+2023-11-20 09:58:44,789 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-11-20 09:58:45,297 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "DELETE /v1/projects/cloud-dev-112233/locations/europe-west3-b/clusters/inel-9495?alt=json HTTP/1.1" 200 None
+2023-11-20 09:58:45,298 DEBUG    root            Chosen display Format:none
+2023-11-20 09:58:45,298 INFO     root            Display format: "none"
+2023-11-20 09:58:45,303 DEBUG    root            Metrics reporting process started...

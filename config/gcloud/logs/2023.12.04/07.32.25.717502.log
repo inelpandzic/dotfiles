@@ -1,0 +1,229 @@
+2023-12-04 07:32:25,723 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'clusters']
+2023-12-04 07:32:25,729 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'clusters', 'create']
+2023-12-04 07:32:25,749 DEBUG    root            Running [gcloud.container.clusters.create] with arguments: [--cluster-version: "1.25", --disk-size: "32212254720", --labels: "OrderedDict([('delete-cluster-after-hours', '10')])", --machine-type: "n1-standard-4", --no-enable-autoupgrade: "False", --num-nodes: "3", --preemptible: "True", --zone: "europe-west3-b", NAME: "inel-10486"]
+2023-12-04 07:32:25,752 INFO     ___FILE_ONLY___ Default change: VPC-native is the default mode during cluster creation for versions greater than 1.21.0-gke.1500. To create advanced routes based clusters, please pass the `--no-enable-ip-alias` flag
+
+2023-12-04 07:32:25,752 INFO     ___FILE_ONLY___ Default change: During creation of nodepools or autoscaling configuration changes for cluster versions greater than 1.24.1-gke.800 a default location policy is applied. For Spot and PVM it defaults to ANY, and for all other VM kinds a BALANCED policy is used. To change the default values use the `--location-policy` flag.
+
+2023-12-04 07:32:25,752 INFO     ___FILE_ONLY___ Note: Your Pod address range (`--cluster-ipv4-cidr`) can accommodate at most 1008 node(s).
+
+2023-12-04 07:32:25,804 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-12-04 07:32:29,608 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "POST /v1/projects/cloud-dev-112233/locations/europe-west3-b/clusters?alt=json HTTP/1.1" 200 None
+2023-12-04 07:32:29,613 INFO     ___FILE_ONLY___ Creating cluster inel-10486 in europe-west3-b...
+2023-12-04 07:32:29,616 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-12-04 07:32:29,841 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cloud-dev-112233/locations/europe-west3-b/operations/operation-1701671549566-9709fe02-216e-471a-9244-80dfa0776f9b?alt=json HTTP/1.1" 200 None
+2023-12-04 07:32:34,852 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-12-04 07:32:35,088 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cloud-dev-112233/locations/europe-west3-b/operations/operation-1701671549566-9709fe02-216e-471a-9244-80dfa0776f9b?alt=json HTTP/1.1" 200 None
+2023-12-04 07:32:40,113 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-12-04 07:32:40,331 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cloud-dev-112233/locations/europe-west3-b/operations/operation-1701671549566-9709fe02-216e-471a-9244-80dfa0776f9b?alt=json HTTP/1.1" 200 None
+2023-12-04 07:32:45,340 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-12-04 07:32:45,565 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cloud-dev-112233/locations/europe-west3-b/operations/operation-1701671549566-9709fe02-216e-471a-9244-80dfa0776f9b?alt=json HTTP/1.1" 200 None
+2023-12-04 07:32:50,587 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-12-04 07:32:50,828 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cloud-dev-112233/locations/europe-west3-b/operations/operation-1701671549566-9709fe02-216e-471a-9244-80dfa0776f9b?alt=json HTTP/1.1" 200 None
+2023-12-04 07:32:55,850 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-12-04 07:32:56,089 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cloud-dev-112233/locations/europe-west3-b/operations/operation-1701671549566-9709fe02-216e-471a-9244-80dfa0776f9b?alt=json HTTP/1.1" 200 None
+2023-12-04 07:33:01,105 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-12-04 07:33:01,341 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cloud-dev-112233/locations/europe-west3-b/operations/operation-1701671549566-9709fe02-216e-471a-9244-80dfa0776f9b?alt=json HTTP/1.1" 200 None
+2023-12-04 07:33:06,358 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-12-04 07:33:06,587 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cloud-dev-112233/locations/europe-west3-b/operations/operation-1701671549566-9709fe02-216e-471a-9244-80dfa0776f9b?alt=json HTTP/1.1" 200 None
+2023-12-04 07:33:11,602 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-12-04 07:33:11,812 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cloud-dev-112233/locations/europe-west3-b/operations/operation-1701671549566-9709fe02-216e-471a-9244-80dfa0776f9b?alt=json HTTP/1.1" 200 None
+2023-12-04 07:33:16,829 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-12-04 07:33:17,049 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cloud-dev-112233/locations/europe-west3-b/operations/operation-1701671549566-9709fe02-216e-471a-9244-80dfa0776f9b?alt=json HTTP/1.1" 200 None
+2023-12-04 07:33:22,076 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-12-04 07:33:22,320 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cloud-dev-112233/locations/europe-west3-b/operations/operation-1701671549566-9709fe02-216e-471a-9244-80dfa0776f9b?alt=json HTTP/1.1" 200 None
+2023-12-04 07:33:27,345 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-12-04 07:33:27,584 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cloud-dev-112233/locations/europe-west3-b/operations/operation-1701671549566-9709fe02-216e-471a-9244-80dfa0776f9b?alt=json HTTP/1.1" 200 None
+2023-12-04 07:33:32,594 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-12-04 07:33:32,826 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cloud-dev-112233/locations/europe-west3-b/operations/operation-1701671549566-9709fe02-216e-471a-9244-80dfa0776f9b?alt=json HTTP/1.1" 200 None
+2023-12-04 07:33:37,844 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-12-04 07:33:38,116 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cloud-dev-112233/locations/europe-west3-b/operations/operation-1701671549566-9709fe02-216e-471a-9244-80dfa0776f9b?alt=json HTTP/1.1" 200 None
+2023-12-04 07:33:43,136 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-12-04 07:33:43,377 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cloud-dev-112233/locations/europe-west3-b/operations/operation-1701671549566-9709fe02-216e-471a-9244-80dfa0776f9b?alt=json HTTP/1.1" 200 None
+2023-12-04 07:33:48,400 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-12-04 07:33:48,637 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cloud-dev-112233/locations/europe-west3-b/operations/operation-1701671549566-9709fe02-216e-471a-9244-80dfa0776f9b?alt=json HTTP/1.1" 200 None
+2023-12-04 07:33:53,650 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-12-04 07:33:53,873 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cloud-dev-112233/locations/europe-west3-b/operations/operation-1701671549566-9709fe02-216e-471a-9244-80dfa0776f9b?alt=json HTTP/1.1" 200 None
+2023-12-04 07:33:58,894 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-12-04 07:33:59,152 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cloud-dev-112233/locations/europe-west3-b/operations/operation-1701671549566-9709fe02-216e-471a-9244-80dfa0776f9b?alt=json HTTP/1.1" 200 None
+2023-12-04 07:34:04,177 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-12-04 07:34:04,419 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cloud-dev-112233/locations/europe-west3-b/operations/operation-1701671549566-9709fe02-216e-471a-9244-80dfa0776f9b?alt=json HTTP/1.1" 200 None
+2023-12-04 07:34:09,433 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-12-04 07:34:09,650 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cloud-dev-112233/locations/europe-west3-b/operations/operation-1701671549566-9709fe02-216e-471a-9244-80dfa0776f9b?alt=json HTTP/1.1" 200 None
+2023-12-04 07:34:14,664 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-12-04 07:34:14,896 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cloud-dev-112233/locations/europe-west3-b/operations/operation-1701671549566-9709fe02-216e-471a-9244-80dfa0776f9b?alt=json HTTP/1.1" 200 None
+2023-12-04 07:34:19,906 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-12-04 07:34:20,144 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cloud-dev-112233/locations/europe-west3-b/operations/operation-1701671549566-9709fe02-216e-471a-9244-80dfa0776f9b?alt=json HTTP/1.1" 200 None
+2023-12-04 07:34:25,156 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-12-04 07:34:25,406 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cloud-dev-112233/locations/europe-west3-b/operations/operation-1701671549566-9709fe02-216e-471a-9244-80dfa0776f9b?alt=json HTTP/1.1" 200 None
+2023-12-04 07:34:30,420 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-12-04 07:34:30,648 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cloud-dev-112233/locations/europe-west3-b/operations/operation-1701671549566-9709fe02-216e-471a-9244-80dfa0776f9b?alt=json HTTP/1.1" 200 None
+2023-12-04 07:34:35,660 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-12-04 07:34:35,872 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cloud-dev-112233/locations/europe-west3-b/operations/operation-1701671549566-9709fe02-216e-471a-9244-80dfa0776f9b?alt=json HTTP/1.1" 200 None
+2023-12-04 07:34:40,889 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-12-04 07:34:41,113 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cloud-dev-112233/locations/europe-west3-b/operations/operation-1701671549566-9709fe02-216e-471a-9244-80dfa0776f9b?alt=json HTTP/1.1" 200 None
+2023-12-04 07:34:46,126 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-12-04 07:34:46,349 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cloud-dev-112233/locations/europe-west3-b/operations/operation-1701671549566-9709fe02-216e-471a-9244-80dfa0776f9b?alt=json HTTP/1.1" 200 None
+2023-12-04 07:34:51,356 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-12-04 07:34:51,550 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cloud-dev-112233/locations/europe-west3-b/operations/operation-1701671549566-9709fe02-216e-471a-9244-80dfa0776f9b?alt=json HTTP/1.1" 200 None
+2023-12-04 07:34:56,561 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-12-04 07:34:56,771 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cloud-dev-112233/locations/europe-west3-b/operations/operation-1701671549566-9709fe02-216e-471a-9244-80dfa0776f9b?alt=json HTTP/1.1" 200 None
+2023-12-04 07:35:01,782 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-12-04 07:35:02,055 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cloud-dev-112233/locations/europe-west3-b/operations/operation-1701671549566-9709fe02-216e-471a-9244-80dfa0776f9b?alt=json HTTP/1.1" 200 None
+2023-12-04 07:35:07,072 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-12-04 07:35:07,289 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cloud-dev-112233/locations/europe-west3-b/operations/operation-1701671549566-9709fe02-216e-471a-9244-80dfa0776f9b?alt=json HTTP/1.1" 200 None
+2023-12-04 07:35:12,300 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-12-04 07:35:12,535 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cloud-dev-112233/locations/europe-west3-b/operations/operation-1701671549566-9709fe02-216e-471a-9244-80dfa0776f9b?alt=json HTTP/1.1" 200 None
+2023-12-04 07:35:17,542 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-12-04 07:35:17,754 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cloud-dev-112233/locations/europe-west3-b/operations/operation-1701671549566-9709fe02-216e-471a-9244-80dfa0776f9b?alt=json HTTP/1.1" 200 None
+2023-12-04 07:35:22,754 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-12-04 07:35:22,986 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cloud-dev-112233/locations/europe-west3-b/operations/operation-1701671549566-9709fe02-216e-471a-9244-80dfa0776f9b?alt=json HTTP/1.1" 200 None
+2023-12-04 07:35:27,994 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-12-04 07:35:28,185 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cloud-dev-112233/locations/europe-west3-b/operations/operation-1701671549566-9709fe02-216e-471a-9244-80dfa0776f9b?alt=json HTTP/1.1" 200 None
+2023-12-04 07:35:33,195 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-12-04 07:35:33,410 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cloud-dev-112233/locations/europe-west3-b/operations/operation-1701671549566-9709fe02-216e-471a-9244-80dfa0776f9b?alt=json HTTP/1.1" 200 None
+2023-12-04 07:35:38,421 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-12-04 07:35:38,650 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cloud-dev-112233/locations/europe-west3-b/operations/operation-1701671549566-9709fe02-216e-471a-9244-80dfa0776f9b?alt=json HTTP/1.1" 200 None
+2023-12-04 07:35:43,662 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-12-04 07:35:43,890 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cloud-dev-112233/locations/europe-west3-b/operations/operation-1701671549566-9709fe02-216e-471a-9244-80dfa0776f9b?alt=json HTTP/1.1" 200 None
+2023-12-04 07:35:48,900 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-12-04 07:35:49,130 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cloud-dev-112233/locations/europe-west3-b/operations/operation-1701671549566-9709fe02-216e-471a-9244-80dfa0776f9b?alt=json HTTP/1.1" 200 None
+2023-12-04 07:35:54,139 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-12-04 07:35:54,372 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cloud-dev-112233/locations/europe-west3-b/operations/operation-1701671549566-9709fe02-216e-471a-9244-80dfa0776f9b?alt=json HTTP/1.1" 200 None
+2023-12-04 07:35:59,379 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-12-04 07:35:59,610 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cloud-dev-112233/locations/europe-west3-b/operations/operation-1701671549566-9709fe02-216e-471a-9244-80dfa0776f9b?alt=json HTTP/1.1" 200 None
+2023-12-04 07:36:04,632 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-12-04 07:36:04,869 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cloud-dev-112233/locations/europe-west3-b/operations/operation-1701671549566-9709fe02-216e-471a-9244-80dfa0776f9b?alt=json HTTP/1.1" 200 None
+2023-12-04 07:36:09,884 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-12-04 07:36:10,130 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cloud-dev-112233/locations/europe-west3-b/operations/operation-1701671549566-9709fe02-216e-471a-9244-80dfa0776f9b?alt=json HTTP/1.1" 200 None
+2023-12-04 07:36:15,150 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-12-04 07:36:15,385 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cloud-dev-112233/locations/europe-west3-b/operations/operation-1701671549566-9709fe02-216e-471a-9244-80dfa0776f9b?alt=json HTTP/1.1" 200 None
+2023-12-04 07:36:20,402 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-12-04 07:36:20,564 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cloud-dev-112233/locations/europe-west3-b/operations/operation-1701671549566-9709fe02-216e-471a-9244-80dfa0776f9b?alt=json HTTP/1.1" 200 None
+2023-12-04 07:36:25,583 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-12-04 07:36:25,811 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cloud-dev-112233/locations/europe-west3-b/operations/operation-1701671549566-9709fe02-216e-471a-9244-80dfa0776f9b?alt=json HTTP/1.1" 200 None
+2023-12-04 07:36:30,828 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-12-04 07:36:31,063 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cloud-dev-112233/locations/europe-west3-b/operations/operation-1701671549566-9709fe02-216e-471a-9244-80dfa0776f9b?alt=json HTTP/1.1" 200 None
+2023-12-04 07:36:36,078 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-12-04 07:36:36,306 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cloud-dev-112233/locations/europe-west3-b/operations/operation-1701671549566-9709fe02-216e-471a-9244-80dfa0776f9b?alt=json HTTP/1.1" 200 None
+2023-12-04 07:36:41,319 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-12-04 07:36:41,552 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cloud-dev-112233/locations/europe-west3-b/operations/operation-1701671549566-9709fe02-216e-471a-9244-80dfa0776f9b?alt=json HTTP/1.1" 200 None
+2023-12-04 07:36:46,572 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-12-04 07:36:46,809 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cloud-dev-112233/locations/europe-west3-b/operations/operation-1701671549566-9709fe02-216e-471a-9244-80dfa0776f9b?alt=json HTTP/1.1" 200 None
+2023-12-04 07:36:51,839 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-12-04 07:36:52,076 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cloud-dev-112233/locations/europe-west3-b/operations/operation-1701671549566-9709fe02-216e-471a-9244-80dfa0776f9b?alt=json HTTP/1.1" 200 None
+2023-12-04 07:36:57,087 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-12-04 07:36:57,310 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cloud-dev-112233/locations/europe-west3-b/operations/operation-1701671549566-9709fe02-216e-471a-9244-80dfa0776f9b?alt=json HTTP/1.1" 200 None
+2023-12-04 07:37:02,329 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-12-04 07:37:02,556 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cloud-dev-112233/locations/europe-west3-b/operations/operation-1701671549566-9709fe02-216e-471a-9244-80dfa0776f9b?alt=json HTTP/1.1" 200 None
+2023-12-04 07:37:07,570 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-12-04 07:37:07,780 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cloud-dev-112233/locations/europe-west3-b/operations/operation-1701671549566-9709fe02-216e-471a-9244-80dfa0776f9b?alt=json HTTP/1.1" 200 None
+2023-12-04 07:37:12,791 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-12-04 07:37:13,010 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cloud-dev-112233/locations/europe-west3-b/operations/operation-1701671549566-9709fe02-216e-471a-9244-80dfa0776f9b?alt=json HTTP/1.1" 200 None
+2023-12-04 07:37:18,031 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-12-04 07:37:18,238 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cloud-dev-112233/locations/europe-west3-b/operations/operation-1701671549566-9709fe02-216e-471a-9244-80dfa0776f9b?alt=json HTTP/1.1" 200 None
+2023-12-04 07:37:23,251 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-12-04 07:37:23,472 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cloud-dev-112233/locations/europe-west3-b/operations/operation-1701671549566-9709fe02-216e-471a-9244-80dfa0776f9b?alt=json HTTP/1.1" 200 None
+2023-12-04 07:37:28,478 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-12-04 07:37:28,677 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cloud-dev-112233/locations/europe-west3-b/operations/operation-1701671549566-9709fe02-216e-471a-9244-80dfa0776f9b?alt=json HTTP/1.1" 200 None
+2023-12-04 07:37:28,679 INFO     root            Operation <Operation
+ clusterConditions: []
+ endTime: '2023-12-04T06:37:28.379743402Z'
+ name: 'operation-1701671549566-9709fe02-216e-471a-9244-80dfa0776f9b'
+ nodepoolConditions: []
+ operationType: OperationTypeValueValuesEnum(CREATE_CLUSTER, 1)
+ progress: <OperationProgress
+ metrics: [<Metric
+ intValue: 10
+ name: 'CLUSTER_CONFIGURING'>, <Metric
+ intValue: 10
+ name: 'CLUSTER_CONFIGURING_TOTAL'>, <Metric
+ intValue: 12
+ name: 'CLUSTER_DEPLOYING'>, <Metric
+ intValue: 12
+ name: 'CLUSTER_DEPLOYING_TOTAL'>, <Metric
+ intValue: 1
+ name: 'CLUSTER_HEALTHCHECKING'>, <Metric
+ intValue: 2
+ name: 'CLUSTER_HEALTHCHECKING_TOTAL'>]
+ stages: []>
+ selfLink: 'https://container.googleapis.com/v1/projects/166042509722/zones/europe-west3-b/operations/operation-1701671549566-9709fe02-216e-471a-9244-80dfa0776f9b'
+ startTime: '2023-12-04T06:32:29.566245127Z'
+ status: StatusValueValuesEnum(DONE, 3)
+ targetLink: 'https://container.googleapis.com/v1/projects/166042509722/zones/europe-west3-b/clusters/inel-10486'
+ zone: 'europe-west3-b'> succeeded after 299.066 seconds
+2023-12-04 07:37:28,776 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-12-04 07:37:28,994 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cloud-dev-112233/locations/europe-west3-b/clusters/inel-10486?alt=json HTTP/1.1" 200 None
+2023-12-04 07:37:28,998 INFO     ___FILE_ONLY___ Created [https://container.googleapis.com/v1/projects/cloud-dev-112233/zones/europe-west3-b/clusters/inel-10486].
+
+2023-12-04 07:37:28,998 INFO     ___FILE_ONLY___ To inspect the contents of your cluster, go to: https://console.cloud.google.com/kubernetes/workload_/gcloud/europe-west3-b/inel-10486?project=cloud-dev-112233
+
+2023-12-04 07:37:30,071 DEBUG    root            Saved kubeconfig to /Users/inelpandzic/.kube/config
+2023-12-04 07:37:30,072 INFO     ___FILE_ONLY___ kubeconfig entry generated for inel-10486.
+
+2023-12-04 07:37:30,072 DEBUG    root            Chosen display Format:
+    table(
+        name,
+        zone:label=LOCATION,
+        master_version():label=MASTER_VERSION,
+        endpoint:label=MASTER_IP,
+        nodePools[0].config.machineType,
+        currentNodeVersion:label=NODE_VERSION,
+        firstof(currentNodeCount,initialNodeCount):label=NUM_NODES,
+        status
+    )
+
+2023-12-04 07:37:30,073 INFO     root            Display format: "
+    table(
+        name,
+        zone:label=LOCATION,
+        master_version():label=MASTER_VERSION,
+        endpoint:label=MASTER_IP,
+        nodePools[0].config.machineType,
+        currentNodeVersion:label=NODE_VERSION,
+        firstof(currentNodeCount,initialNodeCount):label=NUM_NODES,
+        status
+    )
+"
+2023-12-04 07:37:30,075 INFO     ___FILE_ONLY___ NAME
+2023-12-04 07:37:30,075 INFO     ___FILE_ONLY___         
+2023-12-04 07:37:30,075 INFO     ___FILE_ONLY___ LOCATION
+2023-12-04 07:37:30,075 INFO     ___FILE_ONLY___         
+2023-12-04 07:37:30,075 INFO     ___FILE_ONLY___ MASTER_VERSION
+2023-12-04 07:37:30,075 INFO     ___FILE_ONLY___        
+2023-12-04 07:37:30,075 INFO     ___FILE_ONLY___ MASTER_IP
+2023-12-04 07:37:30,075 INFO     ___FILE_ONLY___        
+2023-12-04 07:37:30,075 INFO     ___FILE_ONLY___ MACHINE_TYPE
+2023-12-04 07:37:30,075 INFO     ___FILE_ONLY___    
+2023-12-04 07:37:30,075 INFO     ___FILE_ONLY___ NODE_VERSION
+2023-12-04 07:37:30,075 INFO     ___FILE_ONLY___          
+2023-12-04 07:37:30,075 INFO     ___FILE_ONLY___ NUM_NODES
+2023-12-04 07:37:30,075 INFO     ___FILE_ONLY___   
+2023-12-04 07:37:30,075 INFO     ___FILE_ONLY___ STATUS
+2023-12-04 07:37:30,076 INFO     ___FILE_ONLY___ 
+
+2023-12-04 07:37:30,076 INFO     ___FILE_ONLY___ inel-10486
+2023-12-04 07:37:30,076 INFO     ___FILE_ONLY___   
+2023-12-04 07:37:30,076 INFO     ___FILE_ONLY___ europe-west3-b
+2023-12-04 07:37:30,076 INFO     ___FILE_ONLY___   
+2023-12-04 07:37:30,076 INFO     ___FILE_ONLY___ 1.25.15-gke.1115000
+2023-12-04 07:37:30,076 INFO     ___FILE_ONLY___   
+2023-12-04 07:37:30,076 INFO     ___FILE_ONLY___ 35.198.115.133
+2023-12-04 07:37:30,076 INFO     ___FILE_ONLY___   
+2023-12-04 07:37:30,076 INFO     ___FILE_ONLY___ n1-standard-4
+2023-12-04 07:37:30,076 INFO     ___FILE_ONLY___   
+2023-12-04 07:37:30,076 INFO     ___FILE_ONLY___ 1.25.15-gke.1115000
+2023-12-04 07:37:30,076 INFO     ___FILE_ONLY___   
+2023-12-04 07:37:30,076 INFO     ___FILE_ONLY___ 3
+2023-12-04 07:37:30,076 INFO     ___FILE_ONLY___           
+2023-12-04 07:37:30,076 INFO     ___FILE_ONLY___ RUNNING
+2023-12-04 07:37:30,076 INFO     ___FILE_ONLY___ 
+
+2023-12-04 07:37:30,077 INFO     ___FILE_ONLY___ 
+
+Updates are available for some Google Cloud CLI components.  To install them,
+please run:
+  $ gcloud components update
+
+
+2023-12-04 07:37:30,083 DEBUG    root            Metrics reporting process started...

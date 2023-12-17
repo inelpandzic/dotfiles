@@ -1,0 +1,22 @@
+2023-12-13 11:46:03,625 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'clusters']
+2023-12-13 11:46:03,626 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'clusters', 'delete']
+2023-12-13 11:46:03,637 DEBUG    root            Running [gcloud.container.clusters.delete] with arguments: [--async: "True", --zone: "europe-west3-b", NAME:1: "['inel-17139']"]
+2023-12-13 11:46:03,637 DEBUG    root            Chosen display Format:list[title="The following clusters will be deleted."]
+2023-12-13 11:46:03,644 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-12-13 11:46:04,246 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "DELETE /v1/projects/cloud-dev-112233/locations/europe-west3-b/clusters/inel-17139?alt=json HTTP/1.1" 200 None
+2023-12-13 11:46:04,252 DEBUG    root            Chosen display Format:none
+2023-12-13 11:46:04,253 INFO     root            Display format: "none"
+2023-12-13 11:46:04,254 INFO     ___FILE_ONLY___ 
+
+Updates are available for some Google Cloud CLI components.  To install them,
+please run:
+  $ gcloud components update
+
+
+2023-12-13 11:46:04,258 INFO     ___FILE_ONLY___ 
+
+To take a quick anonymous survey, run:
+  $ gcloud survey
+
+
+2023-12-13 11:46:04,269 DEBUG    root            Metrics reporting process started...

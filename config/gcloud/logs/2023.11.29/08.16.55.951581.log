@@ -1,0 +1,149 @@
+2023-11-29 08:16:55,956 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'clusters']
+2023-11-29 08:16:55,958 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'clusters', 'list']
+2023-11-29 08:16:55,974 DEBUG    root            Running [gcloud.container.clusters.list] with arguments: []
+2023-11-29 08:16:56,026 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-11-29 08:16:56,765 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cloud-dev-112233/locations/-/clusters?alt=json HTTP/1.1" 200 None
+2023-11-29 08:16:56,792 DEBUG    root            Chosen display Format:
+    table(
+        name,
+        zone:label=LOCATION,
+        master_version():label=MASTER_VERSION,
+        endpoint:label=MASTER_IP,
+        nodePools[0].config.machineType,
+        currentNodeVersion:label=NODE_VERSION,
+        firstof(currentNodeCount,initialNodeCount):label=NUM_NODES,
+        status
+    )
+
+2023-11-29 08:16:56,793 INFO     root            Display format: "
+    table(
+        name,
+        zone:label=LOCATION,
+        master_version():label=MASTER_VERSION,
+        endpoint:label=MASTER_IP,
+        nodePools[0].config.machineType,
+        currentNodeVersion:label=NODE_VERSION,
+        firstof(currentNodeCount,initialNodeCount):label=NUM_NODES,
+        status
+    )
+"
+2023-11-29 08:16:56,802 INFO     ___FILE_ONLY___ NAME
+2023-11-29 08:16:56,802 INFO     ___FILE_ONLY___           
+2023-11-29 08:16:56,802 INFO     ___FILE_ONLY___ LOCATION
+2023-11-29 08:16:56,802 INFO     ___FILE_ONLY___         
+2023-11-29 08:16:56,802 INFO     ___FILE_ONLY___ MASTER_VERSION
+2023-11-29 08:16:56,802 INFO     ___FILE_ONLY___        
+2023-11-29 08:16:56,802 INFO     ___FILE_ONLY___ MASTER_IP
+2023-11-29 08:16:56,802 INFO     ___FILE_ONLY___        
+2023-11-29 08:16:56,803 INFO     ___FILE_ONLY___ MACHINE_TYPE
+2023-11-29 08:16:56,803 INFO     ___FILE_ONLY___    
+2023-11-29 08:16:56,803 INFO     ___FILE_ONLY___ NODE_VERSION
+2023-11-29 08:16:56,803 INFO     ___FILE_ONLY___          
+2023-11-29 08:16:56,803 INFO     ___FILE_ONLY___ NUM_NODES
+2023-11-29 08:16:56,803 INFO     ___FILE_ONLY___   
+2023-11-29 08:16:56,803 INFO     ___FILE_ONLY___ STATUS
+2023-11-29 08:16:56,803 INFO     ___FILE_ONLY___ 
+
+2023-11-29 08:16:56,803 INFO     ___FILE_ONLY___ andrii-13937
+2023-11-29 08:16:56,803 INFO     ___FILE_ONLY___   
+2023-11-29 08:16:56,803 INFO     ___FILE_ONLY___ europe-west1-c
+2023-11-29 08:16:56,803 INFO     ___FILE_ONLY___   
+2023-11-29 08:16:56,803 INFO     ___FILE_ONLY___ 1.24.17-gke.2266000
+2023-11-29 08:16:56,803 INFO     ___FILE_ONLY___   
+2023-11-29 08:16:56,803 INFO     ___FILE_ONLY___ 35.241.154.67
+2023-11-29 08:16:56,803 INFO     ___FILE_ONLY___    
+2023-11-29 08:16:56,803 INFO     ___FILE_ONLY___ n1-standard-4
+2023-11-29 08:16:56,803 INFO     ___FILE_ONLY___   
+2023-11-29 08:16:56,803 INFO     ___FILE_ONLY___ 1.24.17-gke.2266000
+2023-11-29 08:16:56,803 INFO     ___FILE_ONLY___   
+2023-11-29 08:16:56,803 INFO     ___FILE_ONLY___ 3
+2023-11-29 08:16:56,803 INFO     ___FILE_ONLY___           
+2023-11-29 08:16:56,803 INFO     ___FILE_ONLY___ PROVISIONING
+2023-11-29 08:16:56,803 INFO     ___FILE_ONLY___ 
+
+2023-11-29 08:16:56,803 INFO     ___FILE_ONLY___ andrii-26147
+2023-11-29 08:16:56,803 INFO     ___FILE_ONLY___   
+2023-11-29 08:16:56,803 INFO     ___FILE_ONLY___ europe-west1-c
+2023-11-29 08:16:56,803 INFO     ___FILE_ONLY___   
+2023-11-29 08:16:56,803 INFO     ___FILE_ONLY___ 1.24.17-gke.2266000
+2023-11-29 08:16:56,803 INFO     ___FILE_ONLY___   
+2023-11-29 08:16:56,803 INFO     ___FILE_ONLY___ 35.195.38.90
+2023-11-29 08:16:56,803 INFO     ___FILE_ONLY___     
+2023-11-29 08:16:56,803 INFO     ___FILE_ONLY___ n1-standard-4
+2023-11-29 08:16:56,803 INFO     ___FILE_ONLY___   
+2023-11-29 08:16:56,803 INFO     ___FILE_ONLY___ 1.24.17-gke.2266000
+2023-11-29 08:16:56,803 INFO     ___FILE_ONLY___   
+2023-11-29 08:16:56,803 INFO     ___FILE_ONLY___ 3
+2023-11-29 08:16:56,803 INFO     ___FILE_ONLY___           
+2023-11-29 08:16:56,803 INFO     ___FILE_ONLY___ RUNNING
+2023-11-29 08:16:56,803 INFO     ___FILE_ONLY___ 
+
+2023-11-29 08:16:56,803 INFO     ___FILE_ONLY___ ege-26129
+2023-11-29 08:16:56,803 INFO     ___FILE_ONLY___      
+2023-11-29 08:16:56,803 INFO     ___FILE_ONLY___ europe-west3
+2023-11-29 08:16:56,803 INFO     ___FILE_ONLY___     
+2023-11-29 08:16:56,803 INFO     ___FILE_ONLY___ 1.28.3-gke.1203000
+2023-11-29 08:16:56,804 INFO     ___FILE_ONLY___    
+2023-11-29 08:16:56,804 INFO     ___FILE_ONLY___ 34.89.146.227
+2023-11-29 08:16:56,804 INFO     ___FILE_ONLY___    
+2023-11-29 08:16:56,804 INFO     ___FILE_ONLY___ n1-standard-4
+2023-11-29 08:16:56,804 INFO     ___FILE_ONLY___   
+2023-11-29 08:16:56,804 INFO     ___FILE_ONLY___ 1.28.3-gke.1203000
+2023-11-29 08:16:56,804 INFO     ___FILE_ONLY___    
+2023-11-29 08:16:56,804 INFO     ___FILE_ONLY___ 3
+2023-11-29 08:16:56,804 INFO     ___FILE_ONLY___           
+2023-11-29 08:16:56,804 INFO     ___FILE_ONLY___ RUNNING
+2023-11-29 08:16:56,804 INFO     ___FILE_ONLY___ 
+
+2023-11-29 08:16:56,804 INFO     ___FILE_ONLY___ inel-30622
+2023-11-29 08:16:56,804 INFO     ___FILE_ONLY___     
+2023-11-29 08:16:56,804 INFO     ___FILE_ONLY___ europe-west3-b
+2023-11-29 08:16:56,804 INFO     ___FILE_ONLY___   
+2023-11-29 08:16:56,804 INFO     ___FILE_ONLY___ 1.25.15-gke.1115000
+2023-11-29 08:16:56,804 INFO     ___FILE_ONLY___   
+2023-11-29 08:16:56,804 INFO     ___FILE_ONLY___ 35.198.142.242
+2023-11-29 08:16:56,804 INFO     ___FILE_ONLY___   
+2023-11-29 08:16:56,804 INFO     ___FILE_ONLY___ n1-standard-4
+2023-11-29 08:16:56,804 INFO     ___FILE_ONLY___   
+2023-11-29 08:16:56,804 INFO     ___FILE_ONLY___ 1.25.15-gke.1115000
+2023-11-29 08:16:56,804 INFO     ___FILE_ONLY___   
+2023-11-29 08:16:56,804 INFO     ___FILE_ONLY___ 3
+2023-11-29 08:16:56,804 INFO     ___FILE_ONLY___           
+2023-11-29 08:16:56,804 INFO     ___FILE_ONLY___ RUNNING
+2023-11-29 08:16:56,804 INFO     ___FILE_ONLY___ 
+
+2023-11-29 08:16:56,804 INFO     ___FILE_ONLY___ spronin-1337
+2023-11-29 08:16:56,804 INFO     ___FILE_ONLY___   
+2023-11-29 08:16:56,804 INFO     ___FILE_ONLY___ us-central1-a
+2023-11-29 08:16:56,804 INFO     ___FILE_ONLY___    
+2023-11-29 08:16:56,804 INFO     ___FILE_ONLY___ 1.27.7-gke.1121000
+2023-11-29 08:16:56,804 INFO     ___FILE_ONLY___    
+2023-11-29 08:16:56,804 INFO     ___FILE_ONLY___ 34.29.220.175
+2023-11-29 08:16:56,804 INFO     ___FILE_ONLY___    
+2023-11-29 08:16:56,804 INFO     ___FILE_ONLY___ n1-standard-4
+2023-11-29 08:16:56,804 INFO     ___FILE_ONLY___   
+2023-11-29 08:16:56,804 INFO     ___FILE_ONLY___ 1.27.7-gke.1121000
+2023-11-29 08:16:56,804 INFO     ___FILE_ONLY___    
+2023-11-29 08:16:56,804 INFO     ___FILE_ONLY___ 3
+2023-11-29 08:16:56,804 INFO     ___FILE_ONLY___           
+2023-11-29 08:16:56,804 INFO     ___FILE_ONLY___ RUNNING
+2023-11-29 08:16:56,804 INFO     ___FILE_ONLY___ 
+
+2023-11-29 08:16:56,804 INFO     ___FILE_ONLY___ natali-26
+2023-11-29 08:16:56,804 INFO     ___FILE_ONLY___      
+2023-11-29 08:16:56,804 INFO     ___FILE_ONLY___ us-central1-c
+2023-11-29 08:16:56,804 INFO     ___FILE_ONLY___    
+2023-11-29 08:16:56,804 INFO     ___FILE_ONLY___ 1.26.10-gke.1101000
+2023-11-29 08:16:56,804 INFO     ___FILE_ONLY___   
+2023-11-29 08:16:56,805 INFO     ___FILE_ONLY___ 34.173.103.140
+2023-11-29 08:16:56,805 INFO     ___FILE_ONLY___   
+2023-11-29 08:16:56,805 INFO     ___FILE_ONLY___ n1-standard-4
+2023-11-29 08:16:56,805 INFO     ___FILE_ONLY___   
+2023-11-29 08:16:56,805 INFO     ___FILE_ONLY___ 1.26.10-gke.1101000
+2023-11-29 08:16:56,805 INFO     ___FILE_ONLY___   
+2023-11-29 08:16:56,805 INFO     ___FILE_ONLY___ 3
+2023-11-29 08:16:56,805 INFO     ___FILE_ONLY___           
+2023-11-29 08:16:56,805 INFO     ___FILE_ONLY___ RUNNING
+2023-11-29 08:16:56,805 INFO     ___FILE_ONLY___ 
+
+2023-11-29 08:16:56,811 DEBUG    root            Metrics reporting process started...

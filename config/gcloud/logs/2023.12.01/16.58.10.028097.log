@@ -1,0 +1,236 @@
+2023-12-01 16:58:10,029 DEBUG    root            Loaded Command Group: ['gcloud', 'projects']
+2023-12-01 16:58:10,030 DEBUG    root            Loaded Command Group: ['gcloud', 'projects', 'describe']
+2023-12-01 16:58:10,031 DEBUG    root            Running [gcloud.projects.describe] with arguments: [--account: "inel.pandzic@percona.com", --configuration: "percona-cloud-dev", --format: "value(name)", PROJECT_ID_OR_NUMBER: "cloud-dev-112233"]
+2023-12-01 16:58:10,051 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2023-12-01 16:58:10,053 DEBUG    root            Caught socket error, retrying: HTTPSConnectionPool(host='cloudresourcemanager.googleapis.com', port=443): Max retries exceeded with url: /v1/projects/cloud-dev-112233?alt=json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x107baa4d0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2023-12-01 16:58:10,053 DEBUG    root            Retrying request to url https://cloudresourcemanager.googleapis.com/v1/projects/cloud-dev-112233?alt=json after exception HTTPSConnectionPool(host='cloudresourcemanager.googleapis.com', port=443): Max retries exceeded with url: /v1/projects/cloud-dev-112233?alt=json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x107baa4d0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2023-12-01 16:58:11,629 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2023-12-01 16:58:11,636 DEBUG    root            Caught socket error, retrying: HTTPSConnectionPool(host='cloudresourcemanager.googleapis.com', port=443): Max retries exceeded with url: /v1/projects/cloud-dev-112233?alt=json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x107cfcfd0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2023-12-01 16:58:11,636 DEBUG    root            Retrying request to url https://cloudresourcemanager.googleapis.com/v1/projects/cloud-dev-112233?alt=json after exception HTTPSConnectionPool(host='cloudresourcemanager.googleapis.com', port=443): Max retries exceeded with url: /v1/projects/cloud-dev-112233?alt=json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x107cfcfd0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2023-12-01 16:58:15,950 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2023-12-01 16:58:15,956 DEBUG    root            Caught socket error, retrying: HTTPSConnectionPool(host='cloudresourcemanager.googleapis.com', port=443): Max retries exceeded with url: /v1/projects/cloud-dev-112233?alt=json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x107cfcfd0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2023-12-01 16:58:15,956 DEBUG    root            Retrying request to url https://cloudresourcemanager.googleapis.com/v1/projects/cloud-dev-112233?alt=json after exception HTTPSConnectionPool(host='cloudresourcemanager.googleapis.com', port=443): Max retries exceeded with url: /v1/projects/cloud-dev-112233?alt=json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x107cfcfd0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2023-12-01 16:58:24,061 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2023-12-01 16:58:24,066 DEBUG    root            Caught socket error, retrying: HTTPSConnectionPool(host='cloudresourcemanager.googleapis.com', port=443): Max retries exceeded with url: /v1/projects/cloud-dev-112233?alt=json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x107cfcfd0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2023-12-01 16:58:24,066 DEBUG    root            Retrying request to url https://cloudresourcemanager.googleapis.com/v1/projects/cloud-dev-112233?alt=json after exception HTTPSConnectionPool(host='cloudresourcemanager.googleapis.com', port=443): Max retries exceeded with url: /v1/projects/cloud-dev-112233?alt=json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x107cfcfd0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2023-12-01 17:00:12,438 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2023-12-01 17:00:12,450 DEBUG    root            HTTPSConnectionPool(host='cloudresourcemanager.googleapis.com', port=443): Max retries exceeded with url: /v1/projects/cloud-dev-112233?alt=json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x107cfcf50>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+Traceback (most recent call last):
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/third_party/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/third_party/urllib3/util/connection.py", line 72, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.2_1/Frameworks/Python.framework/Versions/3.11/lib/python3.11/socket.py", line 962, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/third_party/urllib3/connectionpool.py", line 717, in urlopen
+    httplib_response = self._make_request(
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/third_party/urllib3/connectionpool.py", line 406, in _make_request
+    self._validate_conn(conn)
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/third_party/urllib3/connectionpool.py", line 1057, in _validate_conn
+    conn.connect()
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/third_party/urllib3/connection.py", line 358, in connect
+    self.sock = conn = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/third_party/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x107cfcf50>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/third_party/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/third_party/urllib3/connectionpool.py", line 799, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/third_party/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='cloudresourcemanager.googleapis.com', port=443): Max retries exceeded with url: /v1/projects/cloud-dev-112233?alt=json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x107cfcf50>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 987, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 807, in Run
+    resources = command_instance.Run(args)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/surface/projects/describe.py", line 51, in Run
+    return projects_api.Get(project_ref)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/googlecloudsdk/api_lib/cloudresourcemanager/projects_api.py", line 129, in Get
+    return client.projects.Get(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/googlecloudsdk/generated_clients/apis/cloudresourcemanager/v1/cloudresourcemanager_v1_client.py", line 758, in Get
+    return self._RunMethod(
+           ^^^^^^^^^^^^^^^^
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 734, in _RunMethod
+    http_response = http_wrapper.MakeRequest(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/third_party/apitools/base/py/http_wrapper.py", line 348, in MakeRequest
+    return _MakeRequestNoRetry(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/third_party/apitools/base/py/http_wrapper.py", line 397, in _MakeRequestNoRetry
+    info, content = http.request(
+                    ^^^^^^^^^^^^^
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/googlecloudsdk/core/requests.py", line 426, in HttpRequest
+    return orig_request_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/googlecloudsdk/core/requests.py", line 510, in request
+    response = self.session.request(
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/googlecloudsdk/core/transport.py", line 258, in WrappedRequest
+    response = orig_request(*modified_args, **modified_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/googlecloudsdk/core/credentials/requests.py", line 107, in WrappedRequest
+    response = orig_request(
+               ^^^^^^^^^^^^^
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/googlecloudsdk/core/transport.py", line 258, in WrappedRequest
+    response = orig_request(*modified_args, **modified_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/googlecloudsdk/core/requests.py", line 246, in WrappedRequest
+    return orig_request_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/third_party/requests/sessions.py", line 544, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/third_party/requests/sessions.py", line 657, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/third_party/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='cloudresourcemanager.googleapis.com', port=443): Max retries exceeded with url: /v1/projects/cloud-dev-112233?alt=json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x107cfcf50>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2023-12-01 17:00:12,465 ERROR    ___FILE_ONLY___ BEGIN CRASH STACKTRACE
+Traceback (most recent call last):
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/third_party/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/third_party/urllib3/util/connection.py", line 72, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.2_1/Frameworks/Python.framework/Versions/3.11/lib/python3.11/socket.py", line 962, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/third_party/urllib3/connectionpool.py", line 717, in urlopen
+    httplib_response = self._make_request(
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/third_party/urllib3/connectionpool.py", line 406, in _make_request
+    self._validate_conn(conn)
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/third_party/urllib3/connectionpool.py", line 1057, in _validate_conn
+    conn.connect()
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/third_party/urllib3/connection.py", line 358, in connect
+    self.sock = conn = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/third_party/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x107cfcf50>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/third_party/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/third_party/urllib3/connectionpool.py", line 799, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/third_party/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='cloudresourcemanager.googleapis.com', port=443): Max retries exceeded with url: /v1/projects/cloud-dev-112233?alt=json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x107cfcf50>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/googlecloudsdk/command_lib/crash_handling.py", line 193, in Wrapper
+    target_function(*args, **kwargs)
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/googlecloudsdk/gcloud_main.py", line 186, in main
+    gcloud_cli.Execute()
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 1013, in Execute
+    self._HandleAllErrors(exc, command_path_string, specified_arg_names)
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 1050, in _HandleAllErrors
+    exceptions.HandleError(exc, command_path_string, self.__known_error_handler)
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/googlecloudsdk/calliope/exceptions.py", line 555, in HandleError
+    core_exceptions.reraise(exc)
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/googlecloudsdk/core/exceptions.py", line 146, in reraise
+    six.reraise(type(exc_value), exc_value, tb)
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/third_party/six/__init__.py", line 719, in reraise
+    raise value
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 987, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 807, in Run
+    resources = command_instance.Run(args)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/surface/projects/describe.py", line 51, in Run
+    return projects_api.Get(project_ref)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/googlecloudsdk/api_lib/cloudresourcemanager/projects_api.py", line 129, in Get
+    return client.projects.Get(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/googlecloudsdk/generated_clients/apis/cloudresourcemanager/v1/cloudresourcemanager_v1_client.py", line 758, in Get
+    return self._RunMethod(
+           ^^^^^^^^^^^^^^^^
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 734, in _RunMethod
+    http_response = http_wrapper.MakeRequest(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/third_party/apitools/base/py/http_wrapper.py", line 348, in MakeRequest
+    return _MakeRequestNoRetry(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/third_party/apitools/base/py/http_wrapper.py", line 397, in _MakeRequestNoRetry
+    info, content = http.request(
+                    ^^^^^^^^^^^^^
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/googlecloudsdk/core/requests.py", line 426, in HttpRequest
+    return orig_request_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/googlecloudsdk/core/requests.py", line 510, in request
+    response = self.session.request(
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/googlecloudsdk/core/transport.py", line 258, in WrappedRequest
+    response = orig_request(*modified_args, **modified_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/googlecloudsdk/core/credentials/requests.py", line 107, in WrappedRequest
+    response = orig_request(
+               ^^^^^^^^^^^^^
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/googlecloudsdk/core/transport.py", line 258, in WrappedRequest
+    response = orig_request(*modified_args, **modified_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/googlecloudsdk/core/requests.py", line 246, in WrappedRequest
+    return orig_request_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/third_party/requests/sessions.py", line 544, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/third_party/requests/sessions.py", line 657, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/lib/third_party/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='cloudresourcemanager.googleapis.com', port=443): Max retries exceeded with url: /v1/projects/cloud-dev-112233?alt=json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x107cfcf50>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2023-12-01 17:00:12,469 ERROR    root            gcloud crashed (ConnectionError): HTTPSConnectionPool(host='cloudresourcemanager.googleapis.com', port=443): Max retries exceeded with url: /v1/projects/cloud-dev-112233?alt=json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x107cfcf50>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2023-12-01 17:00:12,479 INFO     ___FILE_ONLY___ 
+If you would like to report this issue, please run the following command:
+
+2023-12-01 17:00:12,480 INFO     ___FILE_ONLY___   gcloud feedback
+
+2023-12-01 17:00:12,480 INFO     ___FILE_ONLY___ 
+To check gcloud for common problems, please run the following command:
+
+2023-12-01 17:00:12,480 INFO     ___FILE_ONLY___   gcloud info --run-diagnostics
+
+2023-12-01 17:00:12,486 DEBUG    root            Metrics reporting process started...

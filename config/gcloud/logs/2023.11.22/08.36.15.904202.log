@@ -1,0 +1,28 @@
+2023-11-22 08:36:15,905 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
+2023-11-22 08:36:15,907 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'config_helper']
+2023-11-22 08:36:15,908 DEBUG    root            Running [gcloud.config.config-helper] with arguments: [--format: "json"]
+2023-11-22 08:36:15,912 DEBUG    root            Chosen display Format:default json
+2023-11-22 08:36:15,912 INFO     root            Display format: "default json"
+2023-11-22 08:36:15,912 INFO     ___FILE_ONLY___ {
+  "configuration": {
+    "active_configuration": "percona-cloud-dev",
+    "properties": {
+      "core": {
+        "account": "inel.pandzic@percona.com",
+        "disable_usage_reporting": "False",
+        "project": "cloud-dev-112233"
+      }
+    }
+  },
+  "credential": {
+    "access_token": "ya29.a0AfB_byBwtL2cXWW2UfUVjNMzgVpteQ199pVsI2iBqenu6mOWYJVcFsrK4BYU_1kcPaD-Ne2_0Y_TwEBERWkoqT6D5w-FDjUf-2V_wYM2Aa4Vi4fu885gDUggI-kTpis4pfvJCuplJIFMwaif2biTbiwErEoMB1OAjXSuAqZDhJykaCgYKAWYSARESFQHGX2MijTimBcZXUXYyaLHbIvv2Mg0179",
+    "id_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjViMzcwNjk2MGUzZTYwMDI0YTI2NTVlNzhjZmE2M2Y4N2M5N2QzMDkiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzMjU1NTk0MDU1OS5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImF1ZCI6IjMyNTU1OTQwNTU5LmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTA3NDA5ODEzMzQ0NTU5NDQzNDA3IiwiaGQiOiJwZXJjb25hLmNvbSIsImVtYWlsIjoiaW5lbC5wYW5kemljQHBlcmNvbmEuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiJ4VkRkNUVvS0ZoM0ZRSWZmeGhGSEhnIiwiaWF0IjoxNzAwNjM4MzIzLCJleHAiOjE3MDA2NDE5MjN9.C2o_628DmJfmus5mPsrL2uTtmtiuZIaNtT_4gWRhC8_x_-6qZ8z_JKEStuFPbPz2zc5S2WJSBl9-5WutictblT6xz1WtRzqdO6qRplA8Y6Y_P1udggwn5TKQNaKWBoNyexR2pJVgZ5EPWStrnQ3DGi0g2RloaSLbfHZ7on03TVU5nJLIHa-yZoHLFrUWtB20KZrC2clvj5YQwQ35zeu5IdAuwqpf7SvzxzYLzL2xggyaa_YjWKUORMT4IYmHFC0SwS90RI1YHKDJzQ0l7rwOdWfLHY5xIHIaG8ycNh8mR8Z_cFI4O2BMovP4oB5BsJlX2J-i5igt0vhkMZS2sCFbYQ",
+    "token_expiry": "2023-11-22T08:32:02Z"
+  },
+  "sentinels": {
+    "config_sentinel": "/Users/inelpandzic/.config/gcloud/config_sentinel"
+  }
+}
+2023-11-22 08:36:15,912 INFO     ___FILE_ONLY___ 
+
+2023-11-22 08:36:15,918 DEBUG    root            Metrics reporting process started...

@@ -142,7 +142,8 @@ bindkey -v
 alias n='nvim'
 alias nf='nvim $(fzf)'
 
-alias vc='code . --goto $(fzf)'
+alias vf='code . --goto $(fzf)'
+alias v='code .'
 
 alias k='kubectl'
 alias kn='kubens'

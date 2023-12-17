@@ -1,0 +1,4 @@
+2023-11-21 17:12:11,840 DEBUG    root            Loaded Command Group: ['gcloud', 'projects']
+2023-11-21 17:12:11,842 DEBUG    root            Loaded Command Group: ['gcloud', 'projects', 'describe']
+2023-11-21 17:12:11,842 DEBUG    root            Running [gcloud.projects.describe] with arguments: [--account: "inel.pandzic@percona.com", --configuration: "percona-cloud-dev", --format: "value(name)", PROJECT_ID_OR_NUMBER: "cloud-dev-112233"]
+2023-11-21 17:12:11,862 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443

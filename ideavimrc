@@ -47,44 +47,44 @@ inoremap jk <Esc>
 nmap <leader>ss :vsplit<CR>
 nmap <leader>sh :split<CR>
 
-nmap <leader>a :action GotoAction<CR>
-
 nnoremap <c-o> :action Back<cr>
 nnoremap <c-i> :action Forward<cr>
 
+" Folding
+nnoremap zc :action CollapseRegion<CR>
+nnoremap zo :action ExpandRegion<CR>
+nnoremap <leader>zc :action CollapseAllRegions<CR>
+nnoremap <leader>zo :action ExpandAllRegions<CR>
+
 nnoremap <leader>o :action FileStructurePopup<CR>
 nnoremap <leader>t :action ActivateTerminalToolWindow<CR>
-nnoremap <leader>nn :action ActivateProjectToolWindow<CR>
 nnoremap <leader>e :action SelectInProjectView<CR>
-nnoremap <leader>xx :action CloseAllEditors<CR>
+nnoremap <leader>w :action CloseAllEditors<CR>
 nnoremap <Leader>r :action ActivateRunToolWindow<CR>
 
-
-nnoremap <Leader>h :action HideAllWindows<CR>
-
-" Edit / refactor
+" LSP
+nnoremap gr :action GotoDeclaration<CR>
 nnoremap gd :action GotoDeclaration<CR>
 nnoremap gD :action GotoTypeDeclaration<CR>
 nnoremap gi :action GotoImplementation<CR>
-nnoremap gs :action GotoSuperMethod<CR>
+nnoremap gI :action GotoSuperMethod<CR>
 nnoremap gq :action QuickImplementations<CR>
 
 nnoremap <leader>lm :action ImplementMethods<CR>
 nnoremap <leader>lr :action RenameElement<CR>
-" nnoremap ,dd :action QuickJavaDoc<CR> --> use shift+k
-nnoremap <leader>lk :action ExternalJavaDoc<CR>
-
-nnoremap ,a :action Annotate<CR>
-nnoremap ,c :action Vcs.Show.Local.Changes<cr>
+nnoremap <leader>lf :action ReformatCode<CR>
+nnoremap <leader>ld :action ExternalJavaDoc<CR>
+nnoremap <leader>la :action ShowIntentionActions<CR>
 
 "Run stuff
 nnoremap .r :action ContextRun<CR>
 nnoremap .d :action ContextDebug<CR>
 nnoremap .s :action Stop<CR>
 nnoremap .b :action ToggleLineBreakpoint<CR>
-"dodati next i prev za breakpoint
 
 " VCS operations
+nnoremap ,a :action Annotate<CR>
+nnoremap ,c :action Vcs.Show.Local.Changes<cr>
 
 
 
@@ -93,13 +93,10 @@ nnoremap .b :action ToggleLineBreakpoint<CR>
 
 "ReopenClosedTab
 "CloseActiveTab                                     <C-S-F4>
-"CloseAllEditors
 "CloseAllEditorsButActive
 "CloseAllUnmodifiedEditors
 
-
 "HideActiveWindow                                   <S-Esc>
-"HideAllWindows                                     <M-S-F12>
 "HideCoverage
 "HideSideWindows
 

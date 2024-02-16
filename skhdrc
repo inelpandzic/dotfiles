@@ -18,12 +18,15 @@ alt + shift - l : yabai -m window --swap east || $(yabai -m window --display eas
 # hyper - e : yabai -m window --toggle zoom-fullscreen
 
 # Focus APP ===============
-hyper - w : open /Applications/Slack.app
+hyper - a : open /Applications/Slack.app
 hyper - s : open /Applications/Arc.app
-hyper - d : open /Applications/Alacritty.app
-hyper - f : open /Applications/Visual\ Studio\ Code.app
-hyper - r : open /Applications/Obsidian.app
-hyper - e : open /Applications/Things3.app
+# hyper - s : open /Applications/Google\ Chrome.app
+# hyper - d : open /Applications/GoLand.app
+hyper - d : open /Applications/Visual\ Studio\ Code.app
+hyper - f : open /Applications/Alacritty.app
+# hyper - r : open /Applications/Obsidian.app
+hyper - g : open /Applications/Notion.app
+# hyper - c : open /Applications/Things3.app
 
 # Stacks ======================================
 alt + shift - s : window=$(yabai -m query --windows --window | jq -r '.id') && yabai -m window east --stack $window || (yabai -m window $window --toggle float && yabai -m window $window --toggle float)

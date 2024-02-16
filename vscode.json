@@ -1,4 +1,5 @@
 {
+  "go.testTimeout": "300s",
   // VIM
   "vim.leader": "<space>",
   "vim.easymotion": true,
@@ -10,62 +11,112 @@
   "vim.visualModeKeyBindings": [],
   "vim.normalModeKeyBindings": [
     {
-      "before": ["ctrl+o"],
-      "commands": ["workbench.action.navigateBackInNavigationLocations"]
+      "before": [
+        "ctrl+o"
+      ],
+      //"commands": ["workbench.action.navigateBackInNavigationLocations"]
+      "commands": [
+        "workbench.action.navigateBack"
+      ]
     },
     {
-      "before": ["ctrl+i"],
-      "commands": ["workbench.action.navigateForwardInNavigationLocations"]
+      "before": [
+        "ctrl+i"
+      ],
+      //"commands": ["workbench.action.navigateForwardInNavigationLocations"]
+      "commands": [
+        "workbench.action.navigateForward"
+      ]
     },
     {
-      "before": ["g", "d"],
-      "commands": ["editor.action.revealDefinition"]
+      "before": [
+        "g",
+        "d"
+      ],
+      "commands": [
+        "editor.action.revealDefinition"
+      ]
     },
     {
-      "before": ["g", "D"],
-      "commands": ["editor.action.goToTypeDefinition"]
+      "before": [
+        "g",
+        "D"
+      ],
+      "commands": [
+        "editor.action.goToTypeDefinition"
+      ]
     },
     {
-      "before": ["leader", "l", "r"],
-      "commands": ["editor.action.rename"]
+      "before": [
+        "leader",
+        "l",
+        "r"
+      ],
+      "commands": [
+        "editor.action.rename"
+      ]
     },
     {
-      "before": ["g", "r"],
-      "commands": ["editor.action.goToReferences"]
+      "before": [
+        "g",
+        "r"
+      ],
+      "commands": [
+        "editor.action.goToReferences"
+      ]
     },
     {
-      "before": ["g", "i"],
-      "commands": ["editor.action.goToImplementation"]
+      "before": [
+        "g",
+        "i"
+      ],
+      "commands": [
+        "editor.action.goToImplementation"
+      ]
     },
     {
-      "before": ["K"],
-      "commands": ["editor.action.showHover"]
+      "before": [
+        "K"
+      ],
+      "commands": [
+        "editor.action.showHover"
+      ]
     },
     {
-      "before": ["leader", "l", "f"],
-      "commands": ["editor.action.formatDocument"]
-    }
+      "before": [
+        "leader",
+        "l",
+        "f"
+      ],
+      "commands": [
+        "editor.action.formatDocument"
+      ]
+    },
   ],
   "vim.insertModeKeyBindings": [
     {
-      "before": ["j", "k"],
-      "after": ["<Esc>"]
+      "before": [
+        "j",
+        "k"
+      ],
+      "after": [
+        "<Esc>"
+      ]
     }
   ],
   "vim.enableNeovim": false,
   "vim.neovimConfigPath": "/opt/homebrew/bin/nvim",
   "vim.foldfix": true,
   // VIM end
+  "editor.suggest.insertMode": "replace",
   "editor.minimap.enabled": false,
   "terminal.integrated.macOptionClickForcesSelection": true,
   "editor.language.colorizedBracketPairs": [],
-  "window.openFoldersInNewWindow": "off",
   "editor.links": false,
   "workbench.startupEditor": "none",
-  "workbench.activityBar.visible": false,
   "files.autoSave": "afterDelay",
   "workbench.tree.indent": 12,
-  "workbench.editor.showTabs": false,
+  "workbench.editor.showTabs": "single",
   "terminal.external.osxExec": "iTerm.app",
   "vscode-neovim.neovimExecutablePaths.darwin": "/opt/homebrew/bin/nvim",
   "go.toolsManagement.autoUpdate": true,
@@ -75,19 +126,39 @@
   "redhat.telemetry.enabled": true,
   "vscode-neovim.neovimInitVimPaths.darwin": "/Users/inelpandzic/.vscode/init.vim",
   "editor.rulers": [],
-  //CustomizeUI
-  "customizeUI.titleBar": "frameless",
-
-  "window.titleBarStyle": "native",
   "git.enableSmartCommit": true,
   "editor.cursorBlinking": "smooth",
+  "editor.renderLineHighlight": "gutter",
+  "zenMode.hideLineNumbers": false,
+  "zenMode.hideStatusBar": false,
   "vim.statusBarColorControl": true,
   "workbench.colorCustomizations": {
-    "statusBar.background": "#005f5f",
-    "statusBar.noFolderBackground": "#005f5f",
-    "statusBar.debuggingBackground": "#005f5f"
+    "statusBar.background": "#005f87",
+    "statusBar.noFolderBackground": "#005f87",
+    "statusBar.debuggingBackground": "#005f87",
+    "statusBar.foreground": "#ffffff",
+    "statusBar.debuggingForeground": "#ffffff"
   },
+  "vs-kubernetes": {
+    "vscode-kubernetes.minikube-path.mac": "/Users/inelpandzic/.vs-kubernetes/tools/minikube/darwin-arm64/minikube"
+  },
+  "workbench.layoutControl.enabled": false,
+  "git.openRepositoryInParentFolders": "never",
+  "editor.stickyScroll.enabled": true,
+  "workbench.colorTheme": "GitHub Dark",
+  "window.commandCenter": false,
+  "go.buildTags": "envtest",
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  },
+  "window.nativeTabs": true,
+  "window.newWindowDimensions": "inherit",
+  "window.openFoldersInNewWindow": "on",
+  "editor.accessibilitySupport": "off",
+  "workbench.activityBar.location": "hidden",
+  "workbench.editor.enablePreview": false,
   "diffEditor.ignoreTrimWhitespace": false
-
-  // "workbench.iconTheme": "Monokai Pro (Filter Octagon) Icons",
 }

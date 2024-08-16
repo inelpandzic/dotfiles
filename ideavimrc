@@ -44,26 +44,31 @@ let mapleader = " "
 
 inoremap jk <Esc>
 
-nmap <leader>ss :vsplit<CR>
-nmap <leader>sh :split<CR>
+"nmap <leader>ss :vsplit<CR>
+"nmap <leader>sh :split<CR>
 
 nnoremap <c-o> :action Back<cr>
 nnoremap <c-i> :action Forward<cr>
 
-" Folding
-nnoremap zc :action CollapseRegion<CR>
-nnoremap zo :action ExpandRegion<CR>
-nnoremap <leader>zc :action CollapseAllRegions<CR>
-nnoremap <leader>zo :action ExpandAllRegions<CR>
 
-nnoremap <leader>o :action FileStructurePopup<CR>
+" Folding
+nnoremap za :action CollapseRegion<CR>
+nnoremap zA :action CollapseAllRegions<CR>
+nnoremap zo :action ExpandRegion<CR>
+nnoremap zR :action ExpandAllRegions<CR>
+
+
+" Tool windows
 nnoremap <leader>t :action ActivateTerminalToolWindow<CR>
-nnoremap <leader>e :action SelectInProjectView<CR>
-nnoremap <leader>w :action CloseAllEditors<CR>
 nnoremap <Leader>r :action ActivateRunToolWindow<CR>
 
-" LSP
+nnoremap <leader>s :action FileStructurePopup<CR>
+nnoremap <leader>e :action SelectInProjectView<CR>
+nnoremap <leader>w :action CloseAllEditors<CR>
+
+" LSP / Code
 nnoremap gr :action GotoDeclaration<CR>
+nnoremap rr :action FindUsages<CR>
 nnoremap gd :action GotoDeclaration<CR>
 nnoremap gD :action GotoTypeDeclaration<CR>
 nnoremap gi :action GotoImplementation<CR>
@@ -72,9 +77,20 @@ nnoremap gq :action QuickImplementations<CR>
 
 nnoremap <leader>lm :action ImplementMethods<CR>
 nnoremap <leader>lr :action RenameElement<CR>
-nnoremap <leader>lf :action ReformatCode<CR>
-nnoremap <leader>ld :action ExternalJavaDoc<CR>
+
+nnoremap <leader>/ :action ReformatCode<CR>
+
+nnoremap K :action QuickJavaDoc<CR>
+
 nnoremap <leader>la :action ShowIntentionActions<CR>
+nnoremap <leader>ll :action ShowErrorDescription<CR>
+
+
+nnoremap <leader>ln :action MethodDown<CR>
+nnoremap <leader>lp :action MethodUp<CR>
+
+" MoveStatementUp
+" MoveStatementDown
 
 "Run stuff
 nnoremap .r :action ContextRun<CR>
@@ -83,30 +99,5 @@ nnoremap .s :action Stop<CR>
 nnoremap .b :action ToggleLineBreakpoint<CR>
 
 " VCS operations
-nnoremap ,a :action Annotate<CR>
-nnoremap ,c :action Vcs.Show.Local.Changes<cr>
-
-
-
-
-"JumpToLastWindow
-
-"ReopenClosedTab
-"CloseActiveTab                                     <C-S-F4>
-"CloseAllEditorsButActive
-"CloseAllUnmodifiedEditors
-
-"HideActiveWindow                                   <S-Esc>
-"HideCoverage
-"HideSideWindows
-
-
-"SearchEverywhere.SelectItem                        <CR>
-"SelectAllOccurrences                               <M-C-G>
-"SelectIn                                           <A-F1>
-"SelectInProjectView                                <C-S-S>
-"SelectInRemoteHost
-"SelectNextOccurrence                               <C-G>
-"SelectVirtualTemplateElement                       <A-S-O>
-"SmartSelect                                        <A-Up>
-"SmartUnSelect
+nnoremap <leader>gg :action ActivateCommitToolWindow<cr>
+nnoremap <leader>ga :action Annotate<CR>

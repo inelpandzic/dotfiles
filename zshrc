@@ -110,15 +110,21 @@ source $ZSH/oh-my-zsh.sh
 
 #Golang
 
+export GOROOT=/opt/homebrew/Cellar/go/1.22.3/libexec
+export PATH=$PATH:/opt/homebrew/Cellar/go/1.22.3/bin
+
 export GOPATH=/Users/inelpandzic/Dev/go
+
 export PATH=$PATH:$(go env GOPATH)/bin
 
 export PATH=$PATH:$HOME/.google-cloud-sdk/bin
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/14/bin
 
+export PATH=$PATH:/opt/homebrew/opt/python@3.12/libexec/bin
+
 
 #Make terminal better
-alias 1p='cat ~/.jedansif | base64 -D | pbcopy'
+alias 1p='cat ~/icloud/jsif | base64 -D | pbcopy'
 alias c='clear'
 alias ll='ls -lahtr'
 
@@ -140,7 +146,7 @@ bindkey -v
 #bindkey -s '^E' 'nvim $(fzf)\n'
 
 alias n='nvim'
-alias nf='nvim $(fzf)'
+alias ff='nvim $(fzf)'
 
 alias vf='code . --goto $(fzf)'
 alias v='code .'
@@ -154,6 +160,9 @@ alias ks='kubectl get services'
 alias kp='kubectl get pods'
 alias kl='kubectl logs'
 
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+
+alias sed='gsed'
 
 # yq version switch
 alias yq4='rm /opt/homebrew/bin/yq && ln -s /opt/homebrew/Cellar/yq/4.26.1/bin/yq /opt/homebrew/bin/yq'
@@ -164,6 +173,7 @@ alias yq3='rm /opt/homebrew/bin/yq && ln -s /Users/inelpandzic/Dev/Workspace/too
 if type brew &>/dev/null
 then
   FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
+alias python='python3'
 
   autoload -Uz compinit
   compinit
@@ -184,7 +194,7 @@ export EDITOR="nvim"
 #
 
 alias gke-list='gcloud container clusters list'
-alias gke-create='gcloud container clusters create --zone europe-west3-b inel-$RANDOM --cluster-version 1.25 --machine-type n1-standard-4 --preemptible --num-nodes=3 --no-enable-autoupgrade --disk-size 30 --labels delete-cluster-after-hours=10 && kubectl create clusterrolebinding cluster-admin-binding-inel --clusterrole=cluster-admin --user=inel.pandzic@percona.com'
+alias gke-create='gcloud container clusters create --zone europe-west3-b inel-$RANDOM --cluster-version 1.27 --machine-type n1-standard-4 --preemptible --num-nodes=3 --no-enable-autoupgrade --disk-size 30 --labels delete-cluster-after-hours=10 && kubectl create clusterrolebinding cluster-admin-binding-inel --clusterrole=cluster-admin --user=inel.pandzic@percona.com'
 
 gke-delete() {
     local cluster=$(gcloud container clusters list | awk '{print $1}' | grep inel | head -n 1)
@@ -200,14 +210,17 @@ gke-recreate(){
 
 export USE_GKE_GCLOUD_AUTH_PLUGIN=True
 
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/inelpandzic/Dev/Workspace/tools/google-cloud-sdk/completion.zsh.inc'; fi
-
 # Generated for envman. Do not edit.
 [ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+
+# ------
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/inelpandzic/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/inelpandzic/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/inelpandzic/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/inelpandzic/Downloads/google-cloud-sdk/completion.zsh.inc'; fi

@@ -1,0 +1,22 @@
+[font]
+size = 13.0
+
+[font.bold]
+family = "Hack Nerd Font Mono"
+
+[font.italic]
+family = "Hack Nerd Font Mono"
+
+[font.normal]
+family = "Hack Nerd Font Mono"
+
+[font.offset]
+x = 0
+y = 5
+
+[window]
+decorations = "none"
+
+[window.padding]
+x = 0
+y = 0

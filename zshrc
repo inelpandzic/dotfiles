@@ -110,8 +110,8 @@ source $ZSH/oh-my-zsh.sh
 
 #Golang
 
-export GOROOT=/opt/homebrew/Cellar/go/1.22.3/libexec
-export PATH=$PATH:/opt/homebrew/Cellar/go/1.22.3/bin
+export GOROOT=/opt/homebrew/Cellar/go/1.23.4/libexec
+export PATH=$PATH:/opt/homebrew/Cellar/go/1.23.4/bin
 
 export GOPATH=/Users/inelpandzic/Dev/go
 
@@ -194,7 +194,7 @@ export EDITOR="nvim"
 #
 
 alias gke-list='gcloud container clusters list'
-alias gke-create='gcloud container clusters create --zone europe-west3-b inel-$RANDOM --cluster-version 1.27 --machine-type n1-standard-4 --preemptible --num-nodes=3 --no-enable-autoupgrade --disk-size 30 --labels delete-cluster-after-hours=10 && kubectl create clusterrolebinding cluster-admin-binding-inel --clusterrole=cluster-admin --user=inel.pandzic@percona.com'
+alias gke-create='gcloud container clusters create --zone europe-west3-b inel-$RANDOM --cluster-version 1.30 --machine-type n1-standard-4 --preemptible --num-nodes=3 --no-enable-autoupgrade --disk-size 30 --labels delete-cluster-after-hours=10 && kubectl create clusterrolebinding cluster-admin-binding-inel --clusterrole=cluster-admin --user=inel.pandzic@percona.com'
 
 gke-delete() {
     local cluster=$(gcloud container clusters list | awk '{print $1}' | grep inel | head -n 1)

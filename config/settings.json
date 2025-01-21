@@ -1,0 +1,208 @@
+{
+  "go.testTimeout": "300s",
+  // VIM
+  "vim.leader": "<space>",
+  "vim.easymotion": true,
+  "vim.sneak": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  // "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.visualModeKeyBindings": [],
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["H"],
+      "after": ["^"]
+    },
+    {
+      "before": ["L"],
+      "after": ["$"]
+    },
+    {
+      "before": [
+        "/"
+      ],
+      "commands": [
+        "actions.find"
+      ]
+    },
+    {
+      "before": [
+        "ctrl+o"
+      ],
+      "commands": [
+        "workbench.action.navigateBack"
+      ]
+    },
+    {
+      "before": [
+        "ctrl+i"
+      ],
+      "commands": [
+        "workbench.action.navigateForward"
+      ]
+    },
+    {
+      "before": [
+        "g",
+        "d"
+      ],
+      "commands": [
+        "editor.action.revealDefinition"
+      ]
+    },
+    {
+      "before": [
+        "g",
+        "D"
+      ],
+      "commands": [
+        "editor.action.goToTypeDefinition"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "l",
+        "r"
+      ],
+      "commands": [
+        "editor.action.rename"
+      ]
+    },
+    {
+      "before": [
+        "g",
+        "r"
+      ],
+      "commands": [
+        "editor.action.goToReferences"
+      ]
+    },
+    {
+      "before": [
+        "g",
+        "i"
+      ],
+      "commands": [
+        "editor.action.goToImplementation"
+      ]
+    },
+    {
+      "before": [
+        "K"
+      ],
+      "commands": [
+        "editor.action.showHover"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "l",
+        "f"
+      ],
+      "commands": [
+        "editor.action.formatDocument"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "l",
+        "s"
+      ],
+      "commands": [
+        "workbench.action.gotoSymbol"
+      ]
+    },
+  ],
+  "vim.insertModeKeyBindings": [
+    {
+      "before": [
+        "j",
+        "k"
+      ],
+      "after": [
+        "<Esc>"
+      ]
+    }
+  ],
+  "vim.enableNeovim": false,
+  "vim.neovimConfigPath": "/opt/homebrew/bin/nvim",
+  "vim.foldfix": true,
+  "vim.highlightedyank.enable": true,
+  "vim.highlightedyank.color": "#a9dc7660",
+  "vim.highlightedyank.duration": 110,
+  // VIM end
+  "editor.suggest.insertMode": "replace",
+  "editor.minimap.enabled": false,
+  "terminal.integrated.macOptionClickForcesSelection": true,
+  "editor.language.colorizedBracketPairs": [],
+  "editor.links": false,
+  "workbench.startupEditor": "none",
+  "files.autoSave": "afterDelay",
+  "workbench.tree.indent": 12,
+  "workbench.editor.showTabs": "single",
+  "terminal.external.osxExec": "iTerm.app",
+  "vscode-neovim.neovimExecutablePaths.darwin": "/opt/homebrew/bin/nvim",
+  "go.toolsManagement.autoUpdate": true,
+  "editor.fontSize": 13,
+  "debug.console.fontSize": 13,
+  "terminal.integrated.fontSize": 13,
+  "redhat.telemetry.enabled": true,
+  "vscode-neovim.neovimInitVimPaths.darwin": "/Users/inelpandzic/.vscode/init.vim",
+  "editor.rulers": [],
+  "git.enableSmartCommit": true,
+  "editor.cursorBlinking": "smooth",
+  "editor.renderLineHighlight": "gutter",
+  "zenMode.hideLineNumbers": false,
+  "zenMode.hideStatusBar": false,
+  "vim.statusBarColorControl": true,
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#005f5f",
+    "statusBar.noFolderBackground": "#005f5f",
+    "statusBar.debuggingBackground": "#005f5f",
+    "statusBar.foreground": "#ffffff",
+    "statusBar.debuggingForeground": "#ffffff"
+  },
+  "vs-kubernetes": {
+    "vscode-kubernetes.minikube-path.mac": "/Users/inelpandzic/.vs-kubernetes/tools/minikube/darwin-arm64/minikube"
+  },
+  "workbench.layoutControl.enabled": false,
+  "git.openRepositoryInParentFolders": "never",
+  "editor.stickyScroll.enabled": true,
+  "window.commandCenter": false,
+  "go.buildTags": "envtest",
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  },
+  "window.nativeTabs": true,
+  "window.newWindowDimensions": "inherit",
+  "window.openFoldersInNewWindow": "off",
+  "editor.accessibilitySupport": "off",
+  "workbench.editor.enablePreview": false,
+  "diffEditor.ignoreTrimWhitespace": false,
+  // Apc Customize UI settings
+  "apc.electron": {
+    "frame": false,
+    "titleBarStyle": "hiddenInset",
+    "trafficLightPosition": {
+      "x": 7,
+      "y": 9
+    }
+  },
+  "apc.header": {
+    "compact": 28,
+  },
+  "window.titleBarStyle": "native",
+  "window.customTitleBarVisibility": "never",
+  "workbench.activityBar.location": "hidden",
+  "window.restoreWindows": "one",
+  "makefile.configureOnOpen": false,
+  "editor.smoothScrolling": true,
+  "workbench.colorTheme": "Tokyo Night"
+}

@@ -9,4 +9,6 @@ return {
   -- import/override with your plugins folder
   { import = "astrocommunity.colorscheme.catppuccin" },
   -- { import = "astrocommunity.editing-support/auto-save-nvim" },
+  { import = "astrocommunity.scrolling.neoscroll-nvim" },
+  { import = "astrocommunity.scrolling.nvim-scrollbar" },
 }

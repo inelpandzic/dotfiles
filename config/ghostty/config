@@ -1,1 +1,10 @@
 theme = tokyonight
+
+# keymaps ==================================
+keybind = global:cmd+`=toggle_quick_terminal
+
+keybind = ctrl+f>k=goto_split:top
+keybind = ctrl+f>j=goto_split:bottom
+keybind = ctrl+f>h=goto_split:left
+keybind = ctrl+f>l=goto_split:right
+

@@ -224,3 +224,50 @@ if [ -f '/Users/inelpandzic/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/inelpandzic/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/inelpandzic/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
+
+
+# --------------------------------------------------------
+# Percona MLINK ---------------------------------------------
+# --------------------------------------------------------
+
+exec-mongo() {
+    local rs="$1"
+
+    case "$rs" in
+    "rs00")
+        mongosh "mongodb://adm:pass@rs00:30000"
+        ;;
+    "rs10")
+        mongosh "mongodb://adm:pass@rs10:30100"
+        ;;
+    *)
+        echo "The variable does not match any known value."
+        ;;
+    esac
+}
+
+clean-docker() {
+    for c in $(docker ps -aq | xargs); do
+        # echo "container: $c"
+        docker stop -t 0 "$c" >/dev/null
+        docker rm -f -v "$c"
+    done
+    #
+    for v in $(docker volume ls -q); do
+        # echo "volume: $c"
+        docker volume rm -f "$v"
+    done
+
+    # docker stop -t 0 $(docker ps -aq | xargs)
+    docker system prune --volumes -f
+}
+
+
+pytest-run() {
+    export TEST_SOURCE_URI=mongodb://adm:pass@rs00:30000
+    export TEST_TARGET_URI=mongodb://adm:pass@rs10:30100
+    export TEST_MLINK_URL=http://localhost:2242
+
+    poetry run pytest
+}
+

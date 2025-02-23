@@ -178,7 +178,8 @@
     "*": true,
     "plaintext": false,
     "markdown": false,
-    "scminput": false
+    "scminput": false,
+    "todo": false
   },
   "window.nativeTabs": true,
   "window.newWindowDimensions": "inherit",
@@ -200,9 +201,14 @@
   },
   "window.titleBarStyle": "native",
   "window.customTitleBarVisibility": "never",
-  "workbench.activityBar.location": "hidden",
   "window.restoreWindows": "one",
   "makefile.configureOnOpen": false,
   "editor.smoothScrolling": true,
-  "workbench.colorTheme": "Tokyo Night"
+  "workbench.colorTheme": "Tokyo Night",
+  "todo.symbols.box": "□",
+  "workbench.activityBar.location": "hidden",
+  "inlineChat.lineNaturalLanguageHint": false,
+  "todo.colors.dark": {
+
+  }
 }
